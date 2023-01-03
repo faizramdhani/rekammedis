@@ -22,4 +22,12 @@ class User_m extends CI_Model
         $query = $this->db->get();
         return $query;
     }
+
+    // public function getData($id = 1)
+    // {
+    //     $query = $this->db->query("select * from pass_utama_bill ORDER BY id_pmedis ASC limit 10 ");
+    //     $result = $query->result_array();
+
+    //     return $result;
+    // }
 }

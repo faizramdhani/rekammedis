@@ -13,11 +13,9 @@
     <!-- Data Tables -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
 
-
     <!-- Template CSS -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/style.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/components.css">
-
 
 
 </head>
@@ -37,10 +35,10 @@
                 <ul class="navbar-nav navbar-right">
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                             <img alt="image" src="<?= site_url() ?>template/assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-                            <div class="d-sm-none d-lg-inline-block"></div><?= ucfirst($this->fungsi->user_login()->level_erm)   ?>
+                            <div class="d-sm-none d-lg-inline-block"></div><?= ucfirst($this->fungsi->user_login()->nmlevel_erm)   ?>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <div class="dropdown-title"><i class="fas fa-circle text-success"></i> ONLINE</div>
+                            <div class="dropdown-title"><i class="fas fa-circle text-success"></i> Online</div>
                             <a href="features-profile.html" class="dropdown-item has-icon">
                                 <i class="far fa-user"></i> <?= ucfirst($this->fungsi->user_login()->nmpeg)   ?>
                             </a>
@@ -74,20 +72,9 @@
                         </li>
 
                         <li class="menu-header">Menu</li>
-                        <li><a class="nav-link" href=""><i class="far fa-square"></i> <span>Rawat Jalan</span></a></li>
+                        <li><a class="nav-link" href="<?= site_url('rawatjalan/listpasien') ?>"><i class="far fa-square"></i> <span>Rawat Jalan</span></a></li>
                         <li><a class="nav-link" href=""><i class="far fa-square"></i> <span>Rawat Inap</span></a></li>
                         <li><a class="nav-link" href=""><i class="far fa-square"></i> <span>IGD</span></a></li>
-
-                        <li class="menu-header">Dokumen</li>
-
-                        <li class="dropdown">
-                            <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i> <span>Forms</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="">Advanced Form</a></li>
-                                <li><a class="nav-link" href="">Editor</a></li>
-                                <li><a class="nav-link" href="">Validation</a></li>
-                            </ul>
-                        </li>
 
 
                         <!-- level admin 1 -->
@@ -189,7 +176,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="<?= site_url('user') ?>">Admin</a></li>
                                     <li><a href="<?= site_url('dokter') ?>">Dokter</a></li>
-                                    <li><a href="auth-register.html">Perawat</a></li>
+                                    <li><a href="">Perawat</a></li>
 
                                 </ul>
                             </li>
@@ -215,6 +202,7 @@
         </div>
 
 
+
         <!-- General JS Scripts -->
         <script src="<?= base_url() ?>/template/node_modules/jquery/dist/jquery.min.js"></script>
         <script src="<?= base_url() ?>/template/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -226,6 +214,7 @@
         <!-- Template JS File -->
         <script src="<?= base_url() ?>/template/assets/js/scripts.js"></script>
         <script src="<?= base_url() ?>/template/assets/js/custom.js"></script>
+
 
 </body>
 

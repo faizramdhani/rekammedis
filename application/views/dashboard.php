@@ -74,32 +74,7 @@
  				</div>
  			</div>
  		</div>
- 		<div class="row">
- 			<div class="col-lg-6 col-md-12 col-12 col-sm-12">
- 				<div class="card">
- 					<div class="card-header">
- 						<h4>Ketersediaan Kamar</h4>
- 						<div class="card-header-action">
- 							<a href="">Detail</a>
- 						</div>
- 					</div>
- 					<div class="card-body">
-
- 						<ul class="list-unstyled list-unstyled-border">
- 							<li class="media">
- 								<div class="media-body">
-
- 								</div>
-
- 								<div class="text-small text-muted">
-
- 								</div>
- 							</li>
- 						</ul>
- 					</div>
- 				</div>
- 			</div>
- 		</div>
+ 		
 
  	</div>
  </section>
