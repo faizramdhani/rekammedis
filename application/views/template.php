@@ -37,12 +37,12 @@
                 <ul class="navbar-nav navbar-right">
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                             <img alt="image" src="<?= site_url() ?>template/assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-                            <div class="d-sm-none d-lg-inline-block"><?= ucfirst($this->fungsi->user_login()->nmpeg)   ?></div>
+                            <div class="d-sm-none d-lg-inline-block"></div><?= ucfirst($this->fungsi->user_login()->level_erm)   ?>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <div class="dropdown-title"><i class="fas fa-circle text-success"></i> ONLINE</div>
                             <a href="features-profile.html" class="dropdown-item has-icon">
-                                <i class="far fa-user"></i> User
+                                <i class="far fa-user"></i> <?= ucfirst($this->fungsi->user_login()->nmpeg)   ?>
                             </a>
                             <a href="features-activities.html" class="dropdown-item has-icon">
                                 <i class="fas fa-bolt"></i> Activities
@@ -78,14 +78,14 @@
                         <li><a class="nav-link" href=""><i class="far fa-square"></i> <span>Rawat Inap</span></a></li>
                         <li><a class="nav-link" href=""><i class="far fa-square"></i> <span>IGD</span></a></li>
 
-                        <li class="menu-header">Stisla</li>
+                        <li class="menu-header">Dokumen</li>
 
                         <li class="dropdown">
                             <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i> <span>Forms</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="forms-advanced-form.html">Advanced Form</a></li>
-                                <li><a class="nav-link" href="forms-editor.html">Editor</a></li>
-                                <li><a class="nav-link" href="forms-validation.html">Validation</a></li>
+                                <li><a class="nav-link" href="">Advanced Form</a></li>
+                                <li><a class="nav-link" href="">Editor</a></li>
+                                <li><a class="nav-link" href="">Validation</a></li>
                             </ul>
                         </li>
 
@@ -188,7 +188,7 @@
                                 <a href="" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>User</span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="<?= site_url('user') ?>">Admin</a></li>
-                                    <li><a href="auth-login.html">Dokter</a></li>
+                                    <li><a href="<?= site_url('dokter') ?>">Dokter</a></li>
                                     <li><a href="auth-register.html">Perawat</a></li>
 
                                 </ul>
