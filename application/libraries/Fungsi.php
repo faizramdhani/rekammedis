@@ -11,5 +11,15 @@ class Fungsi {
         $user_data = $this->ci->user_m->get($id_pmedis)->row();
         return $user_data;
     }
+
+    public function count_user(){
+        $this->ci->load->model('user_m');
+        return $this->ci->user_m->get()->num_rows();
+    }
+
+    // public function count_paslama(){
+    //     $this->ci->load->model('pasien_m');
+    //     return $this->ci->pasien_m->getpaslama()->return->result_array();
+    // }
+    
 }
-?>

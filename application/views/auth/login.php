@@ -22,11 +22,12 @@
 <body>
     <div id="app">
         <section class="section">
-            <div class="container mt-5">
+            <div class="container mt-0">
                 <div class="row">
                     <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
-                        <img src="<?= base_url() ?>/template/assets/img/ihc-nmu.png" width="150" height="150">
-
+                        <div class="login-brand">
+                            <img src="<?= base_url() ?>/template/assets/img/ihc-nmu.png" alt="logo" width="170" height="170" >
+                        </div>
                         <div class="card card-primary">
                             <div class="card-header">
                                 <h4>Login</h4>
@@ -79,9 +80,6 @@
     <script src="<?= base_url() ?>/template/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="<?= base_url() ?>/template/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="<?= base_url() ?>/template/node_modules/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
-
     <script src="<?= base_url() ?>/template/assets/js/stisla.js"></script>
 
     <!-- JS Libraies -->

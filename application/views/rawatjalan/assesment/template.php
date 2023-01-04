@@ -59,33 +59,57 @@
             <div class="main-sidebar sidebar-style-1">
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand">
-                        <a href="<?= site_url('dashboard') ?>"> E-Rekam Medis</a>
+                        <a href=""> E-Rekam Medis</a>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
-                        <a href="<?= site_url('dashboard') ?>">E-RM</a>
+                        <a href="">E-RM</a>
                     </div>
 
-                    <ul class="sidebar-menu">
-                        <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
-                        </li>
+                    <!-- Level dokter 2 -->
+                    <?php if ($this->session->userdata('level_erm') == 2) { ?>
+                        <ul class="sidebar-menu">
+                            <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
 
+                            <li class="menu-header">PENGKAJIAN AWAL</li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="far fa-address-book"></i> <span>Assesment</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="nav-link" href="">Penyakit Dalam</a></li>
+                                    <li><a class="nav-link" href="">Mata</a></li>
+                                    <li><a class="nav-link" href="">Gigi</a></li>
+                                    <li><a class="nav-link" href="">Jantung</a></li>
+                                </ul>
+                            </li>
 
-                        <li class="menu-header">DOKUMEN</li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="far fa-address-book"></i> <span>Assesment</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="">Penyakit Dalam</a></li>
-                                <li><a class="nav-link" href="">Mata</a></li>
-                                <li><a class="nav-link" href="">Gigi</a></li>
-                                <li><a class="nav-link" href="">Jantung</a></li>
-                            </ul>
-                        </li>
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
 
-                        <li><a class="nav-link" href="<?= base_url('rawatjalan/rawatjalanCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
 
-                        <li><a class="nav-link" href="<?= base_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
+                        </ul>
+                    <?php } ?>
 
-                    </ul>
+                    <!-- Level 3 perawat -->
+                    <?php if ($this->session->userdata('level_erm') == 3) { ?>
+                        <ul class="sidebar-menu">
+                        <li><a class="nav-link" href="<?= site_url('dashboard/') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
+
+                            <li class="menu-header"></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="far fa-address-book"></i> <span>Assesment</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="nav-link" href="">Penyakit Dalam</a></li>
+                                    <li><a class="nav-link" href="">Mata</a></li>
+                                    <li><a class="nav-link" href="">Gigi</a></li>
+                                    <li><a class="nav-link" href="">Jantung</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
+
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
+
+                        </ul>
+                    <?php } ?>
                 </aside>
             </div>
 

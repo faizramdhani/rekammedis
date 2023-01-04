@@ -33,14 +33,20 @@
 
                 <ul class="navbar-nav navbar-right">
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-                            <img alt="image" src="<?= base_url() ?>/template/assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-                            <div class="d-sm-none d-lg-inline-block"><?= $this->fungsi->user_login()->level_erm    ?></div>
+                            <img alt="image" src="<?= site_url() ?>template/assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+                            <div class="d-sm-none d-lg-inline-block"></div><?= ucfirst($this->fungsi->user_login()->nmlevel_erm)   ?>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <div class="dropdown-title"><i class="fas fa-circle text-success"></i> <?= $this->fungsi->user_login()->level_erm  ?>
-                            </div>
-
-
+                            <div class="dropdown-title"><i class="fas fa-circle text-success"></i> Online</div>
+                            <a href="features-profile.html" class="dropdown-item has-icon">
+                                <i class="far fa-user"></i> <?= ucfirst($this->fungsi->user_login()->nmpeg)   ?>
+                            </a>
+                            <a href="features-activities.html" class="dropdown-item has-icon">
+                                <i class="fas fa-bolt"></i> Activities
+                            </a>
+                            <a href="features-settings.html" class="dropdown-item has-icon">
+                                <i class="fas fa-cog"></i> Settings
+                            </a>
                             <div class="dropdown-divider"></div>
                             <a href="<?= site_url('auth/logout') ?>" class="dropdown-item has-icon text-danger" id="logout" data-confirm="Logout|Yakin akan Logout?" data-confirm-yes="returnLogout()">
                                 <i class="fas fa-sign-out-alt"></i> Logout
@@ -49,51 +55,40 @@
                     </li>
                 </ul>
             </nav>
+
             <div class="main-sidebar sidebar-style-1">
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand">
-                        <a href="<?= site_url('dashboard') ?>"> E-Rekam Medis</a>
+                        <a href=""> E-Rekam Medis</a>
                     </div>
                     <div class="sidebar-brand sidebar-brand-sm">
-                        <a href="<?= site_url('dashboard') ?>">E-RM</a>
+                        <a href="">E-RM</a>
                     </div>
 
+                    <!-- Level 2 Dokter -->
+                    <?php if ($this->session->userdata('level_erm') == 2) { ?>
                     <ul class="sidebar-menu">
-                        <li><a class="nav-link" href="<?= site_url('rawatjalan/listpasien') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
-                        </li>
+                        <li><a class="nav-link" href="<?= site_url('dashboard/') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
+                       
 
-                        <li class="menu-header">DOKUMEN</li>
-                        <!-- <li><a class="nav-link" href="<?= site_url('pasien/index') ?>"><i class="fas fa-user-injured"></i> <span>Pasien</span></a></li> -->
 
+                        <li class="menu-header"></li>
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="far fa-address-book"></i> <span>Assesment</span></a>
                             <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url('rawatjalan/index') ?>">Penyakit Dalam</a></li>
-                                <li><a class="nav-link" href="<?= base_url('rawatinap/index') ?>">Mata</a></li>
-                                <li><a class="nav-link" href="<?= base_url('') ?>">Gigi</a></li>
-                                <li><a class="nav-link" href="<?= base_url('') ?>">Jantung</a></li>
+                                <li><a class="nav-link" href="">Penyakit Dalam</a></li>
+                                <li><a class="nav-link" href="">Mata</a></li>
+                                <li><a class="nav-link" href="">Gigi</a></li>
+                                <li><a class="nav-link" href="">Jantung</a></li>
                             </ul>
                         </li>
 
-                        <!-- <li class="nav-item dropdown">
-                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-stethoscope"></i> <span>Perawat</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url() ?>">Rawat Inap</a></li>
-                                <li><a class="nav-link" href="<?= base_url() ?>">Rawat Jalan</a></li>
-                                <li><a class="nav-link" href="<?= base_url() ?>">Rekam Medis</a></li>
-                            </ul>
-                        </li>
+                        <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
 
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-stethoscope"></i> <span>Dokter</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a class="nav-link" href="<?= base_url() ?>">Rawat Inap</a></li>
-                                <li><a class="nav-link" href="<?= base_url('rawatjalan/listpasien') ?>">Rawat Jalan</a></li>
-                                <li><a class="nav-link" href="<?= base_url() ?>">Rekam Medis</a></li>
-                            </ul>
-                        </li> -->
+                        <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
 
                     </ul>
+                    <?php } ?>
                 </aside>
             </div>
 
@@ -101,6 +96,7 @@
             <div class="main-content">
                 <?php echo $content ?>
             </div>
+
 
         </div>
     </div>
@@ -116,10 +112,6 @@
     <!-- Template JS File -->
     <script src="<?= base_url() ?>/template/assets/js/scripts.js"></script>
     <script src="<?= base_url() ?>/template/assets/js/custom.js"></script>
-
-
-
-
 
 </body>
 

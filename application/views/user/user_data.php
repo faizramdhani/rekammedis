@@ -1,6 +1,6 @@
  <section class="section">
      <div class="section-header">
-         <h1>Pengguna</h1>
+         <h1>Master</h1>
          <div class="section-header-breadcrumb">
              <div class="breadcrumb-item active"><a href="<?= site_url('dashboard') ?>">Dashboard</a></div>
              <div class="breadcrumb-item"><a href="#">Master Pengguna</a></div>
@@ -23,8 +23,7 @@
 
                  <div class="card-body">
                      <div class="table-responsive">
-
-                         <table class="table table-striped" id="table1">
+                         <table class="table table-striped table-md" id="table1">
                              <thead>
                                  <tr>
                                      <th>No</th>
@@ -110,9 +109,8 @@
                              <input type="password" name="password" class="form-control" required="" disabled>
                          </div>
                      </div>
-
                      <div class="form-group">
-                         <label>Unit</label>
+                         <label>Level</label>
                          <select class="form-control selectric" name="pekerjaan">
                              <option value="1">Pilih</option>
                              <option value="2">Admin</option>
@@ -122,7 +120,7 @@
                      </div>
 
                      <div class="form-group">
-                         <label>Level</label>
+                         <label>Unit</label>
                          <select class="form-control selectric" name="pekerjaan">
                              <option value="1">Pilih</option>
                              <option value="2">RS Gatoel</option>
@@ -131,6 +129,8 @@
                              <option value="5">RS Medika Utama</option>
                          </select>
                      </div>
+
+
 
 
              </div>

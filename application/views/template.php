@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/components.css">
 
 
+
 </head>
 
 <body>
@@ -66,16 +67,56 @@
                     </div>
                     <ul class="sidebar-menu">
                         <li class="menu-header">Dashboard</li>
-                        <li class="dropdown">
-                            <a href="<?= site_url('dashboard') ?>" class="nav-link "><i class="fas fa-fire"></i><span>Dashboard</span></a>
-
-                        </li>
+                        <li><a class="nav-link" href="<?= site_url('dashboard/') ?>"><i class="far fa-square"></i> <span>Dashboard</span></a></li>
 
                         <li class="menu-header">Menu</li>
                         <li><a class="nav-link" href="<?= site_url('rawatjalan/listpasien') ?>"><i class="far fa-square"></i> <span>Rawat Jalan</span></a></li>
                         <li><a class="nav-link" href=""><i class="far fa-square"></i> <span>Rawat Inap</span></a></li>
                         <li><a class="nav-link" href=""><i class="far fa-square"></i> <span>IGD</span></a></li>
 
+                        <!-- Level dokter 2 -->
+                        <?php if ($this->session->userdata('level_erm') == 2) { ?>
+                            <ul class="sidebar-menu">
+
+                                <li class="menu-header">PENGKAJIAN AWAL</li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="far fa-address-book"></i> <span>Assesment</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="nav-link" href="">Penyakit Dalam</a></li>
+                                        <li><a class="nav-link" href="">Mata</a></li>
+                                        <li><a class="nav-link" href="">Gigi</a></li>
+                                        <li><a class="nav-link" href="">Jantung</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
+
+                                <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
+
+                            </ul>
+                        <?php } ?>
+
+                        <!-- Level 3 perawat -->
+                        <?php if ($this->session->userdata('level_erm') == 3) { ?>
+                            <ul class="sidebar-menu">
+
+                                <li class="menu-header">PENGKAJIAN AWAL</li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="far fa-address-book"></i> <span>Assesment</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="nav-link" href="">Penyakit Dalam</a></li>
+                                        <li><a class="nav-link" href="">Mata</a></li>
+                                        <li><a class="nav-link" href="">Gigi</a></li>
+                                        <li><a class="nav-link" href="">Jantung</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
+
+                                <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
+
+                            </ul>
+                        <?php } ?>
 
                         <!-- level admin 1 -->
                         <?php if ($this->session->userdata('level_erm') == 1) { ?>
@@ -85,16 +126,16 @@
                             <li class="dropdown">
                                 <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Pasien</span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="<?= site_url('pasien/pasinap') ?>">Rawat Inap</a></li>
-                                    <li><a href="<?= site_url('pasien/paslama') ?>">Rawat Jalan</a></li>
-                                    <li><a href="<?= site_url('pasien/pasigd') ?>">IGD</a></li>
+                                    <li><a class="nav-link" href="<?= site_url('pasien/pasinap') ?>">Rawat Inap</a></li>
+                                    <li><a class="nav-link" href="<?= site_url('pasien/paslama') ?>">Rawat Jalan</a></li>
+                                    <li><a class="nav-link" href="<?= site_url('pasien/pasigd') ?>">IGD</a></li>
 
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i> <span>Kamar</span></a>
+                                <a href="" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i> <span>Kamar</span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="nav-link" href="errors-503.html">503</a></li>
+                                    <li><a class="nav-link" href="<?= site_url('kamar/') ?>">Data Kamar</a></li>
                                     <li><a class="nav-link" href="errors-403.html">403</a></li>
                                     <li><a class="nav-link" href="errors-404.html">404</a></li>
                                     <li><a class="nav-link" href="errors-500.html">500</a></li>
@@ -171,17 +212,20 @@
 
                                 <!-- Master pengguna/user -->
                             <li class="menu-header">Master Pengguna</li>
+
                             <li class="dropdown">
                                 <a href="" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>User</span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="<?= site_url('user') ?>">Admin</a></li>
-                                    <li><a href="<?= site_url('dokter') ?>">Dokter</a></li>
+                                    <li><a href="<?= site_url('user/') ?>">Admin</a></li>
+                                    <li><a href="<?= site_url('dokter/') ?>">Dokter</a></li>
                                     <li><a href="">Perawat</a></li>
 
                                 </ul>
                             </li>
 
                         <?php } ?>
+
+
                     </ul>
                 </aside>
             </div>
@@ -210,6 +254,13 @@
         <script src="<?= base_url() ?>/template/node_modules/datatables/media/js/jquery.datatables.min.js"></script>
         <script src="<?= base_url() ?>/template/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
         <script src="<?= base_url() ?>/template/assets/js/stisla.js"></script>
+
+        <!-- Sweet Alert -->
+        <script src="<?= base_url() ?> /template/node_modules/sweetalert/sweetalert.min.js"></script>
+
+        <!-- Page Specific JS File -->
+        <script src="<?= base_url() ?> /template/node_modules/sweetalert/modules-sweetalert.js"></script>
+
 
         <!-- Template JS File -->
         <script src="<?= base_url() ?>/template/assets/js/scripts.js"></script>
