@@ -24,5 +24,15 @@ class Rawatjalan extends CI_Controller
         $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/perawatrawatjalan');
     }
 
+    public function penyakitdalam()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/penyakitdalam');
+    }
+
+    public function anak()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/anak');
+    }
+
   
 }

@@ -116,6 +116,7 @@
                             <li class="menu-header">PENGKAJIAN AWAL MEDIS</li>
                             <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>Pengkajian Awal</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/penyakitdalam') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Penyakit Dalam</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/anak') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Anak</span></a></li>
 
 
                         </ul>
