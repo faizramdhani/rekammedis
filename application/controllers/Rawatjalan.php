@@ -23,4 +23,6 @@ class Rawatjalan extends CI_Controller
     {
         $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/perawatrawatjalan');
     }
+
+  
 }

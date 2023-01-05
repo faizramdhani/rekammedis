@@ -1,13 +1,15 @@
 <section class="section">
     <div class="section-header">
-        <h1>Rawat Jalan</h1>
+        <h1>Dokter Rawat Jalan</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="<?= site_url('dashboard') ?>">Dashboard</a></div>
             <div class="breadcrumb-item"><a href="<?= site_url('rawatjalan/listpasien') ?>">Rawat Jalan</a></div>
 
         </div>
     </div>
+</section>
 
+<section class="content">
     <div class="section-body">
         <div class="row">
             <div class="col-lg-12">
@@ -154,7 +156,7 @@
                                                 </table>
                                             </div>
                                         </div>
-                                        
+
                                         <div class="card-footer text-right">
                                             <nav class="d-inline-block">
                                                 <ul class="pagination mb-0">

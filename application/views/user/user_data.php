@@ -43,14 +43,14 @@
                                          <td><?= $data->nmuser ?></td>
                                          <td><?= $data->nmpeg ?></td>
                                          <td>
-                                             <div class="badge badge-pill badge-primary mb-1"><?= $data->nmlevel_erm ?></div>
+                                             <div class="badge badge-info"><?= $data->nmlevel_erm ?></div>
                                          </td>
                                          <td>Unit</td>
 
                                          <td>
                                              <form method="POST" action="">
                                                  <span data-target="" data-toggle="modal" data-id="1" data-nama="">
-                                                     <a class="btn btn-primary btn-action mr-1" title="Edit" data-toggle="tooltip"><i class="fas fa-pencil-alt"></i></a>
+                                                     <a class="btn btn-warning btn-action mr-1" title="Edit" data-toggle="tooltip"><i class="fas fa-pencil-alt"></i></a>
                                                  </span>
                                                  <input type="hidden" name="id" value="">
                                                  <button type="submit" class="btn btn-info btn-action mr-1" title="Lihat" data-toggle="tooltip" name="submit"><i class="fas fa-info-circle"></i></button>

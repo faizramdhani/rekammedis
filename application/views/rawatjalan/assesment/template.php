@@ -65,13 +65,41 @@
                         <a href="">E-RM</a>
                     </div>
 
+
+                    <!-- Level 3 perawat -->
+                    <?php if ($this->session->userdata('level_erm') == 3) { ?>
+                        <ul class="sidebar-menu">
+                            <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
+
+                            <li class="menu-header">PENGKAJIAN AWAL KEPERAWATAN</li>
+                            <!-- <li class="nav-item dropdown">
+                                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="far fa-address-book"></i> <span>Assesment</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="nav-link" href="">Penyakit Dalam</a></li>
+                                    <li><a class="nav-link" href="">Mata</a></li>
+                                    <li><a class="nav-link" href="">Gigi</a></li>
+                                    <li><a class="nav-link" href="">Jantung</a></li>
+                                </ul>
+                            </li> -->
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
+
+
+                            <li class="menu-header">PENGKAJIAN AWAL MEDIS</li>
+                            <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>Pengkajian Awal</span></a></li>
+                            <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>Asesment Penyakit Dalam</span></a></li>
+
+
+                        </ul>
+                    <?php } ?>
+
                     <!-- Level dokter 2 -->
                     <?php if ($this->session->userdata('level_erm') == 2) { ?>
                         <ul class="sidebar-menu">
                             <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
 
-                            <li class="menu-header">PENGKAJIAN AWAL</li>
-                            <li class="nav-item dropdown">
+                            <li class="menu-header">PENGKAJIAN AWAL KEPERAWATAN</li>
+                            <!-- <li class="nav-item dropdown">
                                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="far fa-address-book"></i> <span>Assesment</span></a>
                                 <ul class="dropdown-menu">
                                     <li><a class="nav-link" href="">Penyakit Dalam</a></li>
@@ -79,37 +107,20 @@
                                     <li><a class="nav-link" href="">Gigi</a></li>
                                     <li><a class="nav-link" href="">Jantung</a></li>
                                 </ul>
-                            </li>
-
+                            </li> -->
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
 
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
+
+                            <li class="menu-header">PENGKAJIAN AWAL MEDIS</li>
+                            <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>Pengkajian Awal</span></a></li>
+                            <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>Asesment Penyakit Dalam</span></a></li>
+
 
                         </ul>
                     <?php } ?>
 
-                    <!-- Level 3 perawat -->
-                    <?php if ($this->session->userdata('level_erm') == 3) { ?>
-                        <ul class="sidebar-menu">
-                        <li><a class="nav-link" href="<?= site_url('dashboard/') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
 
-                            <li class="menu-header"></li>
-                            <li class="nav-item dropdown">
-                                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="far fa-address-book"></i> <span>Assesment</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="nav-link" href="">Penyakit Dalam</a></li>
-                                    <li><a class="nav-link" href="">Mata</a></li>
-                                    <li><a class="nav-link" href="">Gigi</a></li>
-                                    <li><a class="nav-link" href="">Jantung</a></li>
-                                </ul>
-                            </li>
-
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
-
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
-
-                        </ul>
-                    <?php } ?>
                 </aside>
             </div>
 

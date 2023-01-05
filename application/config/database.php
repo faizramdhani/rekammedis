@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'root',
+	'hostname' => '10.88.70.71',
+	'username' => 'itnmu',
+	'password' => 'ItNmu@2019',
 	'database' => 'ptnmuerm',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
@@ -85,8 +85,8 @@ $db['default'] = array(
 	'db_debug' => (ENVIRONMENT !== 'development'),
 	'cache_on' => FALSE,
 	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
+	'char_set' => 'latin1',
+	'dbcollat' => 'latin1_swedish_ci',
 	'swap_pre' => '',
 	'encrypt' => FALSE,
 	'compress' => FALSE,

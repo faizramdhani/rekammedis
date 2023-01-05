@@ -18,7 +18,7 @@
                                 <th>No</th>
                                 <th>Kode Dokter</th>
                                 <th>Nama Dokter</th>
-                                <th>Level</th>
+                                <th>Alamat</th>
                                 <th>Kode Ahli</th>
                                 <th>Spesialis</th>
                             </tr>
