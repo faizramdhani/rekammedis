@@ -43,6 +43,23 @@
     <div class="section-body">
             <div class="row">
                 <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-tab="mygroup-tab" href="#tab1">Profil Ringkas Medis Rawat Jalan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab2">Riwayat Penyakit Kronis</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab3">Riwayat</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab1" class="col-12 active" data-tab-group="mygroup-tab">
                     <div class="card">
                         <div class="card-header">
                         <h4>Profil Ringkas Medis Rawat Jalan</h4>
@@ -105,45 +122,50 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                <div class="card">
-                        <div class="card-header">
-                        <h4>Riwayat Penyakit Kronis</h4>
-                        </div>
-                        <div class="row">
-                            <div class="card-body">
-                            <div class="form">
-                                <textarea class="form-control"></textarea>
-                            </div>
-                            <div class="form">
-                                <label>Alergi</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                <div class="card">
-                        <div class="card-header">
-                        <h4>Untuk Anak-Anak : Riwayat Kelahiran</h4>
-                        </div>
-                        <div class="row">
-                            <div class="card-body">
-                            <div class="form">
-                                <textarea class="form-control"></textarea>
+                <div id="tab2" class="col-12" data-tab-group="mygroup-tab">
+                    <div class="row">
+                    <div class="col-6">
+                    <div class="card">
+                            <div class="card-header">
+                            <h4>Riwayat Penyakit Kronis</h4>
                             </div>
-                            <div class="form">
-                                <label>Imunisasi</label>
-                                <input type="text" class="form-control">
-                            </div>
+                            <div class="row">
+                                <div class="card-body">
+                                <div class="form">
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                                <div class="form">
+                                    <label>Alergi</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-6">
+                    <div class="card">
+                            <div class="card-header">
+                            <h4>Untuk Anak-Anak : Riwayat Kelahiran</h4>
+                            </div>
+                            <div class="row">
+                                <div class="card-body">
+                                <div class="form">
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                                <div class="form">
+                                    <label>Imunisasi</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
-                <div class="col-12">
+                <div id="tab3" class="col-12" data-tab-group="mygroup-tab"">
                     <div class="row">
                         <div class="col-12">
                         <div class="card">
