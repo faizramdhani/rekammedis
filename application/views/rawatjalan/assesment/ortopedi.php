@@ -102,9 +102,6 @@
                 <div class="card-header">
                     <h4>PEMERIKSAAN FISIK</h4>
                 </div>
-                <div class="card-header">
-                    <h4>PEMERIKSAAN FISIK</h4>
-                </div>
                 <div class="row">
                     <div class="card-body col-sm-3 col-md-6">
                         <div class="form">
