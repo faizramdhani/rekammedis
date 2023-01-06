@@ -1,6 +1,6 @@
 <section class="section">
     <div class="section-header">
-        <h1>Asesment Awal Medis Bedah</h1>
+        <h1>Asesment Awal Medis Kulit & Kelamin</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
             <div class="breadcrumb-item"><a href="#">Layout</a></div>
@@ -154,7 +154,7 @@
             <div class="card">
             <div class="card-header">
                 <h4>TERAPI</h4>
-            </div>
+                </div>
                 <div class="row">
                     <div class="card-body col-sm-3 col-md-6">
                         <div class="form">
