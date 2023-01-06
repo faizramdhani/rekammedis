@@ -1,6 +1,6 @@
 <section class="section">
     <div class="section-header">
-        <h1>Asesment Awal Medis Anak</h1>
+        <h1>Asesment Awal Medis Bedah</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
             <div class="breadcrumb-item"><a href="#">Layout</a></div>
@@ -86,19 +86,11 @@
                             <textarea class="form-control"></textarea>
                         </div>
                         <div class="form-group">
-                            <label>Riwayat dalam Kandungan</label>
+                            <label>Riwayat Alergi</label>
                             <textarea class="form-control"></textarea>
                         </div>
                         <div class="form-group">
-                            <label>Riwayat Kelahiran</label>
-                            <textarea class="form-control"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label>Riwayat Tumbuh Kembang</label>
-                            <textarea class="form-control"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label>Riwayat Imunisasi</label>
+                            <label>Obat yang dikonsumsi</label>
                             <textarea class="form-control"></textarea>
                         </div>
                     </div>
@@ -110,7 +102,20 @@
             <div class="card-header">
                 <h4>PEMERIKSAAN FISIK</h4>
             </div>
-                <div class="row">
+            <div class="row">
+                <div class="card-body col-sm-3 col-md-6">
+                    <div class="form">
+                        <label>Pemeriksaan Fisik/Status Lokalis</label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="card-body col-sm-3 col-md-6">
+                    <div class="gallery gallery-fw" data-item-height="500">
+                        <div class="gallery-item" data-image="<?= base_url() ?>/template/assets/img/assesment/anatomi.png" data-title="Image 1"></div>
+                    </div>
+                </div>
+            </div>
+                <!-- <div class="row">
                     <div class="card-body col-12">
                         <div class="form">
                             <label>Kondisi Umum</label>
@@ -319,7 +324,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div id="tab3" class="col-14" data-tab-group="mygroup-tab">
@@ -359,7 +364,7 @@
             <div class="card">
             <div class="card-header">
                 <h4>TERAPI</h4>
-                </div>
+            </div>
                 <div class="row">
                     <div class="card-body col-sm-3 col-md-6">
                         <div class="form">
