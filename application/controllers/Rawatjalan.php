@@ -24,6 +24,12 @@ class Rawatjalan extends CI_Controller
         $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/perawatrawatjalan');
     }
 
+
+    public function awal()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/awal');
+    }
+
     public function penyakitdalam()
     {
         $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/penyakitdalam');
@@ -32,6 +38,91 @@ class Rawatjalan extends CI_Controller
     public function anak()
     {
         $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/anak');
+    }
+
+    public function bedah()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/bedah');
+    }
+
+    public function nefrologi()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/nefrologi');
+    }
+
+    public function jantung()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/jantung');
+    }
+
+    public function kulitkelamin()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/kulitkelamin');
+    }
+
+    public function mata()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/mata');
+    }
+
+    public function neurologi()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/neurologi');
+    }
+
+    public function onkologi()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/onkologi');
+    }
+
+    public function paru()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/paru');
+    }
+
+    public function tht()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/tht');
+    }
+
+    public function urologi()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/urologi');
+    }
+
+    public function gigi()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/gigi');
+    }
+
+    public function hd()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/hd');
+    }
+
+    public function bedahsyaraf()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/bedahsyaraf');
+    }
+
+    public function ortopedi()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/ortopedi');
+    }
+
+    public function btkv()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/btkv');
+    }
+
+    public function bedahplastik()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/bedahplastik');
+    }
+
+    public function kesehatanjiwa()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/kesehatanjiwa');
     }
 
   
