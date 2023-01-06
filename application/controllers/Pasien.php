@@ -7,7 +7,6 @@ class Pasien extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Pasien_m');
-        
     }
 
     public function paslama()
@@ -18,7 +17,7 @@ class Pasien extends CI_Controller
     }
     public function pasinap()
     {
-        $data['pasinap'] = $this->Pasien_m->getpasinap();  
+        $data['pasinap'] = $this->Pasien_m->getpasinap();
         $this->template->load('template', 'pasien/pasinap', $data);
     }
     public function pasigd()

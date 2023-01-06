@@ -1,6 +1,6 @@
 <section class="section">
     <div class="section-header">
-        <h1>Asesment Awal Keperawatan Rawat Jalan</h1>
+        <h1>Pengkajian Awal Medis Rawat Jalan</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
             <div class="breadcrumb-item"><a href="#">Layout</a></div>
@@ -9,10 +9,9 @@
     </div>
 </section>
 
-
-
 <!-- Main content -->
 <section class="content">
+    
     <div class="section-body">
         <div class="row">
             <div class="col-12">
@@ -48,118 +47,68 @@
 
     <div class="section-body">
         <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="row">
-                        <div class="card-body col-12">
-                            <div class="form">
-                                <label>Asal Pasien</label>
-                                <div class="row">
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio1">Datang Sendiri</label>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio2">Dirujuk Dari</label>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="form">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label>Tanggal/Jam</label>
-                                    <input type="datetime-local" class="form-control datetimepicker">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
+
+            <div class="col-5">
                 <div class="card">
                     <div class="card-header">
-                        <h4>ANAMNESIS</h4>
+                        <h4>I. ANAMNESIS :</h4>
                     </div>
                     <div class="row">
                         <div class="card-body col-12">
                             <div class="form-group">
                                 <textarea class="form-control"></textarea>
                             </div>
-                            <div class="form">
-                                <label>Riwayat Penyakit Dahulu</label>
-                                <div class="row">
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio1">Tidak Ada</label>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio2">Ada, sebutkan</label>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="form">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form">
-                                <label>Riwayat Penggunaan Obat</label>
-                                <div class="row">
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio1">Tidak Ada</label>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio2">Ada, sebutkan</label>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="form">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form">
-                                <label>Riwayat Alergi</label>
-                                <div class="row">
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio1">Tidak Ada</label>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio2">Ada, sebutkan</label>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="form">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
+                    <div class="card-header">
+                        <label>1. Auto Anamnesis</label>
+                    </div>
+                    <div class="row">
+                        <div class="card-body col-12">
+                            <div class="form-group">
+                                <textarea class="form-control"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-header">
+                        <label>2. Allo Anamnesis</label>
+                    </div>
+                    <div class="row">
+                        <div class="card-body col-12">
+                            <div class="form-group">
+                                <textarea class="form-control"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="card-header">
+                        <label>3. Riwayat Alergi</label>
+                    </div>
+                    <div class="row">
+                        <div class="card-body col-12">
+                            <div class="form-group">
+                                <textarea class="form-control"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-header">
+                        <label>4. Obat yang dikonsumsi</label>
+                    </div>
+                    <div class="row">
+                        <div class="card-body col-12">
+                            <div class="form-group">
+                                <textarea class="form-control"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    
+
                 </div>
             </div>
             <div class="col-12">

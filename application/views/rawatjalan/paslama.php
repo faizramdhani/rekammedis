@@ -3,69 +3,56 @@
         <h1>Pasien</h1>
     </div>
 
-
     <div class="section-body">
         <div class="row">
-            <div class="col">
+            <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Pasien Rawat Inap</h4>
+                        <h4>Data Pasien Rawat Inap</h4>
                     </div>
 
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table table-striped" id="table1">
+                            <table class="table table-striped">
                                 <thead>
                                     <tr>
                                         <th>No</th>
-
                                         <th>Tanggal Masuk</th>
-                                        <th>Jam Masuk</th>
-                                        <th>No.Rawat Inap</th>
-                                        <th>No.Rawat Jalan</th>
                                         <th>No MRM</th>
                                         <th>Nama Pasien</th>
                                         <th>Alamat</th>
-                                        <th>Asal</th>
+                                        <th>No Asuransi</th>
+                                        <th>No SEP</th>
+                                        <th>No Rawat Jalan</th>
 
                                         <th>Nama Dokter</th>
+                                        <th>Nama Kons</th>
 
 
-                                        <th>Kode Kelas</th>
-                                        <th>Nama Kamar</th>
-                                        <th>No Bed</th>
-
-
-
-                                        <th>Nama Konsumen</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
 
+
                                 <tbody>
                                     <?php $no = 1;
-                                    foreach ($pasinap as $row) : ?>
+                                    foreach ($paslama as $row) : ?>
                                         <tr>
                                             <td><?= $no++ ?></td>
-
-                                            <td><?= $row['tglmasuk'] ?></td>
-                                            <td><?= $row['jam'] ?></td>
-                                            <td><?= $row['nori'] ?></td>
-                                            <td><?= $row['norj'] ?></td>
+                                            <td><?= $row['tanggal'] ?></td>
                                             <td><?= $row['nomrm'] ?></td>
                                             <td><?= $row['nmpasien'] ?></td>
                                             <td><?= $row['alamat'] ?></td>
-                                            <td><?= $row['asal'] ?></td>
+
+                                            <td><?= $row['noasuransi'] ?></td>
+                                            <td><?= $row['nosep'] ?></td>
+                                            <td><?= $row['norj'] ?></td>
+
 
                                             <td><?= $row['nmdokter'] ?></td>
-
-                                            <td><?= $row['kdkelas'] ?></td>
-                                            <td><?= $row['nmkamar'] ?></td>
-                                            <td><?= $row['nobed'] ?></td>
-
-
-
                                             <td><?= $row['nmkons'] ?></td>
+
+
                                             <td>
                                                 <div class="row">
                                                     <div class="buttons">
@@ -77,6 +64,7 @@
 
 
                                         <?php endforeach ?>
+
 
                                 </tbody>
                             </table>

@@ -15,7 +15,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <table class="table table-bordered table-md table-responsive">
+                        <table class="table table-striped table-md" id="table1">
                             <tr>
                                 <th>Nama Pasien</th>
                                 <th>Nomor Rawat Jalan</th>
@@ -58,6 +58,34 @@
                                             <th>Subyektif-Obyektif-Asesmen-Planning</th>
                                             <th>Intruksi</th>
                                             <th>Verifikasi DPJP</th>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
                                         </tr>
                                         <tr>
                                             <td></td>

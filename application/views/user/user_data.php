@@ -45,25 +45,18 @@
                                          <td>
                                              <div class="badge badge-info"><?= $data->nmlevel_erm ?></div>
                                          </td>
-                                         <td>Unit</td>
+                                         <td><?= $data->nmunit_erm ?></td>
 
                                          <td>
                                              <form method="POST" action="">
-                                                 <span data-target="" data-toggle="modal" data-id="1" data-nama="">
+                                                 <span data-target="#editUser" data-toggle="modal" data-id="1" data-nama="">
                                                      <a class="btn btn-warning btn-action mr-1" title="Edit" data-toggle="tooltip"><i class="fas fa-pencil-alt"></i></a>
                                                  </span>
                                                  <input type="hidden" name="id" value="">
                                                  <button type="submit" class="btn btn-info btn-action mr-1" title="Lihat" data-toggle="tooltip" name="submit"><i class="fas fa-info-circle"></i></button>
                                              </form>
                                          </td>
-                                         <!-- <td>
-                                             <div class="row">
-                                                 <div class="buttons">
-                                                     <a href="" class="btn btn-icon btn-sm btn-warning"><i class="far fa-edit"></i></a>
-                                                     <a href="" class="btn btn-icon btn-sm btn-primary"><i class="far fa-eye"></i></a>
-                                                 </div>
-                                             </div>
-                                         </td> -->
+
                                      <?php
                                     } ?>
 
@@ -76,6 +69,8 @@
          </div>
      </div>
  </div>
+
+ <!-- Tambah Data User -->
  <div class="modal fade" tabindex="-1" role="dialog" id="addUser">
      <div class="modal-dialog" role="document">
          <div class="modal-content">
@@ -90,7 +85,7 @@
                      <div class="form-group row">
                          <label class="col-sm-3 col-form-label">Username</label>
                          <div class="col-sm-9">
-                             <input type="text" class="form-control" name="nama" required="" disabled>
+                             <input type="text" class="form-control" name="nama" required="">
                              <div class="invalid-feedback">
                                  Mohon data diisi!
                              </div>
@@ -106,7 +101,7 @@
                      <div class="form-group row">
                          <label class="col-sm-3 col-form-label">Nama</label>
                          <div class="col-sm-9">
-                             <input type="password" name="password" class="form-control" required="" disabled>
+                             <input type="password" name="password" class="form-control" required="">
                          </div>
                      </div>
                      <div class="form-group">
@@ -119,24 +114,66 @@
                          </select>
                      </div>
 
-                     <div class="form-group">
-                         <label>Unit</label>
-                         <select class="form-control selectric" name="pekerjaan">
-                             <option value="1">Pilih</option>
-                             <option value="2">RS Gatoel</option>
-                             <option value="3">RS HVA</option>
-                             <option value="4">RS Perkebunan</option>
-                             <option value="5">RS Medika Utama</option>
-                         </select>
-                     </div>
-
-
-
-
              </div>
              <div class="modal-footer bg-whitesmoke br">
                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Keluar</button>
                  <button type="submit" class="btn btn-primary" name="submit2">Tambah</button>
+                 </form>
+             </div>
+         </div>
+     </div>
+ </div>
+
+ <!-- Edit Data User -->
+ <div class="modal fade" tabindex="-1" role="dialog" id="editUser">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title">Edit Data</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <div class="modal-body">
+                 <form action="" method="POST" class="needs-validation" novalidate="">
+                     <div class="form-group row">
+                         <label class="col-sm-3 col-form-label">Username</label>
+                         <div class="col-sm-9">
+                             <input type="text" class="form-control" name="username" required="" id="getUser">
+                             <div class="invalid-feedback">
+                                 Mohon data diisi!
+                             </div>
+                         </div>
+                     </div>
+                     <div class="form-group row">
+                         <label class="col-sm-3 col-form-label">Nama</label>
+                         <div class="col-sm-9">
+                             <input type="text" class="form-control" name="username" required="" id="getUser">
+                             <div class="invalid-feedback">
+                                 Mohon data diisi!
+                             </div>
+                         </div>
+                     </div>
+
+                     <div class="alert alert-light text-center">
+                         Jika password tidak diganti, form dibawah dikosongi saja.
+                     </div>
+                     <div class="form-group row">
+                         <label class="col-sm-3 col-form-label">Password Lama</label>
+                         <div class="col-sm-9">
+                             <input type="password" name="old_password" class="form-control">
+                         </div>
+                     </div>
+                     <div class="form-group row">
+                         <label class="col-sm-3 col-form-label">Password Baru</label>
+                         <div class="col-sm-9">
+                             <input type="password" name="new_password" class="form-control">
+                         </div>
+                     </div>
+             </div>
+             <div class="modal-footer bg-whitesmoke br">
+                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                 <button type="submit" class="btn btn-primary" name="submit">Edit</button>
                  </form>
              </div>
          </div>

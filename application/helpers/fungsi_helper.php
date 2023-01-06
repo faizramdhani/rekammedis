@@ -14,4 +14,16 @@ function check_not_login()
     if (!$user_session) {
         redirect('auth/login');
     }
+
+    function check_admin()
+    {
+        $ci = &get_instance();
+        $ci->load->library('fungsi');
+        if ($ci->fungsi->user_login()->level_erm != 1) {
+            redirect('dashboard');
+        }
+        // else if($ci->fungsi->user_login()->level_erm != 2){
+        //     redirect('');
+        // }
+    }
 }
