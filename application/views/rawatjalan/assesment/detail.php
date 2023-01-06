@@ -46,79 +46,79 @@
 
 <section class="content">
     <div class="section-body">
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-header">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
                         <h4>Profil Ringkas Medis Rawat Jalan</h4>
-                    </div>
-                    <div class="row">
-                        <div class="card-body col-12">
-                            <div class="form">
-                                <label>Nama</label>
-                                <input type="text" class="form-control" value="Irwansyah Saputra">
-                            </div>
-                            <div class="form">
-                                <label>Alamat</label>
-                                <input type="text" class="form-control">
+                        </div>
+                        <div class="row">
+                            <div class="card-body col-12">
+                                    <div class="form">
+                                        <label>Nama</label>
+                                        <input type="text" class="form-control" value="Irwansyah Saputra">
+                                    </div>
+                                    <div class="form">
+                                        <label>Alamat</label>
+                                        <input type="text" class="form-control">
+                                    </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="card-body col-sm-3 col-md-6">
-                            <div class="form">
-                                <label>Tanggal Lahir</label>
-                                <input type="text" class="form-control">
+                        <div class="row">
+                            <div class="card-body col-sm-3 col-md-6">
+                                <div class="form">
+                                    <label>Tanggal Lahir</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form">
+                                    <label>Bangsa</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form">
+                                    <label>Pekerjaan</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form">
+                                    <label>Keluarga/Penanggung Jawab</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form">
+                                    <label>Asuransi</label>
+                                    <input type="text" class="form-control">
+                                </div>
                             </div>
-                            <div class="form">
-                                <label>Bangsa</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form">
-                                <label>Pekerjaan</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form">
-                                <label>Keluarga/Penanggung Jawab</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form">
-                                <label>Asuransi</label>
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="card-body col-sm-3 col-md-6">
-                            <div class="form">
-                                <label>Jenis Kelamin</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form">
-                                <label>Agama</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form">
-                                <label>Perkawinan</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form">
-                                <label>Telp</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form">
-                                <label>No. Asuransi</label>
-                                <input type="text" class="form-control">
+                            <div class="card-body col-sm-3 col-md-6">
+                                <div class="form">
+                                    <label>Jenis Kelamin</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form">
+                                    <label>Agama</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form">
+                                    <label>Perkawinan</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form">
+                                    <label>Telp</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form">
+                                    <label>No. Asuransi</label>
+                                    <input type="text" class="form-control">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6">
+                <div class="col-6">
                 <div class="card">
-                    <div class="card-header">
+                        <div class="card-header">
                         <h4>Riwayat Penyakit Kronis</h4>
-                    </div>
-                    <div class="row">
-                        <div class="card-body">
+                        </div>
+                        <div class="row">
+                            <div class="card-body">
                             <div class="form">
                                 <textarea class="form-control"></textarea>
                             </div>
@@ -126,17 +126,17 @@
                                 <label>Alergi</label>
                                 <input type="text" class="form-control">
                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-6">
+                <div class="col-6">
                 <div class="card">
-                    <div class="card-header">
+                        <div class="card-header">
                         <h4>Untuk Anak-Anak : Riwayat Kelahiran</h4>
-                    </div>
-                    <div class="row">
-                        <div class="card-body">
+                        </div>
+                        <div class="row">
+                            <div class="card-body">
                             <div class="form">
                                 <textarea class="form-control"></textarea>
                             </div>
@@ -144,13 +144,13 @@
                                 <label>Imunisasi</label>
                                 <input type="text" class="form-control">
                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-12">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12">
                         <div class="card">
                             <div class="card-header">
                                 <h4>Riwayat</h4>

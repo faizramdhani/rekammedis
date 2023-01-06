@@ -1,6 +1,6 @@
 <section class="section">
     <div class="section-header">
-        <h1>Asesment Awal Medis Penyakit Dalam</h1>
+        <h1>Asesment Awal Medis Hemodialisis</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
             <div class="breadcrumb-item"><a href="#">Layout</a></div>
@@ -83,14 +83,6 @@
                         </div>
                         <div class="form-group">
                             <label>Allo Anamnesis : Suami/Istri/Anak/Lainnya</label>
-                            <textarea class="form-control"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label>Riwayat Alergi</label>
-                            <textarea class="form-control"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label>Obat yang dikonsumsi</label>
                             <textarea class="form-control"></textarea>
                         </div>
                     </div>
