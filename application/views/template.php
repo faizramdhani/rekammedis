@@ -71,7 +71,7 @@
 
                         <li class="menu-header">Pelayanan Medis</li>
                         <li><a class="nav-link" href="<?= site_url('rawatjalan/listpasien') ?>"><i class="far fa-square"></i> <span>Rawat Jalan</span></a></li>
-                        <li><a class="nav-link" href=""><i class="far fa-square"></i> <span>Rawat Inap</span></a></li>
+                        <li><a class="nav-link" href="<?= site_url('rawatinap/listpasien') ?>"><i class="far fa-square"></i> <span>Rawat Inap</span></a></li>
                         <li><a class="nav-link" href=""><i class="far fa-square"></i> <span>IGD</span></a></li>
 
                         <!-- Level dokter 2 -->
@@ -186,7 +186,7 @@
                                 <a href="" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Master</span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="<?= site_url('user/') ?>">User</a></li>
-                                    
+
 
                                 </ul>
                             </li>
