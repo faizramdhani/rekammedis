@@ -104,6 +104,11 @@ class Rawatjalan extends CI_Controller
         $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/hd');
     }
 
+    public function hdulang()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/hdulang');
+    }
+
     public function bedahsyaraf()
     {
         $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/bedahsyaraf');
