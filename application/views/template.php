@@ -78,8 +78,8 @@
                         <?php if ($this->session->userdata('level_erm') == 2) { ?>
                             <ul class="sidebar-menu">
                                 <li class="menu-header">DOKUMEN</li>
-                                <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>DRM 01</span></a></li>
-                                <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>DRM 02</span></a></li>
+                                <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanDokter') ?>"><i class="fas fa-user-injured"></i> <span>Rawat Jalan</span></a></li>
+                                <!-- <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>DRM 02</span></a></li> -->
 
                             </ul>
                         <?php } ?>
@@ -90,7 +90,7 @@
 
                                 <li class="menu-header">DOKUMEN</li>
                                 <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>DRM 01</span></a></li>
-                                <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>DRM 02</span></a></li>
+                                <!-- <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>DRM 02</span></a></li> -->
 
                             </ul>
                         <?php } ?>
@@ -98,7 +98,7 @@
                         <!-- level admin 1 -->
                         <?php if ($this->session->userdata('level_erm') == 1) { ?>
 
-                            <li class="dropdown">
+                            <!-- <li class="dropdown">
                                 <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Pasien</span></a>
                                 <ul class="dropdown-menu">
                                     <li><a class="nav-link" href="<?= site_url('pasien/pasinap') ?>">Rawat Inap</a></li>
@@ -106,7 +106,7 @@
                                     <li><a class="nav-link" href="<?= site_url('pasien/pasigd') ?>">IGD</a></li>
 
                                 </ul>
-                            </li>
+                            </li> -->
                             <li class="dropdown">
                                 <a href="" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i> <span>Kamar</span></a>
                                 <ul class="dropdown-menu">
@@ -132,21 +132,21 @@
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Fisioterapi</span></a>
-                                <ul class="dropdown-menu">
+                                <!-- <ul class="dropdown-menu">
                                     <li><a href="auth-forgot-password.html">Admin</a></li>
                                     <li><a href="auth-login.html">Dokter</a></li>
                                     <li><a href="auth-register.html">Perawat</a></li>
 
-                                </ul>
+                                </ul> -->
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i> <span>Hemodalisis</span></a>
-                                <ul class="dropdown-menu">
+                                <!-- <ul class="dropdown-menu">
                                     <li><a class="nav-link" href="errors-503.html">503</a></li>
                                     <li><a class="nav-link" href="errors-403.html">403</a></li>
                                     <li><a class="nav-link" href="errors-404.html">404</a></li>
                                     <li><a class="nav-link" href="errors-500.html">500</a></li>
-                                </ul>
+                                </ul> -->
                             </li>
 
 
@@ -154,29 +154,29 @@
                             <li class="menu-header">Penunjang Medis</li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Lab</span></a>
-                                <ul class="dropdown-menu">
+                                <!-- <ul class="dropdown-menu">
                                     <li><a href="auth-forgot-password.html">Admin</a></li>
                                     <li><a href="auth-login.html">Dokter</a></li>
                                     <li><a href="auth-register.html">Perawat</a></li>
 
-                                </ul>
+                                </ul> -->
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i> <span>Radiologi</span></a>
-                                <ul class="dropdown-menu">
+                                <!-- <ul class="dropdown-menu">
                                     <li><a class="nav-link" href="errors-503.html">503</a></li>
                                     <li><a class="nav-link" href="errors-403.html">403</a></li>
                                     <li><a class="nav-link" href="errors-404.html">404</a></li>
                                     <li><a class="nav-link" href="errors-500.html">500</a></li>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li class="dropdown">
                                 <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Obat</span></a>
-                                <ul class="dropdown-menu">
+                                <!-- <ul class="dropdown-menu">
                                     <li><a href="auth-forgot-password.html">Admin</a></li>
                                     <li><a href="auth-login.html">Dokter</a></li>
                                     <li><a href="auth-register.html">Perawat</a></li>
-                                </ul>
+                                </ul> -->
 
 
                                 <!-- Master pengguna/user -->

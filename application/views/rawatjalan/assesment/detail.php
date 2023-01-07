@@ -64,7 +64,7 @@
                     <div class="card-header">
                         <h4>Profil Ringkas Medis Rawat Jalan</h4>
                     </div>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="card-body col-12">
                             <div class="form">
                                 <label>Nama</label>
@@ -75,16 +75,28 @@
                                 <input type="text" class="form-control" disabled>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="row">
                         <div class="card-body col-sm-3 col-md-6">
+                        <div class="form">
+                                <label>Nama</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form">
+                                <label>Alamat</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form">
+                                <label>Email</label>
+                                <input type="text" class="form-control">
+                            </div>
                             <div class="form">
                                 <label>NIK</label>
-                                <input type="text" class="form-control" disabled>
+                                <input type="text" class="form-control">
                             </div>
                             <div class="form">
                                 <label>NPWP</label>
-                                <input type="text" class="form-control" disabled>
+                                <input type="text" class="form-control">
                             </div>
                             <div class="form">
                                 <label>Tanggal Lahir</label>
@@ -104,7 +116,7 @@
                             </div>
                             <div class="form">
                                 <label>Asuransi</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" disabled>
                             </div>
                         </div>
                         <div class="card-body col-sm-3 col-md-6">
