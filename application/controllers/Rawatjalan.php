@@ -44,6 +44,10 @@ class Rawatjalan extends CI_Controller
     {
         $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/bedah');
     }
+    public function obstetriginekologi()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/obstetriginekologi');
+    }
 
     public function nefrologi()
     {
@@ -129,6 +133,12 @@ class Rawatjalan extends CI_Controller
     {
         $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/kesehatanjiwa');
     }
-
-  
+    public function rehabmedik()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/rehabmedik');
+    }
+    public function monitoringhd()
+    {
+        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/monitoringhd');
+    }
 }
