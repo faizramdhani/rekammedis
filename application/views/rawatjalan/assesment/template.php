@@ -131,7 +131,7 @@
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/urologi') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Urologi</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/gigi') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Gigi</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/hd') ?>"><i class="fas fa-user-injured"></i> <span>Asesment HD</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/monitoringhd') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Monitoring HD</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/hdulang') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Ulang HD</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/bedahsyaraf') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Bedah Syaraf</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/ortopedi') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Ortopedi</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/btkv') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Bedah Thorax dan Kardiovaskuler</span></a></li>
