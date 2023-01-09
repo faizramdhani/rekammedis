@@ -1,6 +1,6 @@
 <section class="section">
     <div class="section-header">
-        <h1>Asesment Awal Keperawatan Rawat Jalan</h1>
+        <h1>Pengkajian Awal Keperawatan Rawat Jalan</h1>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
             <div class="breadcrumb-item"><a href="#">Layout</a></div>
@@ -14,27 +14,21 @@
 <section class="content">
     <div class="section-body">
         <div class="row">
-            <div class="col-12">
+            <div class="col-8">
                 <div class="card">
                     <div class="card-body">
-                        <table class="table table-bordered table-md table-responsive">
+                        <table class="table table-bordered table-md">
                             <tr>
-                                <th>Nama Pasien</th>
-                                <th>Nomor Rawat Jalan</th>
-                                <th>Nomor MR</th>
-                                <th>Konsumen</th>
-                                <th>Umur</th>
-                                <th>Jenis Kelamin</th>
+                                <th>NAMA</th>
+                                <th>TGL LAHIR</th>
+                                <th>NOMOR RM</th>
                             </tr>
                             <tr>
-                                <td>Irwansyah Saputra</td>
-                                <td>000000</td>
-                                <td>123456</td>
-                                <td>BPJS</td>
-                                <td>12 TAHUN</td>
-                                <td>Laki - laki</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                             </tr>
-                            <tr>
+
                         </table>
                     </div>
                 </div>
@@ -43,46 +37,11 @@
     </div>
 
     <div class="section-body">
-
         <div class="row">
             <div class="col-12">
                 <div class="card">
-                    <div class="row">
-                        <div class="card-body col-12">
-                            <div class="form">
-                                <label>Asal Pasien</label>
-                                <div class="row">
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio1">Datang Sendiri</label>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio2">Dirujuk Dari</label>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="form">
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label>Tanggal/Jam</label>
-                                    <input type="datetime-local" class="form-control datetimepicker">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="card">
                     <div class="card-body">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <ul class="nav nav-pills" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-tab="mygroup-tab" href="#tab1">Anamnesis</a>
                             </li>
@@ -120,16 +79,51 @@
         </div>
         <div id="tab1" class="col-14 active" data-tab-group="mygroup-tab">
             <div class="card">
-                <div class="card-header">
-                    <h4>ANAMNESIS</h4>
+
+                <div class="col-12">
+                    <div class="card">
+                        <div class="row">
+                            <div class="card-body col-12">
+                                <div class="form">
+                                    <label><b>Asal Pasien</b></label>
+                                    <div class="row">
+                                        <div class="card-body">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio1">Datang Sendiri</label>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio2">Dirujuk Dari</label>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="form">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Tanggal/Jam</label>
+                                        <input type="datetime-local" class="form-control datetimepicker">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
+                    <div class="card-header">
+                        <h4>I. ANAMNESIS</h4>
+                    </div>
                     <div class="card-body col-12">
                         <div class="form-group">
                             <textarea class="form-control"></textarea>
                         </div>
                         <div class="form">
-                            <label>Riwayat Penyakit Dahulu</label>
+                            <label>1. Riwayat Penyakit Dahulu</label>
                             <div class="row">
                                 <div class="card-body">
                                     <div class="custom-control custom-radio">
@@ -151,7 +145,7 @@
                             </div>
                         </div>
                         <div class="form">
-                            <label>Riwayat Penggunaan Obat</label>
+                            <label>2. Riwayat Penggunaan Obat</label>
                             <div class="row">
                                 <div class="card-body">
                                     <div class="custom-control custom-radio">
@@ -173,7 +167,7 @@
                             </div>
                         </div>
                         <div class="form">
-                            <label>Riwayat Alergi</label>
+                            <label>3. Riwayat Alergi</label>
                             <div class="row">
                                 <div class="card-body">
                                     <div class="custom-control custom-radio">
@@ -201,12 +195,12 @@
         <div id="tab2" class="col-14" data-tab-group="mygroup-tab">
             <div class="card">
                 <div class="card-header">
-                    <h4>PEMERIKSAAN FISIK</h4>
+                    <h4>II. PEMERIKSAAN FISIK</h4>
                 </div>
                 <div class="row">
                     <div class="card-body col-12">
                         <div class="form">
-                            <label>Keadaan Umum :</label>
+                            <label>1. Keadaan Umum :</label>
                             <div class="row">
                                 <div class="card-body">
                                     <div class="form">
@@ -229,7 +223,7 @@
                             </div>
                         </div>
                         <div class="form">
-                            <label>Tanda Vital</label>
+                            <label>2. Tanda Vital</label>
                             <div class="row">
                                 <div class="card-body">
                                     <div class="form">
@@ -282,12 +276,12 @@
         <div id="tab3" class="col-14" data-tab-group="mygroup-tab">
             <div class="card">
                 <div class="card-header">
-                    <h4>PSIKO SOSIAL SPIRITUAL DAN EKONOMI</h4>
+                    <h4>III. PSIKO SOSIAL SPIRITUAL DAN EKONOMI</h4>
                 </div>
                 <div class="row">
                     <div class="card-body col-12">
                         <div class="form">
-                            <label>Persepsi pasien terhadap penyakitnya</label>
+                            <label>1. Persepsi pasien terhadap penyakitnya</label>
                             <div class="row">
                                 <div class="card-body">
                                     <div class="custom-control custom-radio">
@@ -315,7 +309,7 @@
                             </div>
                         </div>
                         <div class="form">
-                            <label>Ekspresi pasien terhadap penyakitnya</label>
+                            <label>2. Ekspresi pasien terhadap penyakitnya</label>
                             <div class="row">
                                 <div class="card-body">
                                     <div class="custom-control custom-radio">
@@ -343,7 +337,7 @@
                             </div>
                         </div>
                         <div class="form">
-                            <label>Gangguan konsep diri</label>
+                            <label>3. Gangguan konsep diri</label>
                             <div class="row">
                                 <div class="card-body">
                                     <div class="custom-control custom-radio">
@@ -360,7 +354,7 @@
                             </div>
                         </div>
                         <div class="form">
-                            <label>Reaksi anak interaksi (khusus pasien anak)</label>
+                            <label>4. Reaksi anak interaksi (khusus pasien anak)</label>
                             <div class="row">
                                 <div class="card-body">
                                     <div class="custom-control custom-radio">
@@ -384,11 +378,11 @@
                         </div>
                         <div class="form">
                             <div class="form">
-                                <label>Pendidikan</label>
+                                <label>5. Pendidikan</label>
                                 <input type="text" class="form-control">
                             </div>
                             <div class="form">
-                                <label>Pekerjaan</label>
+                                <label>6. Pekerjaan</label>
                                 <input type="text" class="form-control">
                             </div>
                         </div>
@@ -401,59 +395,101 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4>SKRINING GIZI AWAL</h4>
+                            <h4>IV. SKRINING GIZI AWAL</h4>
                         </div>
                         <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-md">
-                                    <tr>
-                                        <th>NO</th>
-                                        <th>Parameter</th>
-                                        <th>Skor</th>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Apakah pasien mengalami penurunan/peningkatan BB yang tidak di inginkan dalam 6 bulan terakhir?</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Apakah asupan makan berkurang karena tidak nafsu makan?</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Pasien dengan diagnosa khusus/ kondisi khusus</td>
-                                        <td></td>
-                                    </tr>
-                                </table>
+                            <div class="card-body col-12">
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-md">
+                                        <tr>
+                                            <th>NO</th>
+                                            <th>PARAMETER</th>
+                                            <th>Skor</th>
+                                            <th></th>
+                                        </tr>
+                                        <tr>
+                                            <th></th>
+                                            <th></th>
+                                            <th>Ya</th>
+                                            <th>Tidak</th>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Apakah pasien mengalami penurunan/peningkatan BB yang tidak di inginkan dalam 6 bulan terakhir?</td>
+                                            <td>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">2</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">0</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Apakah asupan makan berkurang karena tidak nafsu makan?</td>
+                                            <td>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">1</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">0</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Pasien dengan diagnosa khusus/ kondisi khusus</td>
+                                            <td>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">2</label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">0</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>(Penyakit: DM/kemoterapi/hemodalisa/geriatari/imunitas menurun/lain-lain, sebutkan <input type="text" name=""></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><b>Total Skor</b></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                        </tr>
+
+                                    </table>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-footer text-right">
-                            <nav class="d-inline-block">
-                                <ul class="pagination mb-0">
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left"></i></a>
-                                    </li>
-                                    <li class="page-item active"><a class="page-link" href="#">1 <span class="sr-only">(current)</span></a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">2</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
-                                    </li>
-                                </ul>
-                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <div id="tab5" class="col-14" data-tab-group="mygroup-tab">
             <div class="card">
                 <div class="card-header">
-                    <h4>ASESMEN RESIKO JATUH</h4>
+                    <h4>V. ASESMEN RESIKO JATUH</h4>
                 </div>
                 <div class="row">
                     <div class="card-body col-12">
@@ -515,7 +551,7 @@
         <div id="tab6" class="col-14" data-tab-group="mygroup-tab">
             <div class="card">
                 <div class="card-header">
-                    <h4>ASESMEN NYERI</h4>
+                    <h4>VI. ASESMEN NYERI</h4>
                 </div>
                 <div class="row">
                     <div class="card-body col-12">
@@ -628,7 +664,7 @@
         <div id="tab7" class="col-14" data-tab-group="mygroup-tab">
             <div class="card">
                 <div class="card-header">
-                    <h4>Status Fungsional</h4>
+                    <h4>VII. Status Fungsional</h4>
                 </div>
                 <div class="card-body">
 
@@ -778,155 +814,41 @@
 
                         <tr>
                             <th>Total Skor</th>
+                            <td></td>
+                            <td><input type="text" name=""></td>
                         </tr>
 
                     </table>
-                    <div class="row">
-                        <div class="card-body col-12">
-                            <div class="form">
-                                <label>Kesimpulan</label>
-                                <div class="row">
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio1">Mandiri (20)</label>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio2">Ketergantungan ringan (12-19)</label>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio3">Ketergantungan sedang (9-11)</label>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio4">Ketergantungan Berat(5-10)</label>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                            <label class="custom-control-label" for="customRadio5">Ketergantungan Total (<5) </label> </div> </div> </div> </div> </div> </div> </div> </div> </div> <div id="tab6" class="col-14" data-tab-group="mygroup-tab">
-                                                    <div class="card">
-                                                        <div class="card-header">
-                                                            <h4>ASESMEN NYERI</h4>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="card-body col-12">
-                                                                <div class="form">
-                                                                    <label>Nyeri ?</label>
-                                                                    <div class="row">
-                                                                        <div class="card-body">
-                                                                            <div class="custom-control custom-radio">
-                                                                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                                                                <label class="custom-control-label" for="customRadio1">Ya</label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="card-body">
-                                                                            <div class="custom-control custom-radio">
-                                                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                                                <label class="custom-control-label" for="customRadio2">Tidak</label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <div class="row gutters-sm">
-                                                                        <div class="col-6 col-sm-4">
-                                                                            <label class="imagecheck mb-4">
-                                                                                <input name="imagecheck" type="checkbox" value="1" class="imagecheck-input" />
-                                                                                <figure class="imagecheck-figure">
-                                                                                    <img src="<?= base_url() ?>/template/assets/img/assesment-nyeri/tidak-nyeri.png" alt="}" class="imagecheck-image">
-                                                                                </figure>
-                                                                                <p style="text-align: center;">Tidak Nyeri</p>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="col-6 col-sm-4">
-                                                                            <label class="imagecheck mb-4">
-                                                                                <input name="imagecheck" type="checkbox" value="2" class="imagecheck-input" checked />
-                                                                                <figure class="imagecheck-figure">
-                                                                                    <img src="<?= base_url() ?>/template/assets/img/assesment-nyeri/nyeri-ringan.png" alt="}" class="imagecheck-image">
-                                                                                </figure>
-                                                                                <p style="text-align: center;">Nyeri Ringan</p>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="col-6 col-sm-4">
-                                                                            <label class="imagecheck mb-4">
-                                                                                <input name="imagecheck" type="checkbox" value="3" class="imagecheck-input" />
-                                                                                <figure class="imagecheck-figure">
-                                                                                    <img src="<?= base_url() ?>/template/assets/img/assesment-nyeri/nyeri-mengganggu.png" alt="}" class="imagecheck-image">
-                                                                                </figure>
-                                                                                <p style="text-align: center;">Nyeri yang Mengganggu</p>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="col-6 col-sm-4">
-                                                                            <label class="imagecheck mb-4">
-                                                                                <input name="imagecheck" type="checkbox" value="4" class="imagecheck-input" checked />
-                                                                                <figure class="imagecheck-figure">
-                                                                                    <img src="<?= base_url() ?>/template/assets/img/assesment-nyeri/nyeri-menyusahkan.png" alt="}" class="imagecheck-image">
-                                                                                </figure>
-                                                                                <p style="text-align: center;">Nyeri yang Menyusahkan</p>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="col-6 col-sm-4">
-                                                                            <label class="imagecheck mb-4">
-                                                                                <input name="imagecheck" type="checkbox" value="5" class="imagecheck-input" />
-                                                                                <figure class="imagecheck-figure">
-                                                                                    <img src="<?= base_url() ?>/template/assets/img/assesment-nyeri/nyeri-hebat.png" alt="}" class="imagecheck-image">
-                                                                                </figure>
-                                                                                <p style="text-align: center;">Nyeri Hebat</p>
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="col-6 col-sm-4">
-                                                                            <label class="imagecheck mb-4">
-                                                                                <input name="imagecheck" type="checkbox" value="6" class="imagecheck-input" />
-                                                                                <figure class="imagecheck-figure">
-                                                                                    <img src="<?= base_url() ?>/template/assets/img/assesment-nyeri/nyeri-sangat-hebat.png" alt="}" class="imagecheck-image">
-                                                                                </figure>
-                                                                                <p style="text-align: center;">Nyeri Sangat Hebat</p>
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form">
-                                                                    <label>Nyeri ?</label>
-                                                                    <div class="row">
-                                                                        <div class="card-body">
-                                                                            <img src="<?= base_url() ?>/template/assets/img/assesment-nyeri/range-nyeri.png" alt="}" class="imagecheck-image">
-                                                                            <input type="range" class="form-control">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="form">
-                                                                    <label>Skala</label>
-                                                                    <div class="row">
-                                                                        <div class="card-body">
-                                                                            <div class="custom-control custom-radio">
-                                                                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                                                                <label class="custom-control-label" for="customRadio1">Akut</label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="card-body">
-                                                                            <div class="custom-control custom-radio">
-                                                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                                                <label class="custom-control-label" for="customRadio2">Kronis</label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                        </div>
-                                    </div>
+                    <div class="form">
+                        <label>Kesimpulan :</label>
+                        <div class="form">
+                            <div class="form-group">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Mandiri (20)</label>
                                 </div>
+                                <div class="form-group">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Ketergantungan Ringan(12-19)</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">Ketergantungan Sedang (9-11)</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">Ketergantungan Berat (5-10)</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">Ketergantungan Total (5)</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -938,76 +860,156 @@
         <div id="tab8" class="col-14" data-tab-group="mygroup-tab">
             <div class="card">
                 <div class="card-header">
-                    <h4>Kebutuhan Edukasi</h4>
+                    <h4>VIII. Kebutuhan Edukasi</h4>
                 </div>
                 <div class="row">
-                    <div class="card-body col-12">
-                        <div class="form-group">
-                            <textarea class="form-control"></textarea>
+                    <div class="card-body col-sm-4 col-md-6">
+                        <div class="form-group row align-items-center">
+                            <label class="col-md-3">Bicara </label>
+                            <div class="col-lg-9 col-md-9">
+                                <input type="text" class="form-control" name="nama">
+                            </div>
                         </div>
-                        <div class="form">
-                            <label>Riwayat Penyakit Dahulu</label>
-                            <div class="row">
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio1">Tidak Ada</label>
+                        <div class="form-group row align-items-center">
+                            <label class="col-md-3">Gangguan bicara </label>
+                            <div class="col-lg-9 col-md-9">
+                                <input type="text" class="form-control" name="nama">
+                            </div>
+                        </div>
+                        <div class="form-group row align-items-center">
+                            <label class="col-md-4">Perlu Penerjemah:</label>
+                            <div class="form">
+                                <div class="row">
+                                    <div class="card-body">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio1">Tidak</label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio2">Ada, sebutkan</label>
+                                    <div class="card-body">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio2">Ya, bahasa</label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form">
-                                        <input type="text" class="form-control">
+                                    <div class="card-body">
+                                        <div class="form">
+                                            <input type="text" class="form-control">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="form">
-                            <label>Riwayat Penggunaan Obat</label>
-                            <div class="row">
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio1">Tidak Ada</label>
+                        <div class="form-group row align-items-center">
+                            <label class="col-md-4">Hambatan Belajar:</label>
+                            <div class="form">
+                                <div class="row">
+                                    <div class="card-body">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio1">Tidak</label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio2">Ada, sebutkan</label>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form">
-                                        <input type="text" class="form-control">
+                                    <div class="card-body">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio2">Ya</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="card-body">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3">Pendengaran</label>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3">Agama</label>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3">Penglihatan</label>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3">Emosi</label>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3">Kognotif</label>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3">Bahasa</label>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3">Fisik</label>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3">Lainnya</label>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3">Budaya</label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form">
-                            <label>Riwayat Alergi</label>
-                            <div class="row">
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio1">Tidak Ada</label>
+
+                        <div class="form-group row align-items-center">
+                            <label class="col-md-4">Kebutuhan Pembelajaran :</label>
+                            <div class="form">
+                                <div class="row">
+                                    <div class="card-body">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio1">Proses Penyakit</label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio2">Manajemen nyeri</label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio2">Ada, sebutkan</label>
-                                    </div>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3">Terapi/obat</label>
                                 </div>
-                                <div class="card-body">
-                                    <div class="form">
-                                        <input type="text" class="form-control">
-                                    </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3">Diet/nutrisi</label>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio3">Rehabiliasi lainnya</label>
                                 </div>
                             </div>
                         </div>
@@ -1019,111 +1021,35 @@
         <div id="tab9" class="col-14" data-tab-group="mygroup-tab">
             <div class="card">
                 <div class="card-header">
-                    <h4>Diagnosa perawat</h4>
+                    <h4>IX. Diagnosa Keperawatan</h4>
                 </div>
                 <div class="row">
                     <div class="card-body col-12">
                         <div class="form-group">
                             <textarea class="form-control"></textarea>
                         </div>
-                        <!-- <div class="form">
-                            <label>Riwayat Penyakit Dahulu</label>
-                            <div class="row">
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio1">Tidak Ada</label>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio2">Ada, sebutkan</label>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form">
-                            <label>Riwayat Penggunaan Obat</label>
-                            <div class="row">
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio1">Tidak Ada</label>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio2">Ada, sebutkan</label>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form">
-                            <label>Riwayat Alergi</label>
-                            <div class="row">
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio1">Tidak Ada</label>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio2">Ada, sebutkan</label>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form">
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
+
             </div>
         </div>
+
 
         <div id="tab10" class="col-14" data-tab-group="mygroup-tab">
             <div class="card">
                 <div class="card-header">
-                    <h4>Rencana asuhan Keperawatan</h4>
+                    <h4>X. Rencana Asuhan Keperawatan</h4>
                 </div>
                 <div class="row">
                     <div class="card-body col-12">
                         <div class="form-group">
                             <textarea class="form-control"></textarea>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
     </div>
-
-
-
-
-
-
 
 
 

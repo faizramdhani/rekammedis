@@ -60,32 +60,67 @@
                                             <th>Verifikasi DPJP</th>
                                         </tr>
                                         <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
                                         </tr>
                                         <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
                                         </tr>
                                         <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
                                         </tr>
                                         <tr>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                        </tr>
+                                        <tr>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" name=""></td>
                                         </tr>
                                     </table>
                                 </div>

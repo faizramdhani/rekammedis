@@ -40,17 +40,18 @@
         </div>
     </div>
 
+
     <div class="section-body">
         <div class="row">
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <ul class="nav nav-pills" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-tab="mygroup-tab" href="#tab1">Profil Ringkas Medis Rawat Jalan</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-tab="mygroup-tab" href="#tab2">Riwayat Penyakit Kronis</a>
+                                <a class="nav-link " data-tab="mygroup-tab" href="#tab2">Riwayat Penyakit Kronis</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-tab="mygroup-tab" href="#tab3">Riwayat</a>
@@ -59,227 +60,288 @@
                     </div>
                 </div>
             </div>
+            <!-- tab 1 -->
             <div id="tab1" class="col-12 active" data-tab-group="mygroup-tab">
                 <div class="card">
                     <div class="card-header">
                         <h4>Profil Ringkas Medis Rawat Jalan</h4>
                     </div>
-                    <!-- <div class="row">
-                        <div class="card-body col-12">
-                            <div class="form">
-                                <label>Nama</label>
-                                <input type="text" class="form-control" value="" disabled>
-                            </div>
-                            <div class="form">
-                                <label>Alamat</label>
-                                <input type="text" class="form-control" disabled>
-                            </div>
-                        </div>
-                    </div> -->
                     <div class="row">
-                        <div class="card-body col-sm-3 col-md-6">
-                        <div class="form">
-                                <label>Nama</label>
-                                <input type="text" class="form-control">
+                        <div class="card-body col-sm-4 col-md-6">
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3">Nama </label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input type="text" class="form-control" name="nama">
+                                </div>
                             </div>
-                            <div class="form">
-                                <label>Alamat</label>
-                                <input type="text" class="form-control">
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 ">Alamat </label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input type="text" class="form-control" name="alamat">
+                                </div>
                             </div>
-                            <div class="form">
-                                <label>Email</label>
-                                <input type="text" class="form-control">
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 ">Tanggal Lahir</label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input type="datetime-local" class="form-control datetimepicker">
+                                </div>
                             </div>
-                            <div class="form">
-                                <label>NIK</label>
-                                <input type="text" class="form-control">
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 ">Bangsa </label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input type="text" class="form-control" name="bangsa">
+                                </div>
                             </div>
-                            <div class="form">
-                                <label>NPWP</label>
-                                <input type="text" class="form-control">
+
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 ">Pekerjaan </label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input type="text" class="form-control" name="pekerjaan">
+                                </div>
                             </div>
-                            <div class="form">
-                                <label>Tanggal Lahir</label>
-                                <input type="text" class="form-control">
+
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3">Keluarga/Penanggung Jawab</label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input type="text" class="form-control" name="keluarga">
+                                </div>
                             </div>
-                            <div class="form">
-                                <label>Bangsa</label>
-                                <input type="text" class="form-control">
+
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 ">Asuransi </label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input type="text" class="form-control" name="asuransi">
+                                </div>
                             </div>
-                            <div class="form">
-                                <label>Pekerjaan</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form">
-                                <label>Keluarga/Penanggung Jawab</label>
-                                <input type="text" class="form-control">
-                            </div>
-                            <div class="form">
-                                <label>Asuransi</label>
-                                <input type="text" class="form-control" disabled>
-                            </div>
+
                         </div>
-                        <div class="card-body col-sm-3 col-md-6">
-                            <div class="form">
-                                <label>Jenis Kelamin</label>
-                                <input type="text" class="form-control">
+
+                        <div class="card-body col-sm-4 col-md-6">
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3">Jenis Kelamin</label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input type="text" class="form-control" name="nama">
+                                </div>
                             </div>
-                            <div class="form">
-                                <label>Agama</label>
-                                <input type="text" class="form-control">
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 ">Agama</label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input type="text" class="form-control" name="nama">
+                                </div>
                             </div>
-                            <div class="form">
-                                <label>Perkawinan</label>
-                                <input type="text" class="form-control">
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 ">Perkawinan</label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input type="text" class="form-control" name="nama">
+                                </div>
                             </div>
-                            <div class="form">
-                                <label>Telp</label>
-                                <input type="text" class="form-control">
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 ">Telp</label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input type="text" class="form-control" name="nama">
+                                </div>
                             </div>
-                            <div class="form">
-                                <label>No. Asuransi</label>
-                                <input type="text" class="form-control">
+
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 ">No. Asuransi</label>
+                                <div class="col-lg-9 col-md-9">
+                                    <input type="text" class="form-control" name="nama">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="tab2" class="col-12" data-tab-group="mygroup-tab">
-            <div class="row">
-                <div class="col-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4>Riwayat Penyakit Kronis</h4>
-                        </div>
-                        <div class="row">
-                            <div class="card-body">
-                                <div class="form">
-                                    <textarea class="form-control"></textarea>
-                                </div>
-                                <div class="form">
-                                    <label>Alergi</label>
-                                    <input type="text" class="form-control">
+
+            <!-- tab 2 -->
+            <div id="tab2" class="col-12" data-tab-group="mygroup-tab">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>RIWAYAT PENYAKIT KRONIS</h4>
+                            </div>
+                            <div class="row">
+                                <div class="card-body">
+                                    <div class="form">
+                                        <input type="text" class="form-control" placeholder="1">
+                                    </div>
+                                    <div class="form">
+                                        <input type="text" class="form-control" placeholder="2">
+                                    </div>
+                                    <div class="form">
+                                        <input type="text" class="form-control" placeholder="3">
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4>Untuk Anak-Anak : Riwayat Kelahiran</h4>
-                        </div>
-                        <div class="row">
-                            <div class="card-body">
-                                <div class="form">
-                                    <textarea class="form-control"></textarea>
-                                </div>
-                                <div class="form">
+
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>UNTUK ANAK ANAK : RIWAYAT KELAHIRAN</h4>
+                            </div>
+                            <div class="row">
+                                <div class="card-body">
+                                    <div class="form">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+
                                     <label>Imunisasi</label>
                                     <input type="text" class="form-control">
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>ALERGI</h4>
+                            </div>
+                            <div class="row">
+                                <div class="card-body">
+                                    <div class="col-lg-6 col-md-6">
+                                        <input type="text" class="form-control" name="" placeholder="1">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <input type="text" class="form-control" name="" placeholder="2">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <input type="text" class="form-control" name="" placeholder="3">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="col-lg-6 col-md-6">
+                                        <input type="text" class="form-control" name="" placeholder="4">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <input type="text" class="form-control" name="" placeholder="5">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <input type="text" class="form-control" name="" placeholder="6">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="tab3" class="col-12" data-tab-group="mygroup-tab"">
+            <!-- tab 3 -->
+            <div id="tab3" class="col-12" data-tab-group="mygroup-tab"">
                     <div class=" row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-header">
-                        <h4>Riwayat</h4>
-                        <!-- <div class="card-header-action">
-                            <form>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div> -->
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-md">
-                                <tr>
-                                    <th>Tanggal</th>
-                                    <th>Poliklinik</th>
-                                    <th>Diagnosa</th>
-                                    <th>Pemeriksaan Penunjang</th>
-                                    <th>Riwayat Rawat Inap</th>
-                                    <th>Pengobatan</th>
-                                    <th>Tindakan Operasi</th>
-                                    <th>Nama Dokter</th>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </table>
+                <div class="col-12">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-md">
+                                    <tr>
+                                        <th>Tanggal</th>
+                                        <th>Poliklinik</th>
+                                        <th>Diagnosa</th>
+                                        <th>Pemeriksaan Penunjang</th>
+                                        <th>Riwayat Rawat Inap</th>
+                                        <th>Pengobatan</th>
+                                        <th>Tindakan Operasi</th>
+                                        <th>TTD & Nama Dokter</th>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                        <td><input type="text" name=""></td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
-                    <!-- <div class="card-footer text-right">
-                        <nav class="d-inline-block">
-                            <ul class="pagination mb-0">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left"></i></a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1 <span class="sr-only">(current)</span></a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">2</a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div> -->
                 </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-
 </section>

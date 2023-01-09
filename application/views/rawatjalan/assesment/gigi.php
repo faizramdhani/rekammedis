@@ -46,25 +46,25 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-tab="mygroup-tab" href="#tab1">Anamnesis</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab2">Pemeriksaan Fisik</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab3">Pemeriksaan Penunjang</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab4">Diagnosa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab5">Terapi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab6">Anjuran</a>
-                        </li>
+                        <ul class="nav nav-pills" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-tab="mygroup-tab" href="#tab1">Anamnesis</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab2">Pemeriksaan Fisik</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab3">Pemeriksaan Penunjang</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab4">Diagnosa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab5">Terapi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab6">Anjuran</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -72,8 +72,8 @@
         </div>
         <div id="tab1" class="col-14 active" data-tab-group="mygroup-tab">
             <div class="card">
-            <div class="card-header">
-                <h4>ANAMNESIS</h4>
+                <div class="card-header">
+                    <h4>ANAMNESIS</h4>
                 </div>
                 <div class="row">
                     <div class="card-body col-12">
@@ -99,15 +99,15 @@
         </div>
         <div id="tab2" class="col-14" data-tab-group="mygroup-tab">
             <div class="card">
-            <div class="card-header">
-                <h4>PEMERIKSAAN FISIK</h4>
-            </div>
+                <div class="card-header">
+                    <h4>PEMERIKSAAN FISIK</h4>
+                </div>
                 <div class="row">
                     <div class="card-body col-12">
                         <div class="form">
-                        <div class="gallery gallery-fw" data-item-height="300">
-                            <div class="gallery-item" data-image="<?= base_url() ?>/template/assets/img/assesment/gigi.png" data-title="Image 1"></div>
-                        </div>
+                            <div class="gallery gallery-fw" data-item-height="300">
+                                <div class="gallery-item" data-image="<?= base_url() ?>/template/assets/img/assesment/gigi.png" data-title="Image 1"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -148,8 +148,8 @@
         </div>
         <div id="tab5" class="col-14" data-tab-group="mygroup-tab">
             <div class="card">
-            <div class="card-header">
-                <h4>TERAPI</h4>
+                <div class="card-header">
+                    <h4>TERAPI</h4>
                 </div>
                 <div class="row">
                     <div class="card-body col-sm-3 col-md-6">

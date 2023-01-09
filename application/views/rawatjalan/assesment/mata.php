@@ -46,25 +46,25 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-tab="mygroup-tab" href="#tab1">Anamnesis</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab2">Pemeriksaan Fisik</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab3">Pemeriksaan Penunjang</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab4">Diagnosa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab5">Terapi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab6">Anjuran</a>
-                        </li>
+                        <ul class="nav nav-pills" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-tab="mygroup-tab" href="#tab1">Anamnesis</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab2">Pemeriksaan Fisik</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab3">Pemeriksaan Penunjang</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab4">Diagnosa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab5">Terapi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab6">Anjuran</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -72,8 +72,8 @@
         </div>
         <div id="tab1" class="col-14 active" data-tab-group="mygroup-tab">
             <div class="card">
-            <div class="card-header">
-                <h4>ANAMNESIS</h4>
+                <div class="card-header">
+                    <h4>ANAMNESIS</h4>
                 </div>
                 <div class="row">
                     <div class="card-body col-12">
@@ -106,28 +106,28 @@
                     <div class="card-body">
                         <h7>Visual Aquality</h7>
                         <div class="row">
-                        <div class="card-body col-sm-3 col-md-6">
-                            <div class="row">
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                                <p>PH:</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body col-sm-3 col-md-6">
-                        <div class="row">
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                                <p>PH:</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
+                            <div class="card-body col-sm-3 col-md-6">
+                                <div class="row">
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <p>PH:</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="card-body col-sm-3 col-md-6">
+                                <div class="row">
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <p>PH:</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -135,38 +135,38 @@
                     <div class="card-body">
                         <h7>KML</h7>
                         <div class="row">
-                        <div class="card-body col-sm-3 col-md-6">
-                            <div class="row">
-                                <p>Sph:</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                                <p>Cyl</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                                <p>x</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body col-sm-3 col-md-6">
-                        <div class="row">
-                                <p>Sph:</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                                <p>Cyl</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                                <p>x</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
+                            <div class="card-body col-sm-3 col-md-6">
+                                <div class="row">
+                                    <p>Sph:</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <p>Cyl</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <p>x</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="card-body col-sm-3 col-md-6">
+                                <div class="row">
+                                    <p>Sph:</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <p>Cyl</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <p>x</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -174,38 +174,38 @@
                     <div class="card-body">
                         <h7>Kereksi</h7>
                         <div class="row">
-                        <div class="card-body col-sm-3 col-md-6">
-                            <div class="row">
-                                <p>Sph:</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                                <p>Cyl</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                                <p>x</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-body col-sm-3 col-md-6">
-                        <div class="row">
-                                <p>Sph:</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                                <p>Cyl</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                                <p>x</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
+                            <div class="card-body col-sm-3 col-md-6">
+                                <div class="row">
+                                    <p>Sph:</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <p>Cyl</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <p>x</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="card-body col-sm-3 col-md-6">
+                                <div class="row">
+                                    <p>Sph:</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <p>Cyl</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <p>x</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -230,34 +230,34 @@
                     <div class="card-body">
                         <h7>Keratometri</h7>
                         <div class="row">
-                        <div class="card-body col-sm-3 col-md-6">
-                            <div class="row">
-                                <p>K1:</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
+                            <div class="card-body col-sm-3 col-md-6">
+                                <div class="row">
+                                    <p>K1:</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>K2:</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <p>K2:</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
+                            <div class="card-body col-sm-3 col-md-6">
+                                <div class="row">
+                                    <p>K1:</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p>K2:</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-body col-sm-3 col-md-6">
-                            <div class="row">
-                                <p>K1:</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <p>K2:</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -265,38 +265,38 @@
                     <div class="card-body">
                         <h7>Tonometri</h7>
                         <div class="row">
-                        <div class="card-body col-sm-3 col-md-6">
-                            <div class="row">
-                                <p>Non-Contact:</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
+                            <div class="card-body col-sm-3 col-md-6">
+                                <div class="row">
+                                    <p>Non-Contact:</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <p>mmHg</p>
                                 </div>
-                                <p>mmHg</p>
-                            </div>
-                            <div class="row">
-                                <p>Schiotz:</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
+                                <div class="row">
+                                    <p>Schiotz:</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <p>mmHg</p>
                                 </div>
-                                <p>mmHg</p>
                             </div>
-                        </div>
-                        <div class="card-body col-sm-3 col-md-6">
-                            <div class="row">
-                                <p>Non-Contact:</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
+                            <div class="card-body col-sm-3 col-md-6">
+                                <div class="row">
+                                    <p>Non-Contact:</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <p>mmHg</p>
                                 </div>
-                                <p>mmHg</p>
-                            </div>
-                            <div class="row">
-                                <p>Schiotz:</p>
-                                <div class="form">
-                                    <input type="text" class="form-control">
+                                <div class="row">
+                                    <p>Schiotz:</p>
+                                    <div class="form">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <p>mmHg</p>
                                 </div>
-                                <p>mmHg</p>
                             </div>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -306,9 +306,9 @@
                 <div class="row">
                     <div class="card-body col-12">
                         <div class="form">
-                        <div class="gallery gallery-fw" data-item-height="100">
-                            <div class="gallery-item" data-image="<?= base_url() ?>/template/assets/img/assesment/mata.png" data-title="Image 1"></div>
-                        </div>
+                            <div class="gallery gallery-fw" data-item-height="100">
+                                <div class="gallery-item" data-image="<?= base_url() ?>/template/assets/img/assesment/mata.png" data-title="Image 1"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -587,8 +587,8 @@
         </div>
         <div id="tab5" class="col-14" data-tab-group="mygroup-tab">
             <div class="card">
-            <div class="card-header">
-                <h4>TERAPI</h4>
+                <div class="card-header">
+                    <h4>TERAPI</h4>
                 </div>
                 <div class="row">
                     <div class="card-body col-sm-3 col-md-6">

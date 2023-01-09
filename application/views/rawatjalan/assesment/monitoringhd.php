@@ -46,7 +46,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <ul class="nav nav-pills" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-tab="mygroup-tab" href="#tab1">Anamnesis</a>
                             </li>

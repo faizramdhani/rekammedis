@@ -97,7 +97,7 @@
                     <?php if ($this->session->userdata('level_erm') == 2) { ?>
                         <ul class="sidebar-menu">
                             <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanDokter') ?>"><i class="fas fa-fire"></i> <span>Detail</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanDokter') ?>"><i class="fas fa-fire"></i> <span>Profil Ringkas</span></a></li>
 
                             <li class="menu-header">PENGKAJIAN AWAL KEPERAWATAN</li>
                             <!-- <li class="nav-item dropdown">

@@ -2780,7 +2780,7 @@ a.bb {
 	font-size: 24px;
 	text-transform: uppercase;
 	letter-spacing: 4px;
-	color: #666;
+	/* color: #666; */
 	text-align: center;
 }
 

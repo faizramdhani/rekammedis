@@ -73,7 +73,7 @@
 
                                         <div class="card-body">
                                             <div class="table-responsive">
-                                                <table class="table table-bordered table-md">
+                                                <table class="table table-striped table-md" id="table1">
                                                     <tr>
                                                         <th>Nomor</th>
                                                         <th>Nama Pasien</th>
@@ -96,8 +96,11 @@
                                                         <td>
                                                             <div class="row">
                                                                 <div class="buttons">
-                                                                    <a href="<?= site_url('') ?>" class="btn btn-icon btn-sm btn-warning"><i class="far fa-edit"></i></a>
-                                                                    <a href="<?= site_url('rawatinap/rawatinapDokter') ?>" class="btn btn-icon btn-sm btn-primary"><i class="far fa-eye"></i></a>
+                                                                    <!-- <a href="#" class="btn btn-icon btn-sm btn-warning"><i class="fas fa-exclamation-triangle"></i></a>
+                                                                    <a href="#" class="btn btn-icon btn-danger"><i class="fas fa-times"></i></a> -->
+                                                                    <a href="<?= site_url('') ?>" class="btn btn-icon btn-primary" title="Edit"><i class="far fa-edit"></i></a>
+                                                                    <a href="<?= site_url('rawatinap/rawatinapDokter') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
+                                                                    <a href="#" title="Dokumen" class="btn btn-icon btn-warning"><i class="far fa-file"></i></a>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -113,8 +116,11 @@
                                                         <td>
                                                             <div class="row">
                                                                 <div class="buttons">
-                                                                    <a href="<?= site_url('') ?>" class="btn btn-icon btn-sm btn-warning"><i class="far fa-edit"></i></a>
-                                                                    <a href="<?= site_url('rawatinap/rawatinapDokter') ?>" class="btn btn-icon btn-sm btn-primary"><i class="far fa-eye"></i></a>
+                                                                    <!-- <a href="#" class="btn btn-icon btn-sm btn-warning"><i class="fas fa-exclamation-triangle"></i></a>
+                                                                    <a href="#" class="btn btn-icon btn-danger"><i class="fas fa-times"></i></a> -->
+                                                                    <a href="<?= site_url('') ?>" class="btn btn-icon btn-primary" title="Edit"><i class="far fa-edit"></i></a>
+                                                                    <a href="<?= site_url('rawatinap/rawatinapDokter') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
+                                                                    <a href="#" title="Dokumen" class="btn btn-icon btn-warning"><i class="far fa-file"></i></a>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -130,8 +136,11 @@
                                                         <td>
                                                             <div class="row">
                                                                 <div class="buttons">
-                                                                    <a href="<?= site_url('') ?>" class="btn btn-icon btn-sm btn-warning"><i class="far fa-edit"></i></a>
-                                                                    <a href="<?= site_url('rawatinap/rawatinapDokter') ?>" class="btn btn-icon btn-sm btn-primary"><i class="far fa-eye"></i></a>
+                                                                    <!-- <a href="#" class="btn btn-icon btn-sm btn-warning"><i class="fas fa-exclamation-triangle"></i></a>
+                                                                    <a href="#" class="btn btn-icon btn-danger"><i class="fas fa-times"></i></a> -->
+                                                                    <a href="<?= site_url('') ?>" class="btn btn-icon btn-primary" title="Edit"><i class="far fa-edit"></i></a>
+                                                                    <a href="<?= site_url('rawatinap/rawatinapDokter') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
+                                                                    <a href="#" title="Dokumen" class="btn btn-icon btn-warning"><i class="far fa-file"></i></a>
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -144,11 +153,16 @@
                                                         <td>BPJS</td>
                                                         <td>12 TAHUN</td>
                                                         <td>Laki - laki</td>
+
+
                                                         <td>
                                                             <div class="row">
                                                                 <div class="buttons">
-                                                                    <a href="<?= site_url('') ?>" class="btn btn-icon btn-sm btn-warning"><i class="far fa-edit"></i></a>
-                                                                    <a href="<?= site_url('rawatinap/rawatinapDokter') ?>" class="btn btn-icon btn-sm btn-primary"><i class="far fa-eye"></i></a>
+                                                                    <!-- <a href="#" class="btn btn-icon btn-sm btn-warning"><i class="fas fa-exclamation-triangle"></i></a>
+                                                                    <a href="#" class="btn btn-icon btn-danger"><i class="fas fa-times"></i></a> -->
+                                                                    <a href="<?= site_url('') ?>" class="btn btn-icon btn-primary" title="Edit"><i class="far fa-edit"></i></a>
+                                                                    <a href="<?= site_url('rawatinap/rawatinapDokter') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
+                                                                    <a href="#" title="Dokumen" class="btn btn-icon btn-warning"><i class="far fa-file"></i></a>
                                                                 </div>
                                                             </div>
                                                         </td>

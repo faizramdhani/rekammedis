@@ -46,25 +46,25 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-tab="mygroup-tab" href="#tab1">Anamnesis</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab2">Pemeriksaan Fisik</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab3">Pemeriksaan Penunjang</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab4">Diagnosa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab5">Terapi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-tab="mygroup-tab" href="#tab6">Anjuran</a>
-                        </li>
+                        <ul class="nav nav-pills" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-tab="mygroup-tab" href="#tab1">Anamnesis</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab2">Pemeriksaan Fisik</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab3">Pemeriksaan Penunjang</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab4">Diagnosa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab5">Terapi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab6">Anjuran</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -72,8 +72,8 @@
         </div>
         <div id="tab1" class="col-14 active" data-tab-group="mygroup-tab">
             <div class="card">
-            <div class="card-header">
-                <h4>ANAMNESIS</h4>
+                <div class="card-header">
+                    <h4>ANAMNESIS</h4>
                 </div>
                 <div class="row">
                     <div class="card-body col-12">
@@ -99,25 +99,25 @@
         </div>
         <div id="tab2" class="col-14" data-tab-group="mygroup-tab">
             <div class="card">
-            <div class="card-header">
-                <h4>PEMERIKSAAN FISIK</h4>
-            </div>
+                <div class="card-header">
+                    <h4>PEMERIKSAAN FISIK</h4>
+                </div>
                 <div class="row">
                     <div class="card-body col-12">
                         <div class="form">
                             <label>Kondisi Umum</label>
                             <div class="row">
                                 <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="cukup" name="customRadio" class="custom-control-input" value="option1">
-                                <label class="custom-control-label" for="cukup">Cukup</label>
-                                </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="cukup" name="customRadio" class="custom-control-input" value="option1">
+                                        <label class="custom-control-label" for="cukup">Cukup</label>
+                                    </div>
                                 </div>
                                 <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="lemah" name="customRadio" class="custom-control-input" value="option2">
-                                <label class="custom-control-label" for="lemah">Lemah</label>
-                                </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="lemah" name="customRadio" class="custom-control-input" value="option2">
+                                        <label class="custom-control-label" for="lemah">Lemah</label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -125,44 +125,44 @@
                             <label>Kepala Leher</label>
                             <div class="row">
                                 <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio1">Anemis</label>
-                                </div>
-                                </div>
-                                <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio2">Icterus</label>
-                                </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio1">Anemis</label>
+                                    </div>
                                 </div>
                                 <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio3">Cyanosis</label>
-                                </div>
-                                </div>
-                                <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio4">Dypsnea</label>
-                                </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio2">Icterus</label>
+                                    </div>
                                 </div>
                                 <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio5">Pembesaran Kelenjar Getah Bening</label>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio3">Cyanosis</label>
+                                    </div>
                                 </div>
+                                <div class="card-body">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio4">Dypsnea</label>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio5">Pembesaran Kelenjar Getah Bening</label>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
-                                    <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio6" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio6">Lainnya</label>
-                                    </div>
-                                    <div class="form" style="margin-left: 10px;">
-                                    <input type="text" class="form-control">
-                                    </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio6" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio6">Lainnya</label>
+                                        </div>
+                                        <div class="form" style="margin-left: 10px;">
+                                            <input type="text" class="form-control">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -171,69 +171,69 @@
                             <label>Thorax</label>
                             <div class="row">
                                 <div class="card-body">
-                                <h6>- Cor</h6>
+                                    <h6>- Cor</h6>
                                 </div>
                                 <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio2">S1-S2 tunggal</label>
-                                </div>
-                                </div>
-                                <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio2">Murmur</label>
-                                </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio2">S1-S2 tunggal</label>
+                                    </div>
                                 </div>
                                 <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio2">Gallop</label>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio2">Murmur</label>
+                                    </div>
                                 </div>
+                                <div class="card-body">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio2">Gallop</label>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
-                                    <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio2">Lainnya</label>
-                                    </div>
-                                    <div class="form" style="margin-left: 10px;">
-                                    <input type="text" class="form-control">
-                                    </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio2">Lainnya</label>
+                                        </div>
+                                        <div class="form" style="margin-left: 10px;">
+                                            <input type="text" class="form-control">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="card-body">
-                                <h6>- Pulmo</h6>
+                                    <h6>- Pulmo</h6>
                                 </div>
                                 <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio2">Ves/ves</label>
-                                </div>
-                                </div>
-                                <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio2">Ronchi</label>
-                                </div>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio2">Ves/ves</label>
+                                    </div>
                                 </div>
                                 <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio2">Wheezing</label>
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio2">Ronchi</label>
+                                    </div>
                                 </div>
+                                <div class="card-body">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio2">Wheezing</label>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
-                                    <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio2">Lainnya</label>
-                                    </div>
-                                    <div class="form" style="margin-left: 10px;">
-                                    <input type="text" class="form-control">
-                                    </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio2">Lainnya</label>
+                                        </div>
+                                        <div class="form" style="margin-left: 10px;">
+                                            <input type="text" class="form-control">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -242,48 +242,48 @@
                             <label>Abdomen</label>
                             <div class="row">
                                 <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio2">Supel</label>
-                                </div>
-                                </div>
-                                <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio2">Meteorismus</label>
-                                </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row">
                                     <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio2">Hepar/Lien</label>
+                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio2">Supel</label>
                                     </div>
-                                    <div class="form" style="margin-left: 10px;">
-                                    <input type="text" class="form-control">
-                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio2">Meteorismus</label>
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
-                                    <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio2">Bising usus</label>
-                                    </div>
-                                    <div class="form" style="margin-left: 10px;">
-                                    <input type="text" class="form-control">
-                                    </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio2">Hepar/Lien</label>
+                                        </div>
+                                        <div class="form" style="margin-left: 10px;">
+                                            <input type="text" class="form-control">
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
-                                    <div class="custom-control custom-radio">
-                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadio2">Lainnya</label>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio2">Bising usus</label>
+                                        </div>
+                                        <div class="form" style="margin-left: 10px;">
+                                            <input type="text" class="form-control">
+                                        </div>
                                     </div>
-                                    <div class="form" style="margin-left: 10px;">
-                                    <input type="text" class="form-control">
-                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio2">Lainnya</label>
+                                        </div>
+                                        <div class="form" style="margin-left: 10px;">
+                                            <input type="text" class="form-control">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -291,23 +291,23 @@
                         <div class="form">
                             <label>Ekstremitas</label>
                             <div class="row">
-                            <div class="card-body">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio2">Oedem</label>
+                                <div class="card-body">
+                                    <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio2">Oedem</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                <div class="custom-control custom-radio">
-                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadio2">Akral</label>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio2">Akral</label>
+                                        </div>
+                                        <div class="form" style="margin-left: 10px;">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="form" style="margin-left: 10px;">
-                                <input type="text" class="form-control">
-                                </div>
-                                </div>
-                            </div>
                             </div>
                         </div>
                     </div>
@@ -349,8 +349,8 @@
         </div>
         <div id="tab5" class="col-14" data-tab-group="mygroup-tab">
             <div class="card">
-            <div class="card-header">
-                <h4>TERAPI</h4>
+                <div class="card-header">
+                    <h4>TERAPI</h4>
                 </div>
                 <div class="row">
                     <div class="card-body col-sm-3 col-md-6">
