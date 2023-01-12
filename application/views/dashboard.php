@@ -16,22 +16,22 @@
  			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
  				<div class="card card-statistic-1">
  					<div class="card-icon bg-primary">
- 						<i class="fas fa-users"></i>
+ 						<i class="fas fa-bed""></i>
  					</div>
- 					<div class="card-wrap">
- 						<div class="card-header">
- 							<h4>Rawat Inap</h4>
- 						</div>
- 						<div class="card-body">
- 							Jumlah
- 						</div>
+ 					<div class=" card-wrap">
+ 							<div class="card-header">
+ 								<h4>Rawat Inap</h4>
+ 							</div>
+ 							<div class="card-body">
+ 								Jumlah
+ 							</div>
  					</div>
  				</div>
  			</div>
  			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
  				<div class="card card-statistic-1">
  					<div class="card-icon bg-primary">
- 						<i class="fas fa-user-injured"></i>
+ 						<i class="fas fa-stethoscope"></i>
  					</div>
  					<div class="card-wrap">
  						<div class="card-header">
@@ -50,7 +50,7 @@
  					</div>
  					<div class="card-wrap">
  						<div class="card-header">
- 							<h4>UGD</h4>
+ 							<h4>IGD</h4>
  						</div>
  						<div class="card-body">
  							Jumlah
@@ -61,7 +61,7 @@
  			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
  				<div class="card card-statistic-1">
  					<div class="card-icon bg-primary">
- 						<i class="fas fa-diagnoses"></i>
+ 						<i class="fas fa-briefcase-medical"></i>
  					</div>
  					<div class="card-wrap">
  						<div class="card-header">
@@ -77,6 +77,22 @@
 			 <div class="col-lg-3 col-md-6 col-sm-6 col-12">
  				<div class="card card-statistic-1">
  					<div class="card-icon bg-primary">
+ 						<i class="far fa-file"></i>
+ 					</div>
+ 					<div class="card-wrap">
+ 						<div class="card-header">
+ 							<h4>Rekam Medis</h4>
+ 						</div>
+ 						<div class="card-body">
+ 							Jumlah
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+
+ 			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+ 				<div class="card card-statistic-1">
+ 					<div class="card-icon bg-primary">
  						<i class="fas fa-diagnoses"></i>
  					</div>
  					<div class="card-wrap">
@@ -84,13 +100,13 @@
  							<h4>User</h4>
  						</div>
  						<div class="card-body">
- 							<?=$this->fungsi->count_user() ?>
+ 							<?= $this->fungsi->count_user() ?>
  						</div>
  					</div>
  				</div>
  			</div>
  		</div>
- 		
+
 
  	</div>
  </section>

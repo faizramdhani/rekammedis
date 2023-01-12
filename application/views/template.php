@@ -70,15 +70,15 @@
                         <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="far fa-square"></i> <span>Dashboard</span></a></li>
 
                         <li class="menu-header">Pelayanan Medis</li>
-                        <li><a class="nav-link" href="<?= site_url('rawatjalan/listpasien') ?>"><i class="far fa-square"></i> <span>Rawat Jalan</span></a></li>
-                        <li><a class="nav-link" href="<?= site_url('rawatinap/listpasien') ?>"><i class="far fa-square"></i> <span>Rawat Inap</span></a></li>
-                        <li><a class="nav-link" href=""><i class="far fa-square"></i> <span>IGD</span></a></li>
+                        <li><a class="nav-link" href="<?= site_url('rawatjalan/listpasien') ?>"><i class="fas fa-stethoscope"></i> <span>Rawat Jalan</span></a></li>
+                        <li><a class="nav-link" href="<?= site_url('rawatinap/listpasien') ?>"><i class="fas fa-bed"></i> <span>Rawat Inap</span></a></li>
+                        <li><a class="nav-link" href="<?= site_url('igd/listpasien') ?>"><i class="fas fa-stethoscope"></i> <span>IGD</span></a></li>
 
                         <!-- Level dokter 2 -->
                         <?php if ($this->session->userdata('level_erm') == 2) { ?>
                             <ul class="sidebar-menu">
                                 <li class="menu-header">DOKUMEN</li>
-                                <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanDokter') ?>"><i class="fas fa-user-injured"></i> <span>Rawat Jalan</span></a></li>
+                                <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanDokter') ?>"><i class="fas fa-stethoscope"></i> <span>Rawat Jalan</span></a></li>
                                 <!-- <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>DRM 02</span></a></li> -->
 
                             </ul>
@@ -108,14 +108,14 @@
                                 </ul>
                             </li> -->
                             <li class="dropdown">
-                                <a href="" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i> <span>Kamar</span></a>
+                                <a href="" class="nav-link has-dropdown"><i class="fas fa-bed"></i> <span>Kamar</span></a>
                                 <ul class="dropdown-menu">
                                     <li><a class="nav-link" href="<?= site_url('kamar/') ?>">Data Kamar</a></li>
                                 </ul>
                             </li>
 
                             <li class="dropdown">
-                                <a href="" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i> <span>Dokter</span></a>
+                                <a href="" class="nav-link has-dropdown"><i class="fas fa-stethoscope"></i> <span>Dokter</span></a>
                                 <ul class="dropdown-menu">
                                     <li><a class="nav-link" href="<?= site_url('dokter/') ?>">Data Dokter</a></li>
                                 </ul>
@@ -124,14 +124,14 @@
                             <!-- Master rawat jalan -->
                             <li class="menu-header">Rawat Jalan</li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-ellipsis-h"></i> <span>Poli</span></a>
+                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-stethoscope"></i> <span>Poli</span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="utilities-contact.html">Poli Umum</a></li>
                                     <li><a class="nav-link" href="utilities-invoice.html">Poli Gigi</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Fisioterapi</span></a>
+                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-stethoscope"></i> <span>Fisioterapi</span></a>
                                 <!-- <ul class="dropdown-menu">
                                     <li><a href="auth-forgot-password.html">Admin</a></li>
                                     <li><a href="auth-login.html">Dokter</a></li>
@@ -140,7 +140,7 @@
                                 </ul> -->
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i> <span>Hemodalisis</span></a>
+                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-stethoscope"></i> <span>Hemodalisis</span></a>
                                 <!-- <ul class="dropdown-menu">
                                     <li><a class="nav-link" href="errors-503.html">503</a></li>
                                     <li><a class="nav-link" href="errors-403.html">403</a></li>
@@ -153,7 +153,7 @@
                             <!-- Master penunjang -->
                             <li class="menu-header">Penunjang Medis</li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Lab</span></a>
+                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-briefcase-medical"></i> <span>Lab</span></a>
                                 <!-- <ul class="dropdown-menu">
                                     <li><a href="auth-forgot-password.html">Admin</a></li>
                                     <li><a href="auth-login.html">Dokter</a></li>
@@ -162,7 +162,7 @@
                                 </ul> -->
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i> <span>Radiologi</span></a>
+                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-briefcase-medical"></i> <span>Radiologi</span></a>
                                 <!-- <ul class="dropdown-menu">
                                     <li><a class="nav-link" href="errors-503.html">503</a></li>
                                     <li><a class="nav-link" href="errors-403.html">403</a></li>
@@ -171,7 +171,7 @@
                                 </ul> -->
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Obat</span></a>
+                                <a href="#" class="nav-link has-dropdown"><i class="fas fa-briefcase-medical"></i> <span>Obat</span></a>
                                 <!-- <ul class="dropdown-menu">
                                     <li><a href="auth-forgot-password.html">Admin</a></li>
                                     <li><a href="auth-login.html">Dokter</a></li>

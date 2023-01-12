@@ -1,9 +1,9 @@
 <section class="section">
     <div class="section-header">
-        <h1>Dokter Rawat Inap</h1>
+        <h1>Dokter IGD</h1>
         <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="<?= site_url('dashboard/') ?>">Dashboard</a></div>
-            <div class="breadcrumb-item"><a href="<?= site_url('rawatjalan/listpasien') ?>">Rawat Inap</a></div>
+            <div class="breadcrumb-item active"><a href="<?= site_url('dashboard') ?>">Dashboard</a></div>
+            <div class="breadcrumb-item"><a href="<?= site_url('rawatjalan/listpasien') ?>">Rawat Jalan</a></div>
 
         </div>
     </div>
@@ -23,7 +23,7 @@
                                             <div class="table-responsive">
                                                 <form class="form-horizontal style-form" id="pencarianantrian" method="post">
                                                     <label class="control-label col-md-10">
-                                                        <h4>Daftar Pasien Rawat Inap</h4>
+                                                        <h4>Daftar Pasien IGD</h4>
                                                     </label>
                                                     <div class="table-responsive">
                                                         <p>Poliklinik :</p>
@@ -73,7 +73,7 @@
 
                                         <div class="card-body">
                                             <div class="table-responsive">
-                                                <table class="table table-striped table-md" id="table1">
+                                                <table class="table table-bordered table-md">
                                                     <tr>
                                                         <th>Nomor</th>
                                                         <th>Nama Pasien</th>
@@ -92,18 +92,16 @@
                                                         <td>BPJS</td>
                                                         <td>12 TAHUN</td>
                                                         <td>Laki - laki</td>
-
                                                         <td>
                                                             <div class="row">
                                                                 <div class="buttons">
-                                                                    <!-- <a href="#" class="btn btn-icon btn-sm btn-warning"><i class="fas fa-exclamation-triangle"></i></a>
-                                                                    <a href="#" class="btn btn-icon btn-danger"><i class="fas fa-times"></i></a> -->
                                                                     <a href="<?= site_url('') ?>" class="btn btn-icon btn-primary" title="Edit"><i class="far fa-edit"></i></a>
-                                                                    <a href="<?= site_url('rawatinap/rawatinapDokter') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
+                                                                    <a href="<?= site_url('igd/igdDokter') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
                                                                     <a href="#" title="Tambah" class="btn btn-icon btn-warning"><i class="far fa-file"></i></a>
                                                                 </div>
                                                             </div>
                                                         </td>
+
                                                     </tr>
                                                     <tr>
                                                         <td>2</td>
@@ -116,10 +114,8 @@
                                                         <td>
                                                             <div class="row">
                                                                 <div class="buttons">
-                                                                    <!-- <a href="#" class="btn btn-icon btn-sm btn-warning"><i class="fas fa-exclamation-triangle"></i></a>
-                                                                    <a href="#" class="btn btn-icon btn-danger"><i class="fas fa-times"></i></a> -->
                                                                     <a href="<?= site_url('') ?>" class="btn btn-icon btn-primary" title="Edit"><i class="far fa-edit"></i></a>
-                                                                    <a href="<?= site_url('rawatinap/rawatinapDokter') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
+                                                                    <a href="<?= site_url('igd/igdDokter') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
                                                                     <a href="#" title="Tambah" class="btn btn-icon btn-warning"><i class="far fa-file"></i></a>
                                                                 </div>
                                                             </div>
@@ -136,10 +132,8 @@
                                                         <td>
                                                             <div class="row">
                                                                 <div class="buttons">
-                                                                    <!-- <a href="#" class="btn btn-icon btn-sm btn-warning"><i class="fas fa-exclamation-triangle"></i></a>
-                                                                    <a href="#" class="btn btn-icon btn-danger"><i class="fas fa-times"></i></a> -->
                                                                     <a href="<?= site_url('') ?>" class="btn btn-icon btn-primary" title="Edit"><i class="far fa-edit"></i></a>
-                                                                    <a href="<?= site_url('rawatinap/rawatinapDokter') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
+                                                                    <a href="<?= site_url('igd/igdDokter') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
                                                                     <a href="#" title="Tambah" class="btn btn-icon btn-warning"><i class="far fa-file"></i></a>
                                                                 </div>
                                                             </div>
@@ -153,15 +147,11 @@
                                                         <td>BPJS</td>
                                                         <td>12 TAHUN</td>
                                                         <td>Laki - laki</td>
-
-
                                                         <td>
                                                             <div class="row">
                                                                 <div class="buttons">
-                                                                    <!-- <a href="#" class="btn btn-icon btn-sm btn-warning"><i class="fas fa-exclamation-triangle"></i></a>
-                                                                    <a href="#" class="btn btn-icon btn-danger"><i class="fas fa-times"></i></a> -->
                                                                     <a href="<?= site_url('') ?>" class="btn btn-icon btn-primary" title="Edit"><i class="far fa-edit"></i></a>
-                                                                    <a href="<?= site_url('rawatinap/rawatinapDokter') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
+                                                                    <a href="<?= site_url('igd/igdDokter') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
                                                                     <a href="#" title="Tambah" class="btn btn-icon btn-warning"><i class="far fa-file"></i></a>
                                                                 </div>
                                                             </div>

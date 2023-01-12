@@ -60,67 +60,68 @@
                                             <th>Verifikasi DPJP</th>
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
                                         </tr>
                                         <tr>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
                                         </tr>
                                     </table>
                                 </div>

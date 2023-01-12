@@ -97,26 +97,32 @@
                     <?php if ($this->session->userdata('level_erm') == 2) { ?>
                         <ul class="sidebar-menu">
                             <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('rawatinap/rawatinapDokter') ?>"><i class="fas fa-fire"></i> <span>Detail</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('igd/igdDokter') ?>"><i class="fas fa-fire"></i> <span>Profil Ringkas</span></a></li>
 
-                            <li class="menu-header">DOKUMEN</li>
-                            <li class="nav-item dropdown">
+                            <li class="menu-header">PENGKAJIAN AWAL</li>
+                            <li><a class="nav-link" href="<?= site_url('igd/awal') ?>"><i class="far fa-square"></i> <span>Pengkajian Awal</span></a></li>
+
+                            <li class="menu-header">PENGKAJIAN KEPERAWATAN</li>
+
+                            <!-- <li class="nav-item dropdown">
                                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="far fa-address-book"></i> <span>Assesment</span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="nav-link" href="">DRM 01</a></li>
-                                        <!-- <li><a class="nav-link" href="">Mata</a></li>
-                                        <li><a class="nav-link" href="">Gigi</a></li>
-                                        <li><a class="nav-link" href="">Jantung</a></li> -->
+                                    <li><a class="nav-link" href="">Penyakit Dalam</a></li>
+                                    <li><a class="nav-link" href="">Mata</a></li>
+                                    <li><a class="nav-link" href="">Gigi</a></li>
+                                    <li><a class="nav-link" href="">Jantung</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
+                            <!-- <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
 
 
-
-                            <!-- <li class="menu-header">PENGKAJIAN AWAL MEDIS</li>
+                            <li class="menu-header">PENGKAJIAN AWAL MEDIS</li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/awal') ?>"><i class="fas fa-user-injured"></i> <span>Pengkajian Awal</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/penyakitdalam') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Penyakit Dalam</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/anak') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Anak</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/bedah') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Bedah</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/obstetriginekologi') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Obstetri&Ginekologi</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/nefrologi') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Nefrologi</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/jantung') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Jantung & Pembuluh Darah</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/kulitkelamin') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Kulit & Kelamin</span></a></li>
@@ -124,15 +130,19 @@
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/neurologi') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Neurologi</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/onkologi') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Onkologi</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/paru') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Paru</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/rehabmedik') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Rehab Medik</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/tht') ?>"><i class="fas fa-user-injured"></i> <span>Asesment THT</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/urologi') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Urologi</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/gigi') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Gigi</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/hd') ?>"><i class="fas fa-user-injured"></i> <span>Asesment HD</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/hdulang') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Ulang HD</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/bedahsyaraf') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Bedah Syaraf</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/ortopedi') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Ortopedi</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/btkv') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Bedah Thorax dan Kardiovaskuler</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/bedahplastik') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Bedah Plastik</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/kesehatanjiwa') ?>"><i class="fas fa-user-injured"></i> <span>Asesment Kesehatan Jiwa</span></a></li> -->
+
+
 
                         </ul>
                     <?php } ?>

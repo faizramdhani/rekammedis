@@ -338,42 +338,42 @@
                         </div>
                         <div class="form">
                             <label>3. Gangguan konsep diri</label>
-                            <div class="row">
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio1">Ya</label>
+                            <div class="card-body col-12">
+                                <div class="form">
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Ya</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">Tidak</label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio2">Tidak</label>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <div class="form">
-                            <label>4. Reaksi anak interaksi (khusus pasien anak)</label>
-                            <div class="row">
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio1">Kooperatif</label>
+                            <label>4. Reaksi anak interaksi (Khusus pasien anak)</label>
+                            <div class="card-body col-12">
+                                <div class="form">
+                                    <div class="form-group">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">Kooperatif</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">Tidak Kooperatif</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                            <label class="form-check-label" for="inlineCheckbox3">Curiga</label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio2">Tidak Kooperatif</label>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="custom-control custom-radio">
-                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadio2">Curiga</label>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <div class="form">
@@ -404,15 +404,23 @@
                                     <table class="table table-bordered table-md">
                                         <tr>
                                             <th>NO</th>
-                                            <th>PARAMETER</th>
-                                            <th>Skor</th>
+                                            <th>
+                                                <center>PARAMETER</center>
+                                            </th>
+                                            <th>
+                                                <center>Skor</center>
+                                            </th>
                                             <th></th>
                                         </tr>
                                         <tr>
                                             <th></th>
                                             <th></th>
-                                            <th>Ya</th>
-                                            <th>Tidak</th>
+                                            <th>
+                                                <center>Ya</center>
+                                            </th>
+                                            <th>
+                                                <center>Tidak</center>
+                                            </th>
                                         </tr>
 
 
@@ -422,13 +430,17 @@
                                             <td>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">2</label>
+                                                    <label class="form-check-label" for="inlineCheckbox2">
+                                                        <center>2</center>
+                                                    </label>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">0</label>
+                                                    <label class="form-check-label" for="inlineCheckbox2">
+                                                        <center>0</center>
+                                                    </label>
                                                 </div>
                                             </td>
                                         </tr>
@@ -438,13 +450,17 @@
                                             <td>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">1</label>
+                                                    <label class="form-check-label" for="inlineCheckbox2">
+                                                        <center>1</center>
+                                                    </label>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">0</label>
+                                                    <label class="form-check-label" for="inlineCheckbox2">
+                                                        <center>0</center>
+                                                    </label>
                                                 </div>
                                             </td>
                                         </tr>
@@ -454,27 +470,31 @@
                                             <td>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                    <label class="form-check-label" for="inlineCheckbox1">2</label>
+                                                    <label class="form-check-label" for="inlineCheckbox1">
+                                                        <center>2</center>
+                                                    </label>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">0</label>
+                                                    <label class="form-check-label" for="inlineCheckbox2">
+                                                        <center>0</center>
+                                                    </label>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td>(Penyakit: DM/kemoterapi/hemodalisa/geriatari/imunitas menurun/lain-lain, sebutkan <input type="text" name=""></td>
+                                            <td>(Penyakit: DM/kemoterapi/hemodalisa/geriatari/imunitas menurun/lain-lain, sebutkan <input type="text" class="form-control"></td>
                                             <td></td>
                                             <td></td>
                                         </tr>
                                         <tr>
                                             <td></td>
-                                            <td><b>Total Skor</b></td>
-                                            <td><input type="text" name=""></td>
-                                            <td><input type="text" name=""></td>
+                                            <td><b>Total Skor = </b></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
                                         </tr>
 
                                     </table>
@@ -813,9 +833,9 @@
                         </tr>
 
                         <tr>
-                            <th>Total Skor</th>
+                            <th>Total Skor : </th>
                             <td></td>
-                            <td><input type="text" name=""></td>
+                            <td><input type="text" class="form-control"></td>
                         </tr>
 
                     </table>
