@@ -17,6 +17,17 @@ ORDER BY a.nomrm ASC LIMIT 10");
         $result = $query->result_array();
         return $result;
     }
+
+    public function getpaslamadetail()
+    {
+        $query = $this->db->query("SELECT a.tanggal, a.nomrm, a.nmpasien, b.nmdokter, a.alamat, a.noasuransi, a.nosep, a.norj, a.nmkons
+        FROM paslama a, mtdokter b
+        WHERE b.kddokter=a.kddokter, a.nmrm='$'");
+        // $query = $this->db->query("SELECT * FROM paslama ORDER BY nomrm ASC limit 10");
+        $result = $query->result_array();
+        return $result;
+    }
+    
     public function getpasinap()
     {
         // $query = $this->db->query("SELECT * FROM dafinap ORDER BY nomrm ASC limit 10");
@@ -27,4 +38,6 @@ ORDER BY a.nomrm ASC LIMIT 10");
         $result = $query->result_array();
         return $result;
     }
+
+    
 }

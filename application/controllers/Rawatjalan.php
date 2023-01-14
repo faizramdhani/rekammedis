@@ -3,15 +3,39 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Rawatjalan extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('Pasien_m');
+    }
+
+    // public function listpasien()
+    // {
+    //     $this->template->load('template', 'rawatjalan/listpasien');
+    // }
 
     public function listpasien()
     {
-        $this->template->load('template', 'rawatjalan/listpasien');
+        $data['paslama'] = $this->Pasien_m->getpaslama();
+
+        $this->template->load('template', 'pasien/paslama', $data);
+
+        // $this->template->load('template', 'rawatjalan/listpasien', $data);
     }
+
+    public function pasigd()
+    {
+        // $data['data'] = $this->Pasien_m-->getpasien()->result_array();
+        $this->template->load('template', 'pasien/pasigd');
+    }
+
 
     public function rawatjalanDokter()
     {
+
+        $data['paslama'] = $this->Pasien_m->getpaslamadetail();
         $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/detail');
+
     }
 
     public function rawatjalanCPPT()

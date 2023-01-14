@@ -8,7 +8,7 @@
             <div class="col">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Pasien Rawat Inap</h4>
+                        <h4>Data Pasien Rawat Inap</h4>
                     </div>
 
                     <div class="card-body">
@@ -17,9 +17,8 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-
                                         <th>Tanggal Masuk</th>
-                                        <th>Jam Masuk</th>
+
                                         <th>No.Rawat Inap</th>
                                         <th>No.Rawat Jalan</th>
                                         <th>No MRM</th>
@@ -27,16 +26,13 @@
                                         <th>Alamat</th>
                                         <th>Asal</th>
 
-                                        <th>Nama Dokter</th>
+                                        <!-- <th>Nama Dokter</th> -->
 
 
-                                        <th>Kode Kelas</th>
-                                        <th>Nama Kamar</th>
-                                        <th>No Bed</th>
+                                        <th>Kelas</th>
+                                        <th>Kamar</th>
 
-
-
-                                        <th>Nama Konsumen</th>
+                                        <th>Konsumen</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -48,7 +44,7 @@
                                             <td><?= $no++ ?></td>
 
                                             <td><?= $row['tglmasuk'] ?></td>
-                                            <td><?= $row['jam'] ?></td>
+
                                             <td><?= $row['nori'] ?></td>
                                             <td><?= $row['norj'] ?></td>
                                             <td><?= $row['nomrm'] ?></td>
@@ -56,20 +52,18 @@
                                             <td><?= $row['alamat'] ?></td>
                                             <td><?= $row['asal'] ?></td>
 
-                                            <td><?= $row['nmdokter'] ?></td>
+                                            <!-- <td><?= $row['nmdokter'] ?></td> -->
 
                                             <td><?= $row['kdkelas'] ?></td>
                                             <td><?= $row['nmkamar'] ?></td>
-                                            <td><?= $row['nobed'] ?></td>
-
-
 
                                             <td><?= $row['nmkons'] ?></td>
                                             <td>
                                                 <div class="row">
                                                     <div class="buttons">
-                                                        <a href="" class="btn btn-icon btn-sm btn-warning"><i class="far fa-edit"></i></a>
-                                                        <a href="<?= base_url('rawatjalan/rawatjalanDokter') ?>" class="btn btn-icon btn-sm btn-primary"><i class="far fa-eye"></i></a>
+                                                        <a href="<?= site_url('') ?>" class="btn btn-icon btn-primary" title="Edit"><i class="far fa-edit"></i></a>
+                                                        <a href="<?= site_url('rawatinap/rawatinapDokter') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
+                                                        <a href="#" title="Tambah" class="btn btn-icon btn-warning"><i class="far fa-file"></i></a>
                                                     </div>
                                                 </div>
                                             </td>

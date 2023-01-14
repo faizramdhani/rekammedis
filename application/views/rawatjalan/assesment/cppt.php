@@ -1,6 +1,6 @@
 <section class="section">
     <div class="section-header">
-        <h1>CPPT</h1>
+        <h5>CPPT</h5>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
             <div class="breadcrumb-item"><a href="#">Layout</a></div>
@@ -12,29 +12,53 @@
 <section class="content">
     <div class="section-body">
         <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <table class="table table-bordered table-md table-responsive">
-                            <tr>
-                                <th>Nama Pasien</th>
-                                <th>Nomor Rawat Jalan</th>
-                                <th>Nomor MR</th>
-                                <th>Konsumen</th>
-                                <th>Umur</th>
-                                <th>Jenis Kelamin</th>
-                            </tr>
-                            <tr>
-                                <td>Irwansyah Saputra</td>
-                                <td>000000</td>
-                                <td>123456</td>
-                                <td>BPJS</td>
-                                <td>12 TAHUN</td>
-                                <td>Laki - laki</td>
-                            </tr>
-                            <tr>
-                        </table>
+            <div class="col-12 col-md-6 col-lg-5">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h4>Identitas Pasien</h4>
                     </div>
+                    <table class="table table-md">
+                        <tr>
+                            <th>Nama </th>
+                            <th>No. RM</th>
+                            <th>No. RJ</th>
+                            <th>Jenis Kelamin</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-7">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h4>Pasien</h4>
+                    </div>
+                    <table class="table table-md">
+                        <tr>
+                            <th>NIK</th>
+                            <th>Umur</th>
+                            <th>No. Asuransi </th>
+                            <th>Kode Rumah Sakit</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                    </table>
+
                 </div>
             </div>
         </div>

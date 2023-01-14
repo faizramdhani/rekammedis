@@ -45,7 +45,7 @@
                                          <td>
                                              <div class="badge badge-info"><?= $data->nmlevel_erm ?></div>
                                          </td>
-                                         <td>Unit</td>
+                                         <td><?= $data->nmunit_erm ?></td>
 
                                          <td>
                                              <form method="POST" action="">
@@ -90,7 +90,7 @@
                      <div class="form-group row">
                          <label class="col-sm-3 col-form-label">Username</label>
                          <div class="col-sm-9">
-                             <input type="text" class="form-control" name="nama" required="" disabled>
+                             <input type="text" class="form-control" name="nama" required="" readonly>
                              <div class="invalid-feedback">
                                  Mohon data diisi!
                              </div>
@@ -106,7 +106,7 @@
                      <div class="form-group row">
                          <label class="col-sm-3 col-form-label">Nama</label>
                          <div class="col-sm-9">
-                             <input type="password" name="password" class="form-control" required="" disabled>
+                             <input type="password" name="password" class="form-control" required="" readonly>
                          </div>
                      </div>
                      <div class="form-group">

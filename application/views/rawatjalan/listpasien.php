@@ -28,7 +28,7 @@
                                                     <div class="table-responsive">
                                                         <p>Poliklinik :</p>
                                                         <select name="poli" id="poli" class="form-control" onchange="inputpoli()">
-                                                            <option value="">---Pilih---</option>
+                                                            <option value="">Pilih</option>
                                                             <?php foreach ($poli as $key => $value) { ?>
                                                                 <option value="<?php echo $value['kode1']; ?>" class="option"><?php echo $value['nama']; ?></option>
                                                             <?php } ?>
@@ -75,16 +75,65 @@
                                             <div class="table-responsive">
                                                 <table class="table table-bordered table-md">
                                                     <tr>
-                                                        <th>Nomor</th>
+                                                        <th>No</th>
+                                                        <th>Tanggal Masuk</th>
+                                                        <th>Jam Masuk</th>
+                                                        <th>No.Rawat Inap</th>
+                                                        <th>No.Rawat Jalan</th>
+                                                        <th>No MRM</th>
                                                         <th>Nama Pasien</th>
-                                                        <th>Nomor Rawat Jalan</th>
-                                                        <th>Nomor MR</th>
-                                                        <th>Konsumen</th>
-                                                        <th>Umur</th>
-                                                        <th>Jenis Kelamin</th>
-                                                        <th>Tindakan</th>
+                                                        <th>Alamat</th>
+                                                        <th>Asal</th>
+
+                                                        <th>Nama Dokter</th>
+
+
+                                                        <th>Kode Kelas</th>
+                                                        <th>Nama Kamar</th>
+                                                        <th>No Bed</th>
+
+
+                                                        <th>Nama Konsumen</th>
+                                                        <th>Action</th>
                                                     </tr>
-                                                    <tr>
+
+
+                                                    <tbody>
+                                                        <?php $no = 1;
+                                                        foreach ($getpaslama as $row) : ?>
+                                                            <tr>
+                                                                <td><?= $no++ ?></td>
+
+                                                                <td><?= $row['tglmasuk'] ?></td>
+                                                                <td><?= $row['jam'] ?></td>
+                                                                <td><?= $row['nori'] ?></td>
+                                                                <td><?= $row['norj'] ?></td>
+                                                                <td><?= $row['nomrm'] ?></td>
+                                                                <td><?= $row['nmpasien'] ?></td>
+                                                                <td><?= $row['alamat'] ?></td>
+                                                                <td><?= $row['asal'] ?></td>
+
+                                                                <td><?= $row['nmdokter'] ?></td>
+
+                                                                <td><?= $row['kdkelas'] ?></td>
+                                                                <td><?= $row['nmkamar'] ?></td>
+                                                                <td><?= $row['nobed'] ?></td>
+                                                                <td><?= $row['nmkons'] ?></td>
+                                                                <td>
+                                                                    <div class="row">
+                                                                        <div class="buttons">
+                                                                            <a href="" class="btn btn-icon btn-sm btn-warning"><i class="far fa-edit"></i></a>
+                                                                            <a href="<?= base_url('rawatjalan/rawatjalanDokter') ?>" class="btn btn-icon btn-sm btn-primary"><i class="far fa-eye"></i></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+
+
+                                                            <?php endforeach ?>
+
+                                                    </tbody>
+
+                                                    <!-- <tr>
                                                         <td>1</td>
                                                         <td>Irwansyah Saputra</td>
                                                         <td>000000</td>
@@ -101,9 +150,10 @@
                                                                 </div>
                                                             </div>
                                                         </td>
+                                                    </tr> -->
 
-                                                    </tr>
-                                                    <tr>
+
+                                                    <!-- <tr>
                                                         <td>2</td>
                                                         <td>Hasan Basri</td>
                                                         <td>000000</td>
@@ -121,6 +171,7 @@
                                                             </div>
                                                         </td>
                                                     </tr>
+
                                                     <tr>
                                                         <td>3</td>
                                                         <td>Kusnadi</td>
@@ -156,12 +207,12 @@
                                                                 </div>
                                                             </div>
                                                         </td>
-                                                    </tr>
+                                                    </tr> -->
                                                 </table>
                                             </div>
                                         </div>
 
-                                        <div class="card-footer text-right">
+                                        <!-- <div class="card-footer text-right">
                                             <nav class="d-inline-block">
                                                 <ul class="pagination mb-0">
                                                     <li class="page-item disabled">
@@ -177,7 +228,8 @@
                                                     </li>
                                                 </ul>
                                             </nav>
-                                        </div>
+                                        </div> -->
+
                                     </div>
                                 </div>
                             </div>

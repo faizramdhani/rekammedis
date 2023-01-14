@@ -48,7 +48,7 @@
                     <div class="card-body">
                         <ul class="nav nav-pills" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-tab="mygroup-tab" href="#tab1">Pengkajian</a>
+                                <a class="nav-link active" data-tab="mygroup-tab" href="#tab1">Pengkajian Awal</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link " data-tab="mygroup-tab" href="#tab2">Survei Primer</a>
@@ -65,9 +65,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div class="card-header">
-                                    <h5 class="col"><b>PENGKAJIAN AWAL GAWAT DARURAT</b></h5>
-                                </div>
+
                                 <div class="card-body">
                                     <div class="card-body col-14">
 
@@ -448,96 +446,304 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div class="card-header">
-                                    <h5 class="col"><b>SURVEI PRIMER</b></h5>
-                                </div>
+
                                 <div class="card-body">
-                                    <div class="card-body col-14">
+                                    <div class="card-body col-12">
 
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-md col-14">
+                                            <table class="table table-bordered table-md">
                                                 <!-- 1 -->
                                                 <tr>
-                                                    <td>Airway</td>
+                                                    <td></td>
+                                                    <td><b>
+                                                            <center>SURVEI PRIMER</center>
+                                                        </b>
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+
+
+                                                <!-- 2 -->
+                                                <tr>
                                                     <td>
+                                                        <center>Airway</center>
+                                                    </td>
+                                                    <td>
+                                                        <center>Breathing</center>
+                                                    </td>
+                                                    <td>
+                                                        <center>Circulation</center>
+                                                    </td>
+                                                </tr>
+
+                                                <!-- 3 -->
+                                                <tr>
+                                                    <td>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Paten</center>
+                                                            </label>
+                                                        </div>
                                                         <div class="form-check form-check-inline">
                                                             <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                                                             <label class="form-check-label" for="inlineCheckbox2">
-                                                                Ya: Dokter/Puskesmas/Klinik/RS
-                                                                <label>
-                                                                    <input type="text" class="form-control">
-                                                                </label>
+                                                                <center>Gurgling</center>
                                                             </label>
                                                         </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Snooring</center>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option3">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Stridor</center>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+
+
+                                                    <td>
+                                                        <label>RR :</label>
+                                                        <label class="col-2">
+                                                            <input type="text" class="form-control">
+                                                        </label>
+                                                        <label>x/menit</label>
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+
+                                                <!-- 4 -->
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Warna Kulit :
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>
+                                                                    Normal
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Cyanosis
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Pola Nafas :
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>
+                                                                    Normal
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Kussmaul
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Cheyne Stoke
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Gasping
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Kerja Nafas :
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>
+                                                                    Normal
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Takipnea
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Dyspnea
+                                                                </center>
+                                                            </label>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Otot bantu nafas :
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Suara Nafas :
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>
+                                                                    Vesikuler
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Wheezing
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Ronchi
+                                                                </center>
+                                                            </label>
+                                                        </div>
+
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Stridor
+                                                                </center>
+                                                            </label>
+                                                        </div>
+
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Jejas :
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>
+                                                                    Ya
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Tidak
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Deviasi Trakhea :
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>
+                                                                    Ya
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Tidak
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Pengembangan dada :
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>
+                                                                    Simetris
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Tidak
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td></td>
+                                                    <td>Distensi vena jugularis :
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>
+                                                                    Ya
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">
+                                                                <center>Tidak
+                                                                </center>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <label>SpO2</label>
+                                                        <label class="col-2">
+                                                            <input type="text" class="form-control">
+                                                        </label>
+                                                        <label>%</label>
+                                                    </td>
+
+                                                </tr>
+
                                         </div>
-                                        </td>
 
-                                        </tr>
 
-                                        <!-- 2 -->
-                                        <tr>
-                                            <td>TRIASE</td>
-                                            <td>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">
-                                                        <center>Merah</center>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">
-                                                        <center>Kuning</center>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">
-                                                        <center>Hijau</center>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">
-                                                        <center>Hitam</center>
-                                                    </label>
-                                                </div>
-
-                                            </td>
-                                        </tr>
-
-                                        <!-- 3 -->
-                                        <tr>
-                                            <td>Keluhan Utama</td>
-                                            <td>
-
-                                            </td>
-                                        </tr>
-
-                                        <!-- 4 -->
-                                        <tr>
-                                            <td>Keadaan Umum</td>
-                                            <td>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">
-                                                        <center>Gelisah/koma</center>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">
-                                                        <center>Lemah/kesakitan</center>
-                                                    </label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">
-                                                        <center>Cukup</center>
-                                                    </label>
-                                                </div>
-                                            </td>
-                                        </tr>
 
                                         <!-- 5 -->
                                         <tr>

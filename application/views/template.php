@@ -67,7 +67,7 @@
                     </div>
                     <ul class="sidebar-menu">
                         <li class="menu-header">Dashboard</li>
-                        <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="far fa-square"></i> <span>Dashboard</span></a></li>
+                        <li><a class="nav-link" href="<?= site_url('dashboard/') ?>"><i class="far fa-square"></i> <span>Dashboard</span></a></li>
 
                         <li class="menu-header">Pelayanan Medis</li>
                         <li><a class="nav-link" href="<?= site_url('rawatjalan/listpasien') ?>"><i class="fas fa-stethoscope"></i> <span>Rawat Jalan</span></a></li>
@@ -76,23 +76,21 @@
 
                         <!-- Level dokter 2 -->
                         <?php if ($this->session->userdata('level_erm') == 2) { ?>
-                            <ul class="sidebar-menu">
+                            <!-- <ul class="sidebar-menu">
                                 <li class="menu-header">DOKUMEN</li>
                                 <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanDokter') ?>"><i class="fas fa-stethoscope"></i> <span>Rawat Jalan</span></a></li>
-                                <!-- <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>DRM 02</span></a></li> -->
+                              <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>DRM 02</span></a></li> 
 
-                            </ul>
+                            </ul> -->
                         <?php } ?>
 
                         <!-- Level 3 perawat -->
                         <?php if ($this->session->userdata('level_erm') == 3) { ?>
-                            <ul class="sidebar-menu">
-
+                            <!-- <ul class="sidebar-menu">
                                 <li class="menu-header">DOKUMEN</li>
                                 <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>DRM 01</span></a></li>
-                                <!-- <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>DRM 02</span></a></li> -->
-
-                            </ul>
+                                <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>DRM 02</span></a></li>
+                            </ul> -->
                         <?php } ?>
 
                         <!-- level admin 1 -->

@@ -18,19 +18,34 @@
                         <table class="table table-bordered table-md table-responsive">
                             <tr>
                                 <th>Nama Pasien</th>
-                                <th>Nomor Rawat Jalan</th>
-                                <th>Nomor MR</th>
+                                <th>Jenis Kelamin</th>
                                 <th>Konsumen</th>
                                 <th>Umur</th>
-                                <th>Jenis Kelamin</th>
+                                <th>NIK</th>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td>000000</td>
-                                <td>123456</td>
-                                <td>BPJS</td>
-                                <td>12 TAHUN</td>
-                                <td>Laki - laki</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                        </table>
+                        <table class="table table-bordered table-md table-responsive">
+                            <tr>
+                                <th>No Rawat Jalan</th>
+                                <th>Nomor Rawat Inap</th>
+                                <th>Nomor Rekam Medis</th>
+                                <th>Kode Rumah Sakit</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
                             </tr>
                             <tr>
                         </table>
@@ -46,7 +61,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <ul class="nav nav-pills" id="myTab" role="tablist">
+                        <ul class="nav nav-pills" id="myTab" role="tablist ">
                             <li class="nav-item">
                                 <a class="nav-link active" data-tab="mygroup-tab" href="#tab1">Profil Ringkas Medis Rawat Jalan</a>
                             </li>
@@ -60,6 +75,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- tab 1 -->
             <div id="tab1" class="col-12 active" data-tab-group="mygroup-tab">
                 <div class="card">
@@ -152,7 +168,7 @@
                             <div class="form-group row">
                                 <div class="col-md-6"></div>
                                 <div class="col-lg-4 col-md-6 text-center">
-                                    <button class="btn btn-icon icon-center btn-primary" href="#tab1">Selanjutnya <i class="fas fa-arrow-right"></i></button>
+                                    <a data-tab="mygroup-tab" href="#tab2">Riwayat</a>
                                 </div>
                             </div>
                             <!-- <div class="form-group row">
@@ -205,7 +221,6 @@
 
                                     <label>Imunisasi</label>
                                     <input type="text" class="form-control">
-
 
                                 </div>
                             </div>

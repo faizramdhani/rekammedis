@@ -7,19 +7,21 @@ class Pasien extends CI_Controller
     {
         parent::__construct();
         $this->load->model('Pasien_m');
-        
     }
 
     public function paslama()
     {
         $data['paslama'] = $this->Pasien_m->getpaslama();
 
-        $this->template->load('template', 'pasien/paslama', $data);
+        // $this->template->load('template', 'pasien/paslama', $data);
+
+        $this->template->load('template', 'rawatjalan/listpasien', $data);
     }
     public function pasinap()
     {
-        $data['pasinap'] = $this->Pasien_m->getpasinap();  
-        $this->template->load('template', 'pasien/pasinap', $data);
+        $data['pasinap'] = $this->Pasien_m->getpasinap();
+        // $this->template->load('template', 'pasien/pasinap', $data);
+        $this->template->load('template', 'rawatinap/listpasien', $data);
     }
     public function pasigd()
     {

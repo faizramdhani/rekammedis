@@ -104,6 +104,10 @@
                             <li><a class="nav-link" href="<?= site_url('rawatinap/preadmisi') ?>"><i class="fas fa-user-injured"></i> <span>Asesmen Pre Admisi</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatinap/generalconsent') ?>"><i class="fas fa-user-injured"></i> <span>General Consent</span></a></li>
 
+                            <li><a class="nav-link" href="<?= site_url('rawatinap/consent') ?>"><i class="fas fa-user-injured"></i> <span>Consent</span></a></li>
+
+                            <li><a class="nav-link" href="<?= site_url('rawatinap/kronis') ?>"><i class="fas fa-user-injured"></i> <span>kronis</span></a></li>
+
 
                             <!-- <li class="menu-header">PENGKAJIAN AWAL MEDIS</li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/awal') ?>"><i class="fas fa-user-injured"></i> <span>Pengkajian Awal</span></a></li>
