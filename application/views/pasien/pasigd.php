@@ -8,7 +8,7 @@
             <div class="col">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Pasien IGD</h4>
+                        <h4>Data Pasien IGD</h4>
                     </div>
 
                     <div class="card-body">

@@ -32,10 +32,10 @@ class Rawatjalan extends CI_Controller
 
     public function rawatjalanDokter()
     {
+        $this->form_validation->set_rules('1', 'keterangan', 'required');
 
-        $data['paslama'] = $this->Pasien_m->getpaslamadetail();
+        // $data['paslama'] = $this->Pasien_m->getpaslamadetail();
         $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/detail');
-
     }
 
     public function rawatjalanCPPT()

@@ -10,7 +10,6 @@
 </section>
 
 <section class="content">
-
     <div class="row">
         <div class="col-12 col-md-6 col-lg-5">
             <div class="card card-primary">
@@ -24,39 +23,8 @@
                         <th>No. RJ</th>
                         <th>Jenis Kelamin</th>
                     </tr>
+                    <th>1</th>
 
-                    <!-- <tbody>
-                        <?php $no = 1;
-                        foreach ($pasrj as $row) : ?>
-                            <tr>
-                                <td><?= $no++ ?></td>
-                                <td><?= $row['nmpasien'] ?></td>
-                                <td><?= $row['nomrm'] ?></td>
-                                <td><?= $row['alamat'] ?></td>
-
-                             
-                                <td><?= $row['nosep'] ?></td>
-                                <td><?= $row['norj'] ?></td>
-
-
-                                <td><?= $row['nmdokter'] ?></td>
-                                <td><?= $row['nmkons'] ?></td>
-
-
-                                <td>
-                                    <div class="row">
-                                        <div class="buttons">
-                                            <a href="" class="btn btn-icon btn-sm btn-warning"><i class="far fa-edit"></i></a>
-                                            <a href="<?= base_url('rawatjalan/rawatjalanDokter') ?>" class="btn btn-icon btn-sm btn-primary"><i class="far fa-eye"></i></a>
-                                        </div>
-                                    </div>
-                                </td>
-
-
-                            <?php endforeach ?>
-
-
-                    </tbody> -->
                 </table>
 
             </div>
@@ -111,101 +79,103 @@
                             <div class="col-12 col-md-6 col-lg-6">
                                 <div class="card-body">
                                     <!-- tabel 1 -->
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered table-md">
-                                            <tr>
-                                                <th>
-                                                    <center>NO</center>
-                                                </th>
-                                                <th>
-                                                    <center>RIWAYAT PENYAKIT KRONIS</center>
-                                                </th>
-                                            </tr>
+                                    <div class="form-group">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-md">
+                                                <tr>
+                                                    <th>
+                                                        <center>NO</center>
+                                                    </th>
+                                                    <th>
+                                                        <center>RIWAYAT PENYAKIT KRONIS</center>
+                                                    </th>
+                                                </tr>
 
-                                            <tr>
-                                                <td>
-                                                    <center>1</center>
-                                                </td>
-                                                <td><input type="text" class="form-control"></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <center>2</center>
-                                                </td>
-                                                <td><input type="text" class="form-control"></td>
-
-
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <center>3</center>
-                                                </td>
-                                                <td><input type="text" class="form-control"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <center>4</center>
-                                                </td>
-                                                <td><input type="text" class="form-control"></td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <center>5
-                                                </td>
-                                                <td><input type="text" class="form-control"></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-
-                                    <!-- tabel 2 -->
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered table-md">
-                                            <tr>
-                                                <th>
-                                                    <center>NO</center>
-                                                </th>
-                                                <th>
-                                                    <center>ALERGI</center>
-                                                </th>
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <center>1</center>
-                                                </td>
-                                                <td><input type="text" class="form-control"></td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <center>2</center>
-                                                </td>
-                                                <td><input type="text" class="form-control"></td>
+                                                <tr>
+                                                    <td>
+                                                        <center>1</center>
+                                                    </td>
+                                                    <td><input type="text" name="1" class="form-control"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <center>2</center>
+                                                    </td>
+                                                    <td><input type="text" class="form-control"></td>
 
 
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <center>3</center>
-                                                </td>
-                                                <td><input type="text" class="form-control"></td>
-                                            </tr>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <center>3</center>
+                                                    </td>
+                                                    <td><input type="text" class="form-control"></td>
+                                                </tr>
 
-                                            <tr>
-                                                <td>
-                                                    <center>4</center>
-                                                </td>
-                                                <td><input type="text" class="form-control"></td>
-                                            </tr>
+                                                <tr>
+                                                    <td>
+                                                        <center>4</center>
+                                                    </td>
+                                                    <td><input type="text" class="form-control"></td>
+                                                </tr>
 
-                                            <tr>
-                                                <td>
-                                                    <center>5
-                                                </td>
-                                                <td><input type="text" class="form-control"></td>
-                                            </tr>
-                                        </table>
+                                                <tr>
+                                                    <td>
+                                                        <center>5
+                                                    </td>
+                                                    <td><input type="text" class="form-control"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+
+                                        <!-- tabel 2 -->
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-md">
+                                                <tr>
+                                                    <th>
+                                                        <center>NO</center>
+                                                    </th>
+                                                    <th>
+                                                        <center>ALERGI</center>
+                                                    </th>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <center>1</center>
+                                                    </td>
+                                                    <td><input type="text" class="form-control"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <center>2</center>
+                                                    </td>
+                                                    <td><input type="text" class="form-control"></td>
+
+
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <center>3</center>
+                                                    </td>
+                                                    <td><input type="text" class="form-control"></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <center>4</center>
+                                                    </td>
+                                                    <td><input type="text" class="form-control"></td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <center>5
+                                                    </td>
+                                                    <td><input type="text" class="form-control"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -432,6 +402,6 @@
             </div>
         </div>
     </div>
-    </div>
+
 
 </section>

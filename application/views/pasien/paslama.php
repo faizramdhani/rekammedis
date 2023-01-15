@@ -27,7 +27,7 @@
                                             <form class="form-horizontal style-form" id="pencarianantrian" method="post">
 
                                                 <div class="table-responsive">
-                                                    <p>Poliklinik :</p>
+                                                    <p>Pilih Poli :</p>
                                                     <select name="poli" id="poli" class="form-control" onchange="inputpoli()">
                                                         <option value="">---Pilih---</option>
                                                         <?php foreach ($poli as $key => $value) { ?>
@@ -45,7 +45,7 @@
                                                 </div>
                                                 <br>
                                                 <div class="table-responsive">
-                                                    <button onclick="cariantrianpoli()" type="submit" class="btn btn-primary"><i class="fa fa-search"> Cari Pasien</i></button>
+                                                    <button onclick="cariantrianpoli()" type="submit" class="btn btn-primary"><i class="fa fa-search"><label>Cari Pasien</label></i></button>
                                                 </div>
                                             </form>
                                         </div>
@@ -61,7 +61,7 @@
                                         <tr>
                                             <th>No</th>
                                             <th>Nama Pasien</th>
-                                            <th>Tanggal Masuk</th>
+                                            
                                             <th>No MRM</th>
 
                                             <th>Alamat</th>
@@ -84,7 +84,6 @@
                                             <tr>
                                                 <td><?= $no++ ?></td>
                                                 <td><?= $row['nmpasien'] ?></td>
-                                                <td><?= $row['tanggal'] ?></td>
                                                 <td><?= $row['nomrm'] ?></td>
                                                 <td><?= $row['alamat'] ?></td>
 
@@ -120,4 +119,5 @@
                 </div>
             </div>
         </div>
+    </div>
 </section>
