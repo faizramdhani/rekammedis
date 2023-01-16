@@ -15,3 +15,7 @@ function check_not_login()
         redirect('auth/login');
     }
 }
+function dd($param){
+	var_dump($param);
+	die;
+}

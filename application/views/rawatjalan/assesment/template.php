@@ -111,17 +111,17 @@
 
                             <li class="menu-header">PENGKAJIAN AWAL KEPERAWATAN</li>
 
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="far fa-square"></i> <span>Pengkajian Awal</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanCPPT') ?>"><i class="far fa-square"></i> <span>CPPT</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>Pengkajian Awal</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
 
 
                             <li class="menu-header">ASSESMENT AWAL MEDIS</li>
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/awal') ?>"><i class="far fa-square"></i> <span>Pengkajian Awal</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/awal') ?>"><i class="fas fa-user-injured"></i> <span>Pengkajian Awal</span></a></li>
 
 
                             <!-- poli umumm -->
                             <li class="dropdown">
-                                <a class="nav-link has-dropdown"><i class="fas fa-stethoscope"></i> <span>Poli Umum</span></a>
+                                <a class="nav-link has-dropdown"><i class="far fa-address-book"></i> <span>Poli Umum</span></a>
                                 <ul class="dropdown-menu">
                                     <!-- <li><a class="nav-link" href="<?= site_url('rawatjalan/penyakitdalam') ?>"><i class="fas fa-user-injured"></i> <span>Penyakit Dalam</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/anak') ?>"><i class="fas fa-user-injured"></i> <span>Anak</span></a></li>
@@ -151,7 +151,7 @@
 
                             <!-- poli spesialis -->
                             <li class="dropdown">
-                                <a class="nav-link has-dropdown"><i class="fas fa-stethoscope"></i> <span>Poli Spesialis</span></a>
+                                <a class="nav-link has-dropdown"><i class="far fa-address-book"></i> <span>Poli Spesialis</span></a>
                                 <ul class="dropdown-menu">
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/penyakitdalam') ?>"><i class="fas fa-user-injured"></i> <span>Penyakit Dalam</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/anak') ?>"><i class="fas fa-user-injured"></i> <span>Anak</span></a></li>

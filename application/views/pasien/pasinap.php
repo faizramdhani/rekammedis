@@ -1,6 +1,6 @@
 <section class="section">
     <div class="section-header">
-        <h5>Dokter Rawat Inap</h5>
+        <h1>Pasien</h1>
     </div>
 
     <div class="section-body">
@@ -17,12 +17,17 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Nama Pasien</th>
-                                        <th>Alamat</th>
-                                        <th>Asal</th>
+                                        <th>Tanggal Masuk</th>
+
                                         <th>No.Rawat Inap</th>
                                         <th>No.Rawat Jalan</th>
                                         <th>No MRM</th>
+                                        <th>Nama Pasien</th>
+                                        <th>Alamat</th>
+                                        <th>Asal</th>
+
+                                        <!-- <th>Nama Dokter</th> -->
+
 
                                         <th>Kelas</th>
                                         <th>Kamar</th>
@@ -37,13 +42,15 @@
                                     foreach ($pasinap as $row) : ?>
                                         <tr>
                                             <td><?= $no++ ?></td>
-                                            <td><?= $row['nmpasien'] ?></td>
-                                            <td><?= $row['alamat'] ?></td>
-                                            <td><?= $row['asal'] ?></td>
+
+                                            <td><?= $row['tglmasuk'] ?></td>
+
                                             <td><?= $row['nori'] ?></td>
                                             <td><?= $row['norj'] ?></td>
                                             <td><?= $row['nomrm'] ?></td>
-
+                                            <td><?= $row['nmpasien'] ?></td>
+                                            <td><?= $row['alamat'] ?></td>
+                                            <td><?= $row['asal'] ?></td>
 
                                             <!-- <td><?= $row['nmdokter'] ?></td> -->
 

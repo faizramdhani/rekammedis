@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class igd extends CI_Controller
+class Igd extends CI_Controller
 {
     public function listpasien()
     {
