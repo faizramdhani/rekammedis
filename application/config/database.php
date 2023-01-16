@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => 'root',
+	'hostname' => '10.88.70.71',
+	'username' => 'itnmu',
+	'password' => 'ItNmu@2019',
 	'database' => 'ptnmuerm',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
@@ -93,4 +93,93 @@ $db['default'] = array(
 	'stricton' => FALSE,
 	'failover' => array(),
 	'save_queries' => TRUE
+);
+
+$db['dbrst'] = array(
+    'dsn'      => '',
+    'hostname' => '10.18.10.199',
+    'username' => 'itnmu',
+    'password' => 'itnmu',
+    'database' => 'ptnmusimrs_rst',
+    'dbdriver' => 'mysqli',
+    'dbprefix' => '',
+    'pconnect' => FALSE,
+    'db_debug' => (ENVIRONMENT !== 'production'),
+    'cache_on' => FALSE,
+    'cachedir' => '',
+    'char_set' => 'utf8',
+    'dbcollat' => 'utf8_general_ci',
+    'swap_pre' => '',
+    'encrypt'  => FALSE,
+    'compress' => FALSE,
+    'stricton' => FALSE,
+    'failover' => array(),
+    'save_queries' => TRUE
+);
+
+$db['dbrsg'] = array(
+    'dsn'      => '',
+    'hostname' => '10.18.10.199',
+    'username' => 'itnmu',
+    'password' => 'itnmu',
+    'database' => 'ptnmusimrs_rst',
+    'dbdriver' => 'mysqli',
+    'dbprefix' => '',
+    'pconnect' => FALSE,
+    'db_debug' => (ENVIRONMENT !== 'production'),
+    'cache_on' => FALSE,
+    'cachedir' => '',
+    'char_set' => 'utf8',
+    'dbcollat' => 'utf8_general_ci',
+    'swap_pre' => '',
+    'encrypt'  => FALSE,
+    'compress' => FALSE,
+    'stricton' => FALSE,
+    'failover' => array(),
+    'save_queries' => TRUE
+);
+
+$db['dbrsp'] = array(
+    'dsn'      => '',
+    'hostname' => '10.18.10.199',
+    'username' => 'itnmu',
+    'password' => 'itnmu',
+    'database' => 'ptnmusimrs_rst',
+    'dbdriver' => 'mysqli',
+    'dbprefix' => '',
+    'pconnect' => FALSE,
+    'db_debug' => (ENVIRONMENT !== 'production'),
+    'cache_on' => FALSE,
+    'cachedir' => '',
+    'char_set' => 'utf8',
+    'dbcollat' => 'utf8_general_ci',
+    'swap_pre' => '',
+    'encrypt'  => FALSE,
+    'compress' => FALSE,
+    'stricton' => FALSE,
+    'failover' => array(),
+    'save_queries' => TRUE
+);
+
+
+$db['dbrsmu'] = array(
+    'dsn'      => '',
+    'hostname' => '10.18.10.199',
+    'username' => 'itnmu',
+    'password' => 'itnmu',
+    'database' => 'ptnmusimrs_rst',
+    'dbdriver' => 'mysqli',
+    'dbprefix' => '',
+    'pconnect' => FALSE,
+    'db_debug' => (ENVIRONMENT !== 'production'),
+    'cache_on' => FALSE,
+    'cachedir' => '',
+    'char_set' => 'utf8',
+    'dbcollat' => 'utf8_general_ci',
+    'swap_pre' => '',
+    'encrypt'  => FALSE,
+    'compress' => FALSE,
+    'stricton' => FALSE,
+    'failover' => array(),
+    'save_queries' => TRUE
 );

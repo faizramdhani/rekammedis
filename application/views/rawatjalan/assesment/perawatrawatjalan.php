@@ -676,7 +676,7 @@
                     </div>
                     <div class="form-group">
                         <div class="row gutters-sm">
-                            <div class="col-6 col-sm-4">
+                            <div class="col-2 col-sm-2">
                                 <label class="imagecheck mb-4">
                                     <input name="imagecheck" type="checkbox" value="1" class="imagecheck-input" />
                                     <figure class="imagecheck-figure">
@@ -685,7 +685,7 @@
                                     <p style="text-align: center;">Tidak Nyeri</p>
                                 </label>
                             </div>
-                            <div class="col-6 col-sm-4">
+                            <div class="col-2 col-sm-2">
                                 <label class="imagecheck mb-4">
                                     <input name="imagecheck" type="checkbox" value="2" class="imagecheck-input" checked />
                                     <figure class="imagecheck-figure">
@@ -694,7 +694,7 @@
                                     <p style="text-align: center;">Nyeri Ringan</p>
                                 </label>
                             </div>
-                            <div class="col-6 col-sm-4">
+                            <div class="col-2 col-sm-2">
                                 <label class="imagecheck mb-4">
                                     <input name="imagecheck" type="checkbox" value="3" class="imagecheck-input" />
                                     <figure class="imagecheck-figure">
@@ -703,7 +703,7 @@
                                     <p style="text-align: center;">Nyeri yang Mengganggu</p>
                                 </label>
                             </div>
-                            <div class="col-6 col-sm-4">
+                            <div class="col-2 col-sm-2">
                                 <label class="imagecheck mb-4">
                                     <input name="imagecheck" type="checkbox" value="4" class="imagecheck-input" checked />
                                     <figure class="imagecheck-figure">
@@ -712,7 +712,7 @@
                                     <p style="text-align: center;">Nyeri yang Menyusahkan</p>
                                 </label>
                             </div>
-                            <div class="col-6 col-sm-4">
+                            <div class="col-2 col-sm-2">
                                 <label class="imagecheck mb-4">
                                     <input name="imagecheck" type="checkbox" value="5" class="imagecheck-input" />
                                     <figure class="imagecheck-figure">
@@ -721,7 +721,7 @@
                                     <p style="text-align: center;">Nyeri Hebat</p>
                                 </label>
                             </div>
-                            <div class="col-6 col-sm-4">
+                            <div class="col-2 col-sm-2">
                                 <label class="imagecheck mb-4">
                                     <input name="imagecheck" type="checkbox" value="6" class="imagecheck-input" />
                                     <figure class="imagecheck-figure">
