@@ -12,15 +12,14 @@ class Pasien extends CI_Controller
     public function paslama()
     {
         $data['paslama'] = $this->Pasien_m->getpaslama();
-        // $this->template->load('template', 'pasien/paslama', $data);
-
-        $this->template->load('template', 'rawatjalan/listpasien', $data);
+        $data['dokter'] = $this->Pasien_m->getdokter();
+        $this->template->load('template', 'pasien/paslama', $data);
     }
     public function pasinap()
     {
         $data['pasinap'] = $this->Pasien_m->getpasinap();
         // $this->template->load('template', 'pasien/pasinap', $data);
-        $this->template->load('template', 'rawatinap/listpasien', $data);
+        $this->template->load('template', 'pasien/pasinap', $data);
     }
     public function pasigd()
     {

@@ -11,12 +11,12 @@ class Rawatjalan extends CI_Controller
 		$this->load->model('Pasien_m');
 	}
 
-	public function listpasien()
-	{
-		$data['paslama'] = $this->Pasien_m->getpaslama();
-		$data['dokter'] = $this->Pasien_m->getdokter();
-		$this->template->load('template', 'pasien/paslama', $data);
-	}
+	// public function listpasien()
+	// {
+	// 	$data['paslama'] = $this->Pasien_m->getpaslama();
+	// 	$data['dokter'] = $this->Pasien_m->getdokter();
+	// 	$this->template->load('template', 'pasien/paslama', $data);
+	// }
 
 	public function pasigd()
 	{

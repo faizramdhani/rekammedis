@@ -65,9 +65,9 @@
                         <li class="menu-header">Dashboard</li>
                         <li><a class="nav-link" href="<?= site_url('dashboard/') ?>"><i class="far fa-square"></i> <span>Dashboard</span></a></li>
 
-                        <li class="menu-header">Pelayanan Medis</li>
-                        <li><a class="nav-link" href="<?= site_url('rawatjalan/listpasien ') ?>"><i class="fas fa-stethoscope"></i> <span>Rawat Jalan</span></a></li>
-                        <li><a class="nav-link" href="<?= site_url('rawatinap/listpasien') ?>"><i class="fas fa-bed"></i> <span>Rawat Inap</span></a></li>
+                        <li class="menu-header">Unit</li>
+                        <li><a class="nav-link" href="<?= site_url('pasien/paslama ') ?>"><i class="fas fa-stethoscope"></i> <span>Rawat Jalan</span></a></li>
+                        <li><a class="nav-link" href="<?= site_url('pasien/pasinap') ?>"><i class="fas fa-bed"></i> <span>Rawat Inap</span></a></li>
                         <li><a class="nav-link" href="<?= site_url('igd/listpasien') ?>"><i class="fas fa-stethoscope"></i> <span>IGD</span></a></li>
 
                         <!-- Level dokter 2 -->

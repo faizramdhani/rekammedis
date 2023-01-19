@@ -10,11 +10,11 @@ class Rawatinap extends CI_Controller
         $this->load->model('Pasien_m');
     }
 
-    public function listpasien()
-    {
-        $data['pasinap'] = $this->Pasien_m->getpasinap();
-        $this->template->load('template', 'pasien/pasinap', $data);
-    }
+    // public function listpasien()
+    // {
+    //     $data['pasinap'] = $this->Pasien_m->getpasinap();
+    //     $this->template->load('template', 'pasien/pasinap', $data);
+    // }
 
     public function rawatinapDokter()
     {
