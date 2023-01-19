@@ -31,8 +31,8 @@
                                        <select name="poli" id="poli" class="form-control" onchange="inputpoli()">
                                           <option value="">---Pilih---</option>
                                           <?php foreach ($poli as $key => $value) { ?>
-                                          <option value="<?php echo $value['kode1']; ?>" class="option">
-                                             <?php echo $value['nama']; ?></option>
+                                             <option value="<?php echo $value['kode1']; ?>" class="option">
+                                                <?php echo $value['nama']; ?></option>
                                           <?php } ?>
                                        </select>
                                     </div>
@@ -46,8 +46,7 @@
                                     </div>
                                     <br>
                                     <div class="table-responsive">
-                                       <button onclick="cariantrianpoli()" type="submit" class="btn btn-primary"><i
-                                             class="fa fa-search"> Cari Pasien</i></button>
+                                       <button onclick="cariantrianpoli()" type="submit" class="btn btn-primary"><i class="fa fa-search"> Cari Pasien</i></button>
                                     </div>
                                  </form>
                               </div>
@@ -63,7 +62,7 @@
                               <tr>
                                  <th>No</th>
                                  <th>Nama Pasien</th>
-                                 <th>Tanggal Masuk</th>
+
                                  <th>No MRM</th>
 
                                  <th>Alamat</th>
@@ -71,7 +70,7 @@
                                  <th>No SEP</th>
                                  <th>No Rawat Jalan</th>
 
-                                 <!-- <th>Nama Dokter</th> -->
+
                                  <th>Konsumen</th>
 
 
@@ -82,36 +81,29 @@
 
                            <tbody>
                               <?php $no = 1;
-                                        foreach ($paslama as $row) : ?>
-                              <tr>
-                                 <td><?= $no++ ?></td>
-                                 <td><?= $row['nmpasien'] ?></td>
-                                 <td><?= $row['tanggal'] ?></td>
-                                 <td><?= $row['nomrm'] ?></td>
-                                 <td><?= $row['alamat'] ?></td>
+                              foreach ($paslama as $row) : ?>
+                                 <tr>
+                                    <td><?= $no++ ?></td>
+                                    <td><?= $row['nmpasien'] ?></td>
+                                    <td><?= $row['nomrm'] ?></td>
+                                    <td><?= $row['alamat'] ?></td>
+                                    <td><?= $row['noasuransi'] ?></td>
+                                    <td><?= $row['nosep'] ?></td>
+                                    <td><?= $row['norj'] ?></td>
 
-                                 <td><?= $row['noasuransi'] ?></td>
-                                 <td><?= $row['nosep'] ?></td>
-                                 <td><?= $row['norj'] ?></td>
-
-
-                                 <!-- <td><?= $row['nmdokter'] ?></td> -->
-                                 <td><?= $row['nmkons'] ?></td>
+                                    <td><?= $row['nmkons'] ?></td>
 
 
-                                 <td>
-                                    <div class="row">
-                                       <div class="buttons">
-                                          <a href="<?= site_url('') ?>" class="btn btn-icon btn-primary" title="Edit"><i
-                                                class="far fa-edit"></i></a>
-                                          <a href="<?= site_url('rawatjalan/rawatjalanDokter/'. $row['nomrm']) ?>"
-                                             title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
-                                          <a href="#" title="Tambah" class="btn btn-icon btn-warning"><i
-                                                class="far fa-file"></i></a>
+                                    <td>
+                                       <div class="row">
+                                          <div class="buttons">
+                                             <a href="<?= site_url('') ?>" class="btn btn-icon btn-primary" title="Edit"><i class="far fa-edit"></i></a>
+                                             <a href="<?= site_url('rawatjalan/rawatjalanDokter/' . $row['nomrm']) ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
+                                             <a href="#" title="Tambah" class="btn btn-icon btn-warning"><i class="far fa-file"></i></a>
 
+                                          </div>
                                        </div>
-                                    </div>
-                                 </td>
+                                    </td>
 
                                  <?php endforeach ?>
 

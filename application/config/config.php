@@ -30,7 +30,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 //         $_SERVER['SCRIPT_NAME']
 //     );
 
-$config['base_url'] = 'http://10.88.10.38/e-rekammedis/';
+$config['base_url'] = 'http://localhost/e-rekammedis/';
 
 /*
 |--------------------------------------------------------------------------

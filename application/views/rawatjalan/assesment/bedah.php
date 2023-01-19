@@ -122,11 +122,14 @@
                 <div class="card-header">
                     <h4>PEMERIKSAAN PENUNJANG</h4>
                 </div>
-                <div class="row">
-                    <div class="card-body col-12">
-                        <div class="form-group">
-                            <textarea class="form-control"></textarea>
-                        </div>
+                <div class="card-body">
+                    <div class="section-title mt-0">Pilih</div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>Laboratorium</option>
+                            <option>Radiologi</option>
+                            <option>Obat</option>
+                        </select>
                     </div>
                 </div>
             </div>

@@ -13,29 +13,52 @@
 <section class="content">
     <div class="section-body">
         <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <table class="table table-bordered table-md table-responsive">
-                            <tr>
-                                <th>Nama Pasien</th>
-                                <th>Nomor Rawat Jalan</th>
-                                <th>Nomor MR</th>
-                                <th>Konsumen</th>
-                                <th>Umur</th>
-                                <th>Jenis Kelamin</th>
-                            </tr>
-                            <tr>
-                                <td>Irwansyah Saputra</td>
-                                <td>000000</td>
-                                <td>123456</td>
-                                <td>BPJS</td>
-                                <td>12 TAHUN</td>
-                                <td>Laki - laki</td>
-                            </tr>
-                            <tr>
-                        </table>
+            <div class="col-12 col-md-6 col-lg-5">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h4>Identitas Pasien</h4>
                     </div>
+                    <table class="table table-md">
+                        <tr>
+                            <th>Nama </th>
+                            <th>No. RM</th>
+                            <th>No. RJ</th>
+                            <th>Jenis Kelamin</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-7">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <h4>Pasien</h4>
+                    </div>
+                    <table class="table table-md">
+                        <tr>
+                            <th>NIK</th>
+                            <th>Umur</th>
+                            <th>No. Asuransi </th>
+                            <th>Kode Rumah Sakit</th>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>
+                        <tr>
+                    </table>
+
                 </div>
             </div>
         </div>
@@ -319,11 +342,14 @@
                 <div class="card-header">
                     <h4>PEMERIKSAAN PENUNJANG</h4>
                 </div>
-                <div class="row">
-                    <div class="card-body col-12">
-                        <div class="form-group">
-                            <textarea class="form-control"></textarea>
-                        </div>
+                <div class="card-body">
+                    <div class="section-title mt-0">Pilih</div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>Laboratorium</option>
+                            <option>Radiologi</option>
+                            <option>Obat</option>
+                        </select>
                     </div>
                 </div>
             </div>
