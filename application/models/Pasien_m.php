@@ -18,13 +18,27 @@ class Pasien_m extends CI_Model
         return $result;
     }
 
+    public function getdokter(){
+
+        $query = $this->db->query("SELECT nmdokter, nmahli FROM mtdokter where stsp='p'");
+
+        $result = $query->result();
+        return $result;
+        // return $query->result();
+    }
+
     public function getpaslamadetail($noRM)
     {
-        $query = $this->db->query("SELECT a.tanggal, a.nomrm, a.nmpasien, b.nmdokter, a.alamat, a.noasuransi, a.nosep, a.norj, a.nmkons, a.nik
-        FROM paslama a, mtdokter b
-        WHERE b.kddokter=a.kddokter AND a.nomrm='$noRM'");
+        // $query = $this->db->query("SELECT a.tanggal, a.nomrm, a.nmpasien, b.nmdokter, a.alamat, a.noasuransi, a.nosep, a.norj, a.nmkons, a.nik
+        // FROM paslama a, mtdokter b
+        // WHERE b.kddokter=a.kddokter AND a.nomrm='$noRM'");
+
+        $query = $this->db->query("SELECT a.nomrm, a.nmpasien, a.noasuransi, a.norj, b.kelamin, b.identitas, b.umurthn
+        FROM paslama a, pasien b
+        WHERE b.nomrm=a.nomrm AND a.nomrm='$noRM'");
 
         $result = $query->row_array();
+        $this->session->set_userdata($result);
         return $result;
     }
 

@@ -27,12 +27,10 @@
 
                <tbody>
                   <tr>
-                     <td><?= $pasrj['nmpasien'] ?></td>
-                     <td><?= $pasrj['nomrm'] ?></td>
-                     <td><?= $pasrj['norj'] ?></td>
-                     <td>
-                        <!-- jenis kelamin tidak ditemukan pada database -->
-                     </td>
+                     <td><?php echo $this->session->userdata('nmpasien'); ?></td>
+                     <td><?php echo $this->session->userdata('nomrm'); ?></td>
+                     <td><?php echo $this->session->userdata('norj'); ?></td>
+                     <td><?php echo $this->session->userdata('kelamin'); ?></td>
                   </tr>
                </tbody>
             </table>
@@ -53,11 +51,9 @@
                   <th>Kode Rumah Sakit</th>
                </tr>
                <tr>
-                  <td><?= $pasrj['nik'] ?></td>
-                  <td>
-                     <!-- tanggal lahir tidak ditemukan -->
-                  </td>
-                  <td><?= $pasrj['noasuransi'] ?></td>
+                  <td><?php echo $this->session->userdata('identitas'); ?></td>
+                  <td><?php echo $this->session->userdata('umurthn'); ?></td>
+                  <td><?php echo $this->session->userdata('noasuransi'); ?></td>
                   <td>
                      <!-- kode rumah sakit tidak ditemukan -->
                   </td>

@@ -1,6 +1,6 @@
 <section class="section">
    <div class="section-header">
-      <h1>Dokter Rawat Jalan</h1>
+      <h1>Pasien Rawat Jalan</h1>
       <div class="section-header-breadcrumb">
          <div class="breadcrumb-item active"><a href="<?= site_url('dashboard') ?>">Dashboard</a></div>
          <div class="breadcrumb-item"><a href="<?= site_url('rawatjalan/listpasien') ?>">Rawat Jalan</a></div>
@@ -27,11 +27,16 @@
                                        </label>
                                        <div class="table-responsive">
                                           <p>Poliklinik :</p>
-                                          <select name="poli" id="poli" class="form-control" onchange="inputpoli()">
+                                          <select name="poli" id="poli" class="form-control">
+                                             <?php 
+                                                foreach ($poli as $key => $value){
+                                                   echo '<option value="'.$value->kdahli.'">'.$value->nmahli.'</option>';
+                                                }                                             
+                                             ?>
                                              <option value="">Pilih</option>
                                              <?php foreach ($poli as $key => $value) { ?>
-                                             <option value="<?php echo $value['kode1']; ?>" class="option">
-                                                <?php echo $value['nama']; ?></option>
+                                             <option value="<?php echo $value['kdahli']; ?>" class="option">
+                                                <?php echo $value['nmahli']; ?></option>
                                              <?php } ?>
                                           </select>
                                        </div>

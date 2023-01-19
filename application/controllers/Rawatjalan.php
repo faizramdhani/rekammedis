@@ -13,7 +13,7 @@ class Rawatjalan extends CI_Controller
 	public function listpasien()
 	{
 		$data['paslama'] = $this->Pasien_m->getpaslama();
-
+		$data['dokter'] = $this->Pasien_m->getdokter();
 		$this->template->load('template', 'pasien/paslama', $data);
 
 		// $this->template->load('template', 'rawatjalan/listpasien', $data);

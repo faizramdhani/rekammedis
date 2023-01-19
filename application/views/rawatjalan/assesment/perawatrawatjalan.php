@@ -27,10 +27,10 @@
                             <th>Jenis Kelamin</th>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><?php echo $this->session->userdata('nmpasien'); ?></td>
+                            <td><?php echo $this->session->userdata('nomrm'); ?></td>
+                            <td><?php echo $this->session->userdata('norj'); ?></td>
+                            <td><?php echo $this->session->userdata('kelamin'); ?></td>
 
                         </tr>
                         <tr>
@@ -52,9 +52,9 @@
                             <th>Kode Rumah Sakit</th>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><?php echo $this->session->userdata('identitas'); ?></td>
+                            <td><?php echo $this->session->userdata('umurthn'); ?></td>
+                            <td><?php echo $this->session->userdata('noasuransi'); ?></td>
                             <td></td>
 
                         </tr>

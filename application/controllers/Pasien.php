@@ -12,7 +12,6 @@ class Pasien extends CI_Controller
     public function paslama()
     {
         $data['paslama'] = $this->Pasien_m->getpaslama();
-
         // $this->template->load('template', 'pasien/paslama', $data);
 
         $this->template->load('template', 'rawatjalan/listpasien', $data);

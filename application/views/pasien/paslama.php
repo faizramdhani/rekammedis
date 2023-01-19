@@ -1,6 +1,6 @@
 <section class="section">
    <div class="section-header">
-      <h5>Dokter Rawat Jalan</h5>
+      <h5>Rawat Jalan</h5>
       <div class="section-header-breadcrumb">
          <div class="breadcrumb-item active"><a href="<?= site_url('dashboard') ?>">Dashboard</a></div>
          <div class="breadcrumb-item"><a href="<?= site_url('rawatjalan/listpasien') ?>">Rawat Jalan</a></div>
@@ -25,20 +25,22 @@
                            <div class="card-body">
                               <div class="table-responsive">
                                  <form class="form-horizontal style-form" id="pencarianantrian" method="post">
-
                                     <div class="table-responsive">
-                                       <p>Poliklinik :</p>
-                                       <select name="poli" id="poli" class="form-control" onchange="inputpoli()">
-                                          <option value="">---Pilih---</option>
-                                          <?php foreach ($poli as $key => $value) { ?>
-                                          <option value="<?php echo $value['kode1']; ?>" class="option">
-                                             <?php echo $value['nama']; ?></option>
-                                          <?php } ?>
+                                       <p>Poliklinik:</p>
+                                       <select name="poli" class="form-control">
+                                       <?php foreach($dokter as $row) { 
+                                             echo '<option value="'.$row->nmahli.'">'.$row->nmahli.'</option>';
+                                       }?>
                                        </select>
                                     </div>
                                     <div class="table-responsive" id='divkodepoli'>
                                        <p>Dokter :</p>
-                                       <select name="dokterpoli" id="dokterpoli" class="form-control"></select>
+                                       <p><?php echo $this->session->userdata('level_erm'); ?></p>
+                                       <select name="dokter" class="form-control">
+                                       <?php foreach($dokter as $row) { 
+                                             echo '<option value="'.$row->nmdokter.'">'.$row->nmdokter.'</option>';
+                                       }?>
+                                       </select>
                                     </div>
                                     <div class="table-responsive">
                                        <p>Tanggal Perawatan :</p>
