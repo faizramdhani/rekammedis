@@ -10,12 +10,12 @@ class Igd extends CI_Controller
 
     public function igdDokter()
     {
-        $this->template->load('igd/pengkajian/template', 'igd/pengkajian/detail');
+        $this->template->load('igd/assesment/template', 'igd/assesment/detail');
     }
 
     public function awal()
     {
-        $this->template->load('igd/pengkajian/template', 'igd/pengkajian/awal');
+        $this->template->load('igd/assesment/template', 'igd/assesment/awal');
     }
     
     

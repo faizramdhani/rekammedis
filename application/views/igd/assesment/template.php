@@ -41,12 +41,7 @@
                             <a href="features-profile.html" class="dropdown-item has-icon">
                                 <i class="far fa-user"></i> <?= ucfirst($this->fungsi->user_login()->nmpeg)   ?>
                             </a>
-                            <a href="features-activities.html" class="dropdown-item has-icon">
-                                <i class="fas fa-bolt"></i> Activities
-                            </a>
-                            <a href="features-settings.html" class="dropdown-item has-icon">
-                                <i class="fas fa-cog"></i> Settings
-                            </a>
+
                             <div class="dropdown-divider"></div>
                             <a href="<?= site_url('auth/logout') ?>" class="dropdown-item has-icon text-danger" id="logout" data-confirm="Logout|Yakin akan Logout?" data-confirm-yes="returnLogout()">
                                 <i class="fas fa-sign-out-alt"></i> Logout
@@ -100,7 +95,7 @@
                             <li><a class="nav-link" href="<?= site_url('igd/igdDokter') ?>"><i class="fas fa-fire"></i> <span>Profil Ringkas</span></a></li>
 
                             <li class="menu-header">PENGKAJIAN AWAL</li>
-                            <li><a class="nav-link" href="<?= site_url('igd/awal') ?>"><i class="far fa-square"></i> <span>Pengkajian Awal</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('igd/awal') ?>"><i class="far fa-square"></i> <span>Asesment Awal</span></a></li>
 
                             <li class="menu-header">PENGKAJIAN KEPERAWATAN</li>
 

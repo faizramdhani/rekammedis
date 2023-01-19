@@ -10,7 +10,6 @@
 </section>
 
 <section class="content">
-
    <div class="row">
       <div class="col-12 col-md-6 col-lg-5">
          <div class="card card-primary">
@@ -275,8 +274,7 @@
                               <div class="col-md"></div>
                               <!-- <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab1">Kembali <i class="fas fa-arrow-left"></i></a> </button> -->
                               <div class="col-lg-4 col-md-5 text-right">
-                                 <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist"
-                                    href="#tab2">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
+                                 <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab2">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
                               </div>
                            </div>
 
@@ -398,10 +396,8 @@
                               <!-- button  -->
                               <div class="form-group row">
                                  <div class="col-md"></div>
-                                 <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist"
-                                    href="#tab1">Kembali <i class="fas fa-arrow-left"></i></a> </button>
-                                 <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist"
-                                    href="#tab2">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
+                                 <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab1">Kembali <i class="fas fa-arrow-left"></i></a> </button>
+                                 <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab2">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
                               </div>
                            </div>
                         </div>

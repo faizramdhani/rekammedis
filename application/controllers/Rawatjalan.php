@@ -6,45 +6,43 @@ class Rawatjalan extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->library('session');
+
 		$this->load->model('Pasien_m');
 	}
-
 
 	public function listpasien()
 	{
 		$data['paslama'] = $this->Pasien_m->getpaslama();
 		$data['dokter'] = $this->Pasien_m->getdokter();
 		$this->template->load('template', 'pasien/paslama', $data);
-
-		// $this->template->load('template', 'rawatjalan/listpasien', $data);
 	}
 
 	public function pasigd()
 	{
-		// $data['data'] = $this->Pasien_m-->getpasien()->result_array();
 		$this->template->load('template', 'pasien/pasigd');
 	}
 
 
 	public function rawatjalanDokter()
 	{
-
 		$noRM = $this->uri->segment(3);
 		$data['pasrj'] = $this->Pasien_m->getpaslamadetail($noRM);
 		// dd($data);
-		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/detail',$data);
+		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/detail', $data);
+	}
+
+	public function perawatrawatjalan()
+	{
+
+		// $this->session->set_userdata('$noRM', 'noRM');
+		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/perawatrawatjalan');
 	}
 
 	public function rawatjalanCPPT()
 	{
 		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/cppt');
 	}
-
-	public function perawatrawatjalan()
-	{
-		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/perawatrawatjalan');
-	}
-
 
 	public function awal()
 	{

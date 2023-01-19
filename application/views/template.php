@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- header -->
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
@@ -17,9 +19,8 @@
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/style.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/components.css">
 
-
-
 </head>
+
 
 <body>
     <div id="app">
@@ -43,12 +44,7 @@
                             <a href="features-profile.html" class="dropdown-item has-icon">
                                 <i class="far fa-user"></i> <?= ucfirst($this->fungsi->user_login()->nmpeg)   ?>
                             </a>
-                            <a href="features-activities.html" class="dropdown-item has-icon">
-                                <i class="fas fa-bolt"></i> Activities
-                            </a>
-                            <a href="features-settings.html" class="dropdown-item has-icon">
-                                <i class="fas fa-cog"></i> Settings
-                            </a>
+
                             <div class="dropdown-divider"></div>
                             <a href="<?= site_url('auth/logout') ?>" class="dropdown-item has-icon text-danger" id="logout" data-confirm="Logout|Yakin akan Logout?" data-confirm-yes="returnLogout()">
                                 <i class="fas fa-sign-out-alt"></i> Logout
@@ -70,7 +66,7 @@
                         <li><a class="nav-link" href="<?= site_url('dashboard/') ?>"><i class="far fa-square"></i> <span>Dashboard</span></a></li>
 
                         <li class="menu-header">Pelayanan Medis</li>
-                        <li><a class="nav-link" href="<?= site_url('rawatjalan/listpasien') ?>"><i class="fas fa-stethoscope"></i> <span>Rawat Jalan</span></a></li>
+                        <li><a class="nav-link" href="<?= site_url('rawatjalan/listpasien ') ?>"><i class="fas fa-stethoscope"></i> <span>Rawat Jalan</span></a></li>
                         <li><a class="nav-link" href="<?= site_url('rawatinap/listpasien') ?>"><i class="fas fa-bed"></i> <span>Rawat Inap</span></a></li>
                         <li><a class="nav-link" href="<?= site_url('igd/listpasien') ?>"><i class="fas fa-stethoscope"></i> <span>IGD</span></a></li>
 
@@ -191,7 +187,6 @@
 
                         <?php } ?>
 
-
                     </ul>
                 </aside>
             </div>
@@ -203,7 +198,7 @@
 
             <footer class="main-footer">
                 <div class="footer-left">
-                    Copyright &copy; <?= date('Y'); ?> <div class="bullet"></div> <a href="">IT NMU</a>
+                    &copy; <?= date('Y'); ?> <div class="bullet"></div> <a href="">IT NMU</a>
                 </div>
                 <div class="footer-right">
                     <label>E - Rekam Medis</label>

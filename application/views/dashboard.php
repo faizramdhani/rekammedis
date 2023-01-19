@@ -1,10 +1,10 @@
  <section class="section">
  	<div class="section-header">
- 		<h1>Dashboard</h1>
+ 		<h5>Dashboard</h5>
  		<div class="section-header-breadcrumb">
  			<div class="breadcrumb-item active"><a href="<?= site_url('dashboard/') ?>">Dashboard</a></div>
- 			<!-- <div class="breadcrumb-item"><a href="#">Layout</a></div>
- 			<div class="breadcrumb-item">Default Layout</div> -->
+ 			<div class="breadcrumb-item"><a href="#">Layout</a></div>
+ 			<div class="breadcrumb-item">Default Layout</div>
  		</div>
  	</div>
  </section>
@@ -16,15 +16,15 @@
  			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
  				<div class="card card-statistic-1">
  					<div class="card-icon bg-primary">
- 						<i class="fas fa-bed""></i>
+ 						<i class="fas fa-bed"></i>
  					</div>
- 					<div class=" card-wrap">
- 							<div class="card-header">
- 								<h4>Rawat Inap</h4>
- 							</div>
- 							<div class="card-body">
- 								Jumlah
- 							</div>
+ 					<div class="card-wrap">
+ 						<div class="card-header">
+ 							<h4>Rawat Inap</h4>
+ 						</div>
+ 						<div class="card-body">
+
+ 						</div>
  					</div>
  				</div>
  			</div>
@@ -38,7 +38,7 @@
  							<h4>Rawat Jalan</h4>
  						</div>
  						<div class="card-body">
- 							Jumlah
+ 							<!-- <?= $this->fungsi->count_paslama() ?> -->
  						</div>
  					</div>
  				</div>
@@ -53,7 +53,7 @@
  							<h4>IGD</h4>
  						</div>
  						<div class="card-body">
- 							Jumlah
+
  						</div>
  					</div>
  				</div>
@@ -68,13 +68,13 @@
  							<h4>Penunjang Medis</h4>
  						</div>
  						<div class="card-body">
- 							Jumlah
+
  						</div>
  					</div>
  				</div>
  			</div>
 
-			 <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+ 			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
  				<div class="card card-statistic-1">
  					<div class="card-icon bg-primary">
  						<i class="far fa-file"></i>
@@ -84,13 +84,13 @@
  							<h4>Rekam Medis</h4>
  						</div>
  						<div class="card-body">
- 							Jumlah
+
  						</div>
  					</div>
  				</div>
  			</div>
 
- 			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+ 			<!-- <div class="col-lg-3 col-md-6 col-sm-6 col-12">
  				<div class="card card-statistic-1">
  					<div class="card-icon bg-primary">
  						<i class="fas fa-diagnoses"></i>
@@ -104,7 +104,7 @@
  						</div>
  					</div>
  				</div>
- 			</div>
+ 			</div> -->
  		</div>
 
 

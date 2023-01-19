@@ -131,7 +131,7 @@
                                                    <div class="buttons">
                                                       <a href="" class="btn btn-icon btn-sm btn-warning"><i
                                                             class="far fa-edit"></i></a>
-                                                      <a href="<?= base_url('rawatjalan/rawatjalanDokter/') ?>"
+                                                      <a href="<?= base_url('rawatjalan/rawatjalanDokter/')  ?>"
                                                          class="btn btn-icon btn-sm btn-primary"><i
                                                             class="far fa-eye"></i></a>
                                                    </div>

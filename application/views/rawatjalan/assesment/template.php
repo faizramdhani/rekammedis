@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- header -->
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Blank Page &mdash; Stisla</title>
+    <title>Layout &rsaquo; Default &mdash; Stisla</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
 
-    <!-- CSS Libraries -->
+    <!-- Data Tables -->
+    <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/style.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/components.css">
+
 </head>
 
 <body>
@@ -28,7 +31,6 @@
                         <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
                         <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
                     </ul>
-
                 </form>
 
                 <ul class="navbar-nav navbar-right">
@@ -41,12 +43,6 @@
                             <a href="features-profile.html" class="dropdown-item has-icon">
                                 <i class="far fa-user"></i> <?= ucfirst($this->fungsi->user_login()->nmpeg)   ?>
                             </a>
-                            <a href="features-activities.html" class="dropdown-item has-icon">
-                                <i class="fas fa-bolt"></i> Activities
-                            </a>
-                            <a href="features-settings.html" class="dropdown-item has-icon">
-                                <i class="fas fa-cog"></i> Settings
-                            </a>
                             <div class="dropdown-divider"></div>
                             <a href="<?= site_url('auth/logout') ?>" class="dropdown-item has-icon text-danger" id="logout" data-confirm="Logout|Yakin akan Logout?" data-confirm-yes="returnLogout()">
                                 <i class="fas fa-sign-out-alt"></i> Logout
@@ -56,7 +52,7 @@
                 </ul>
             </nav>
 
-            <div class="main-sidebar sidebar-style-1">
+            <div class="main-sidebar sidebar-style-2">
                 <aside id="sidebar-wrapper">
                     <div class="sidebar-brand">
                         <a href=""> E-Rekam Medis</a>
@@ -64,7 +60,6 @@
                     <div class="sidebar-brand sidebar-brand-sm">
                         <a href="">E-RM</a>
                     </div>
-
 
                     <!-- Level 3 perawat -->
                     <?php if ($this->session->userdata('level_erm') == 3) { ?>
@@ -97,17 +92,7 @@
                     <?php if ($this->session->userdata('level_erm') == 2) { ?>
                         <ul class="sidebar-menu">
                             <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanDokter') ?>"><i class="far fa-square"></i> <span>Profil Ringkas</span></a></li>
-
-                            <!-- <li class="dropdown">
-                                <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Pasien</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="nav-link" href="<?= site_url('pasien/pasinap') ?>">Rawat Inap</a></li>
-                                    <li><a class="nav-link" href="<?= site_url('pasien/paslama') ?>">Rawat Jalan</a></li>
-                                    <li><a class="nav-link" href="<?= site_url('pasien/pasigd') ?>">IGD</a></li>
-
-                                </ul>
-                            </li> -->
+                            <!-- <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanDokter') ?>"><i class="far fa-square"></i> <span>Profil Ringkas</span></a></li> -->
 
                             <li class="menu-header">PENGKAJIAN AWAL KEPERAWATAN</li>
 
@@ -123,28 +108,6 @@
                             <li class="dropdown">
                                 <a class="nav-link has-dropdown"><i class="far fa-address-book"></i> <span>Poli Umum</span></a>
                                 <ul class="dropdown-menu">
-                                    <!-- <li><a class="nav-link" href="<?= site_url('rawatjalan/penyakitdalam') ?>"><i class="fas fa-user-injured"></i> <span>Penyakit Dalam</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/anak') ?>"><i class="fas fa-user-injured"></i> <span>Anak</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/bedah') ?>"><i class="fas fa-user-injured"></i> <span>Bedah</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/obstetriginekologi') ?>"><i class="fas fa-user-injured"></i> <span>Obstetri&Ginekologi</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/nefrologi') ?>"><i class="fas fa-user-injured"></i> <span>Nefrologi</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/jantung') ?>"><i class="fas fa-user-injured"></i> <span>Jantung & Pembuluh Darah</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/kulitkelamin') ?>"><i class="fas fa-user-injured"></i> <span>Kulit & Kelamin</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/mata') ?>"><i class="fas fa-user-injured"></i> <span>Mata</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/neurologi') ?>"><i class="fas fa-user-injured"></i> <span>Neurologi</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/onkologi') ?>"><i class="fas fa-user-injured"></i> <span>Onkologi</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/paru') ?>"><i class="fas fa-user-injured"></i> <span>Paru</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/rehabmedik') ?>"><i class="fas fa-user-injured"></i> <span>Rehab Medik</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/tht') ?>"><i class="fas fa-user-injured"></i> <span>THT</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/urologi') ?>"><i class="fas fa-user-injured"></i> <span>Urologi</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/gigi') ?>"><i class="fas fa-user-injured"></i> <span>Gigi</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/hd') ?>"><i class="fas fa-user-injured"></i> <span>HD</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/hdulang') ?>"><i class="fas fa-user-injured"></i> <span>Ulang HD</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/bedahsyaraf') ?>"><i class="fas fa-user-injured"></i> <span>Bedah Syaraf</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/ortopedi') ?>"><i class="fas fa-user-injured"></i> <span>Ortopedi</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/btkv') ?>"><i class="fas fa-user-injured"></i> <span>Bedah Thorax dan Kardiovaskuler</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/bedahplastik') ?>"><i class="fas fa-user-injured"></i> <span>Bedah Plastik</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/kesehatanjiwa') ?>"><i class="fas fa-user-injured"></i> <span>Kesehatan Jiwa</span></a></li> -->
 
                                 </ul>
                             </li>
@@ -179,12 +142,8 @@
                                 </ul>
                             </li>
 
-
-
                         </ul>
                     <?php } ?>
-
-
                 </aside>
             </div>
 
@@ -192,7 +151,6 @@
             <div class="main-content">
                 <?php echo $content ?>
             </div>
-
 
         </div>
     </div>
