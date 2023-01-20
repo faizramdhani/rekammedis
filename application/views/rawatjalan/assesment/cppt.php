@@ -96,7 +96,7 @@
                                                     <select class="form-control">
                                                         <option>Dokter</option>
                                                         <option>Perawat</option>
-                                                        <option>Option 3</option>
+                                                        <option></option>
                                                     </select>
                                                 </div>
                                             </td>

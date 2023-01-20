@@ -109,7 +109,7 @@
                                     <div class="row">
                                         <div class="card-body col-14">
                                             <div class="form">
-                                                <label class="col-sm-9">Asal Pasien</b></label>
+                                                <label class="col-sm-5">Asal Pasien</b></label>
 
                                                 <div class="row">
                                                     <div class="card-body col-sm-3">
