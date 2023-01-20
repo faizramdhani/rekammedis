@@ -3,7 +3,7 @@ function inputpoli(){
   var varpoli = $('#poli').val();
   // alert(poli);
   $.ajax({
-      url:'pasien/searchdokter',
+      url:'Pasien/searchdokter',
       method: 'post',
       data: {kode1: varpoli},
       dataType: 'json',

@@ -77,44 +77,25 @@
                            <thead>
                               <tr>
                                  <th>No</th>
-                                 <th>Nama Pasien</th>
-
-                                 <th>No MRM</th>
-
-                                 <th>Alamat</th>
-                                 <th>No Asuransi</th>
-                                 <th>No SEP</th>
-                                 <th>No Rawat Jalan</th>
-
-
-                                 <th>Konsumen</th>
-
-
+                                 <th>Kode Assessment Awal Perawat</th>
+                                 <th>Anamnesis</th>
                                  <th>Action</th>
                               </tr>
                            </thead>
 
 
-                           <!-- <tbody>
+                           <tbody>
                               <?php $no = 1;
-                              foreach ($paslama as $row) : ?>
+                              foreach ($assessmentawalperawat as $row) : ?>
                                  <tr>
                                     <td><?= $no++ ?></td>
-                                    <td><?= $row['nmpasien'] ?></td>
-                                    <td><?= $row['nomrm'] ?></td>
-                                    <td><?= $row['alamat'] ?></td>
-                                    <td><?= $row['noasuransi'] ?></td>
-                                    <td><?= $row['nosep'] ?></td>
-                                    <td><?= $row['norj'] ?></td>
-
-                                    <td><?= $row['nmkons'] ?></td>
-
-
+                                    <td><?= $row['id_pengkajianawalperawat'] ?></td>
+                                    <td><?= $row['anamnesis'] ?></td>
                                     <td>
                                        <div class="row">
                                           <div class="buttons">
                                              <a href="<?= site_url('') ?>" class="btn btn-icon btn-primary" title="Edit"><i class="far fa-edit"></i></a>
-                                             <a href="<?= site_url('rawatjalan/rawatjalanDokter/' . $row['nomrm']) ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
+                                             <a href="<?= site_url('') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
                                              <a href="#" title="Tambah" class="btn btn-icon btn-warning"><i class="far fa-file"></i></a>
 
                                           </div>
@@ -124,7 +105,7 @@
                                  <?php endforeach ?>
 
 
-                           </tbody> -->
+                           </tbody>
                         </table>
                      </div>
                     </div>

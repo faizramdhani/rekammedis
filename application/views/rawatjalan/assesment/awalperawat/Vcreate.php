@@ -113,19 +113,19 @@
                                             <div class="row">
                                                 <div class="card-body">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio1">Datang Sendiri</label>
+                                                        <input type="radio" id="datangsendiri" name="asalpasien" class="custom-control-input">
+                                                        <label class="custom-control-label" for="datangsendiri">Datang Sendiri</label>
                                                     </div>
                                                 </div>
                                                 <div class="card-body">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio2">Dirujuk Dari</label>
+                                                        <input type="radio" id="dirujukdari" name="asalpasien" class="custom-control-input">
+                                                        <label class="custom-control-label" for="dirujukdari">Dirujuk Dari</label>
                                                     </div>
                                                 </div>
                                                 <div class="card-body">
-                                                    <div class="form">
-                                                        <input type="text" class="form-control">
+                                                    <div class="form" id="try">
+                                                        <input type="text" id="return" name="return" class="form-control">
                                                     </div>
                                                 </div>
                                             </div>
@@ -143,7 +143,7 @@
                                 </div>
                                 <div class="card-body col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control"></textarea>
+                                        <textarea name="anamnesis" class="form-control"></textarea>
                                     </div>
                                     <div class="form">
                                         <label>1. Riwayat Penyakit Dahulu</label>
@@ -220,10 +220,11 @@
                                             <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab2">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
                                         </div>
                                     </div>
+                                    <input class="btn btn-success" type="submit" name="btn" value="Save" />
                                 </div>
                             </div>
-
                         </div>
+                        </form>
                         <!-- tab 2 -->
                         <div id="tab2" class="col-14" data-tab-group="mygroup-tab">
                             <div class="card-header">
@@ -1327,10 +1328,16 @@
                                 </div>
                             </div>
                         </div>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<script type="text/javascript">
+    $(document).on('change', 'input:radio[name=asalpasien]', function() {
+        $('div[id^="try"]').toggle(); // toggle all DIVs begining with "my_radio_"
+        $('#' + $(this).attr('id') + '_text').show(); // show the current one
+    });
+    </script>
