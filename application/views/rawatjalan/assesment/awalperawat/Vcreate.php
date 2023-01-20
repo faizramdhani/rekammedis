@@ -113,25 +113,30 @@
                                             <div class="row">
                                                 <div class="card-body">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="datangsendiri" name="asalpasien" class="custom-control-input">
+                                                        <input type="radio" id="datangsendiri" onclick="javascript:asalpasienCheck();" name="asalpasien" class="custom-control-input" value="Datang Sendiri">
                                                         <label class="custom-control-label" for="datangsendiri">Datang Sendiri</label>
                                                     </div>
                                                 </div>
+                                                <!-- <div class="card-body" id="ifYess" style="visibility:hidden">
+                                                    <div class="form">
+                                                        <input type="text" id="return" name="asalpasien" class="form-control" value="Datang Sendiri">
+                                                    </div>
+                                                </div> -->
                                                 <div class="card-body">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="dirujukdari" name="asalpasien" class="custom-control-input">
+                                                        <input type="radio" id="dirujukdari" onclick="javascript:asalpasienCheck();" name="asalpasien" class="custom-control-input">
                                                         <label class="custom-control-label" for="dirujukdari">Dirujuk Dari</label>
                                                     </div>
                                                 </div>
-                                                <div class="card-body">
-                                                    <div class="form" id="try">
-                                                        <input type="text" id="return" name="return" class="form-control">
+                                                <div class="card-body" id="ifYes" style="visibility:hidden">
+                                                    <div class="form">
+                                                        <input type="text" id="return" name="asalpasien" class="form-control">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <label>Tanggal/Jam</label>
-                                                <input type="datetime-local" class="form-control datetimepicker">
+                                                <input type="datetime-local" name="tanggal" class="form-control datetimepicker">
                                             </div>
                                         </div>
                                     </div>
@@ -150,19 +155,19 @@
                                         <div class="row">
                                             <div class="card-body">
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadio1">Tidak Ada</label>
+                                                    <input type="radio" id="tidakadapenyakit" onclick="javascript:riwayatpenyakitCheck();" name="riwayat_penyakit" class="custom-control-input">
+                                                    <label class="custom-control-label" for="tidakadapenyakit">Tidak Ada</label>
                                                 </div>
                                             </div>
                                             <div class="card-body">
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadio2">Ada, sebutkan</label>
+                                                    <input type="radio" id="adapenyakit" onclick="javascript:riwayatpenyakitCheck();" name="riwayat_penyakit" class="custom-control-input">
+                                                    <label class="custom-control-label" for="adapenyakit">Ada, sebutkan</label>
                                                 </div>
                                             </div>
-                                            <div class="card-body">
+                                            <div class="card-body" id="adapenyakityes" style="visibility:hidden">
                                                 <div class="form">
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" name="riwayat_penyakit" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -172,19 +177,19 @@
                                         <div class="row">
                                             <div class="card-body">
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadio1">Tidak Ada</label>
+                                                    <input type="radio" id="tidakadaobat" onclick="javascript:riwayatobatCheck();" name="riwayat_penggunaan_obat" class="custom-control-input">
+                                                    <label class="custom-control-label" for="tidakadaobat">Tidak Ada</label>
                                                 </div>
                                             </div>
                                             <div class="card-body">
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadio2">Ada, sebutkan</label>
+                                                    <input type="radio" id="adaobat" onclick="javascript:riwayatobatCheck();" name="riwayat_penggunaan_obat" class="custom-control-input">
+                                                    <label class="custom-control-label" for="adaobat">Ada, sebutkan</label>
                                                 </div>
                                             </div>
-                                            <div class="card-body">
+                                            <div class="card-body" id="adaobatyes" style="visibility:hidden">
                                                 <div class="form">
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" name="riwayat_penggunaan_obat" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -194,19 +199,19 @@
                                         <div class="row">
                                             <div class="card-body">
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadio1">Tidak Ada</label>
+                                                    <input type="radio" id="tidakadaalergi" onclick="javascript:riwayatalergiCheck();" name="riwayat_alergi" class="custom-control-input">
+                                                    <label class="custom-control-label" for="tidakadaalergi">Tidak Ada</label>
                                                 </div>
                                             </div>
                                             <div class="card-body">
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadio2">Ada, sebutkan</label>
+                                                    <input type="radio" id="adaalergi" onclick="javascript:riwayatalergiCheck();" name="riwayat_alergi" class="custom-control-input">
+                                                    <label class="custom-control-label" for="adaalergi">Ada, sebutkan</label>
                                                 </div>
                                             </div>
-                                            <div class="card-body">
+                                            <div class="card-body" id="adaalergiyes" style="visibility:hidden">
                                                 <div class="form">
-                                                    <input type="text" class="form-control">
+                                                    <input type="text" name="riwayat_alergi" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -220,11 +225,9 @@
                                             <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab2">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
                                         </div>
                                     </div>
-                                    <input class="btn btn-success" type="submit" name="btn" value="Save" />
                                 </div>
                             </div>
                         </div>
-                        </form>
                         <!-- tab 2 -->
                         <div id="tab2" class="col-14" data-tab-group="mygroup-tab">
                             <div class="card-header">
@@ -242,24 +245,18 @@
                                                         <div class="form">
                                                             <label>TB</label>
                                                         </div>
-                                                        <input type="text" class="form-control col-6">
+                                                        <input type="text" name="tb" class="form-control col-6">
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>BB</label>
-                                                            <input type="text" class="form-control col-5">
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div class="form">
-                                                            <label>BB</label>
-                                                            <input type="text" class="form-control col-6">
+                                                            <input type="text" name="bb" class="form-control col-5">
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>GCS</label>
-                                                            <input type="text" class="form-control col-6">
+                                                            <input type="text" name="gcs" class="form-control col-6">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -270,42 +267,42 @@
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>TD</label>
-                                                            <input type="text" class="form-control col-5">
+                                                            <input type="text" name="td" class="form-control col-5">
                                                             <p>mmhg</p>
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>Suhu</label>
-                                                            <input type="text" class="form-control col-5">
+                                                            <input type="text" name="suhu" class="form-control col-5">
                                                             <p>oC</p>
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>Nadi</label>
-                                                            <input type="text" class="form-control col-5">
+                                                            <input type="text" name="nadi" class="form-control col-5">
                                                             <p>x/mnt</p>
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>RR</label>
-                                                            <input type="text" class="form-control col-5">
+                                                            <input type="text" name="rr" class="form-control col-5">
                                                             <p>x/mnt</p>
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>GDA</label>
-                                                            <input type="text" class="form-control col-3">
+                                                            <input type="text" name="gda" class="form-control col-3">
                                                             <p>mg/dl</p>
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>SpO2</label>
-                                                            <input type="text" class="form-control col-3">
+                                                            <input type="text" name="spo2" class="form-control col-3">
                                                             <p>%</p>
                                                         </div>
 
@@ -317,9 +314,8 @@
                                                                 <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab3">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
                                                             </div>
                                                         </div>
-                                                    </div>
-
-
+                                                    </div>                                        
+                                                <input class="btn btn-success" type="submit" name="btn" value="Save" />
                                                 </div>
                                             </div>
                                         </table>
@@ -327,6 +323,7 @@
                                 </div>
                             </div>
                         </div>
+                        </form>
                         <!-- tab 3 -->
                         <div id="tab3" class="col-14" data-tab-group="mygroup-tab">
                             <div class="card-header">
@@ -434,7 +431,7 @@
                                         <label>5. Pendidikan</label>
                                         <div class="card-body col-12">
                                             <div class="form">
-                                                <input type="text" class="form-control col-5">
+                                                <input type="text" name="pendidikan" class="form-control col-5">
                                             </div>
                                         </div>
                                     </div>
@@ -443,7 +440,7 @@
                                         <label>6. Pekerjaan</label>
                                         <div class="card-body col-12">
                                             <div class="form">
-                                                <input type="text" class="form-control col-5">
+                                                <input type="text" name="pekerjaan" class="form-control col-5">
                                             </div>
                                         </div>
                                     </div>
@@ -1340,4 +1337,4 @@
         $('div[id^="try"]').toggle(); // toggle all DIVs begining with "my_radio_"
         $('#' + $(this).attr('id') + '_text').show(); // show the current one
     });
-    </script>
+</script>

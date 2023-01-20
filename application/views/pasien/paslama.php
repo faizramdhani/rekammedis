@@ -115,6 +115,5 @@
             </div>
          </div>
       </div>
+      <script src="<?php echo base_url('assets/js/mainchart.js');?>"></script>
 </section>
-
-<script src="<?php echo base_url('assets/js/mainchart.js');?>"></script>

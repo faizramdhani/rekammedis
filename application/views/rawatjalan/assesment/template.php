@@ -163,6 +163,7 @@
     <script src="<?= base_url() ?>/template/node_modules/datatables/media/js/jquery.datatables.min.js"></script>
     <script src="<?= base_url() ?>/template/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
     <script src="<?= base_url() ?>/template/assets/js/stisla.js"></script>
+    <script src="<?= base_url() ?>/template/assets/js/mainchart.js"></script>
 
     <!-- Template JS File -->
     <script src="<?= base_url() ?>/template/assets/js/scripts.js"></script>

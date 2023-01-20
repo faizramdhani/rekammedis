@@ -14,3 +14,31 @@ function inputpoli(){
       }
   });
 }
+
+function asalpasienCheck() {
+    if (document.getElementById('dirujukdari').checked) {
+        document.getElementById('ifYes').style.visibility = 'visible';
+    }
+    else document.getElementById('ifYes').style.visibility = 'hidden';
+}
+
+function riwayatpenyakitCheck() {
+    if (document.getElementById('adapenyakit').checked) {
+        document.getElementById('adapenyakityes').style.visibility = 'visible';
+    }
+    else document.getElementById('adapenyakityes').style.visibility = 'hidden';
+}
+
+function riwayatobatCheck() {
+    if (document.getElementById('adaobat').checked) {
+        document.getElementById('adaobatyes').style.visibility = 'visible';
+    }
+    else document.getElementById('adaobatyes').style.visibility = 'hidden';
+}
+
+function riwayatalergiCheck() {
+    if (document.getElementById('adaalergi').checked) {
+        document.getElementById('adaalergiyes').style.visibility = 'visible';
+    }
+    else document.getElementById('adaalergiyes').style.visibility = 'hidden';
+}
