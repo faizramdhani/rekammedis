@@ -75,7 +75,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                    <table class="table table-bordered table-md">
+                                    <table class="table table-striped table-md">
                                         <tr>
                                             <th>Tanggal/Jam</th>
                                             <th>PPA</th>
@@ -84,8 +84,22 @@
                                             <th>Verifikasi DPJP</th>
                                         </tr>
                                         <tr>
-                                            <td><input type="text" class="form-control"></td>
-                                            <td><input type="text" class="form-control"></td>
+                                            <td>
+                                                <div class="form-group">
+
+                                                    <input type="datetime-local" class="form-control datepicker">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-group">
+
+                                                    <select class="form-control">
+                                                        <option>Dokter</option>
+                                                        <option>Perawat</option>
+                                                        <option>Option 3</option>
+                                                    </select>
+                                                </div>
+                                            </td>
                                             <td><input type="text" class="form-control"></td>
                                             <td><input type="text" class="form-control"></td>
                                             <td><input type="text" class="form-control"></td>
@@ -150,23 +164,7 @@
                                     </table>
                                 </div>
                             </div>
-                            <!-- <div class="card-footer text-right">
-                                <nav class="d-inline-block">
-                                    <ul class="pagination mb-0">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left"></i></a>
-                                        </li>
-                                        <li class="page-item active"><a class="page-link" href="#">1 <span class="sr-only">(current)</span></a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">2</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div> -->
+
                         </div>
                     </div>
                 </div>
