@@ -27,19 +27,16 @@
                                  <form class="form-horizontal style-form" id="pencarianantrian" method="post">
                                     <div class="table-responsive">
                                        <p>Poliklinik:</p>
-                                       <select name="poli" class="form-control">
-                                       <?php foreach($dokter as $row) { 
-                                             echo '<option value="'.$row->nmahli.'">'.$row->nmahli.'</option>';
-                                       }?>
+                                       <select name="poli" id="poli" class="form-control" required onchange="inputpoli()">
+                                          <option value="">---Pilih---</option>
+                                       <?php foreach ($poli as $key => $value) { ?>
+                                       <option value="<?php echo $value['kode1']; ?>" class="option"><?php echo $value['nama']; ?></option>
+                                       <?php } ?> 
                                        </select>
                                     </div>
                                     <div class="table-responsive" id='divkodepoli'>
                                        <p>Dokter :</p>
-                                       <p><?php echo $this->session->userdata('level_erm'); ?></p>
-                                       <select name="dokter" class="form-control">
-                                       <?php foreach($dokter as $row) { 
-                                             echo '<option value="'.$row->nmdokter.'">'.$row->nmdokter.'</option>';
-                                       }?>
+                                       <select name="dokterpoli" id="dokterpoli" class="form-control" required>
                                        </select>
                                     </div>
                                     <div class="table-responsive">
@@ -119,3 +116,5 @@
          </div>
       </div>
 </section>
+
+<script src="<?php echo base_url('assets/js/mainchart.js');?>"></script>

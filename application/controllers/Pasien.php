@@ -12,9 +12,18 @@ class Pasien extends CI_Controller
     public function paslama()
     {
         $data['paslama'] = $this->Pasien_m->getpaslama();
-        $data['dokter'] = $this->Pasien_m->getdokter();
+        $data['poli'] = $this->Pasien_m->getpoli();
         $this->template->load('template', 'pasien/paslama', $data);
     }
+
+    function searchdokter()
+	{				
+	    $postData = $this->input->post();
+	    print_r($postData);
+        $data = $this->Pasien_m->dokterbyahli($postData['kode1']); 
+		echo json_encode($data); 
+	}
+
     public function pasinap()
     {
         $data['pasinap'] = $this->Pasien_m->getpasinap();

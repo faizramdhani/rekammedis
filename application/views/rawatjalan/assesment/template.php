@@ -66,7 +66,8 @@
                         <ul class="sidebar-menu">
                             <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
 
-                            <li class="menu-header">PENGKAJIAN AWAL KEPERAWATAN</li>
+                            <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanDokter/') ?>"><i class="fas fa-user-injured"></i> <span>Detail</span></a></li>
+                            <li class="menu-header">KEPERAWATAN</li>
                             <!-- <li class="nav-item dropdown">
                                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="far fa-address-book"></i> <span>Assesment</span></a>
                                 <ul class="dropdown-menu">
@@ -76,7 +77,7 @@
                                     <li><a class="nav-link" href="">Jantung</a></li>
                                 </ul>
                             </li> -->
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('Cassessmentawalperawat/index') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
 
 

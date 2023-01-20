@@ -28,6 +28,21 @@ class Pasien_m extends CI_Model
         // return $query->result();
     }
 
+    public function getpoli(){
+
+        $query = $this->db->query("SELECT kode1, nama FROM tindakan1");
+
+        $result = $query->result_array();
+        return $result;
+        // return $query->result();
+    }
+
+    function dokterbyahli($kode1){    	
+        $qry = $this->db->query("SELECT a.kddokter, b.nmdokter FROM paslama a, mtdokter b WHERE b.kddokter=a.kddokter AND a.kode1='".$kode1."';");
+        $rest = $qry->result_array();
+		return $rest;
+    }
+
     public function getpaslamadetail($noRM)
     {
         // $query = $this->db->query("SELECT a.tanggal, a.nomrm, a.nmpasien, b.nmdokter, a.alamat, a.noasuransi, a.nosep, a.norj, a.nmkons, a.nik
