@@ -8,6 +8,7 @@ class Igd extends CI_Controller
         $this->template->load('template', 'igd/listpasien');
     }
 
+
     public function igdDokter()
     {
         $this->template->load('igd/assesment/template', 'igd/assesment/detail');
@@ -17,6 +18,4 @@ class Igd extends CI_Controller
     {
         $this->template->load('igd/assesment/template', 'igd/assesment/awal');
     }
-    
-    
 }
