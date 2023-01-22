@@ -68,7 +68,7 @@
                         <li class="menu-header">Unit</li>
                         <li><a class="nav-link" href="<?= site_url('pasien/paslama ') ?>"><i class="fas fa-stethoscope"></i> <span>Rawat Jalan</span></a></li>
                         <li><a class="nav-link" href="<?= site_url('pasien/pasinap') ?>"><i class="fas fa-bed"></i> <span>Rawat Inap</span></a></li>
-                        <li><a class="nav-link" href="<?= site_url('igd/listpasien') ?>"><i class="fas fa-stethoscope"></i> <span>IGD</span></a></li>
+                        <li><a class="nav-link" href="<?= site_url('pasien/pasigd') ?>"><i class="fas fa-stethoscope"></i> <span>IGD</span></a></li>
 
                         <!-- Level dokter 2 -->
                         <?php if ($this->session->userdata('level_erm') == 2) { ?>

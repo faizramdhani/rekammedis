@@ -96,8 +96,6 @@
                                           <div class="buttons">
                                              <a href="<?= site_url('') ?>" class="btn btn-icon btn-primary" title="Edit"><i class="far fa-edit"></i></a>
                                              <a href="<?= site_url('') ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
-                                             <a href="#" title="Tambah" class="btn btn-icon btn-warning"><i class="far fa-file"></i></a>
-
                                           </div>
                                        </div>
                                     </td>

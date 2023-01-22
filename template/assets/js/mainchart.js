@@ -42,3 +42,10 @@ function riwayatalergiCheck() {
     }
     else document.getElementById('adaalergiyes').style.visibility = 'hidden';
 }
+
+function bicaranormalCheck() {
+    if (document.getElementById('bicaranormal').checked) {
+        document.getElementById('bicaranormal').style.visibility = 'visible';
+    }
+    else document.getElementById('bicaranormalyes').style.visibility = 'hidden';
+}

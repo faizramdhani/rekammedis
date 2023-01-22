@@ -68,4 +68,17 @@ class Pasien_m extends CI_Model
         $result = $query->result_array();
         return $result;
     }
+
+    
+    // public function getpasigd()
+    // {
+
+    //     $query = $this->db->query("SELECT a.tglmasuk, a.jam, a.nomrm, a.nori, a.asal, a.kdkelas, c.nmkamar, a.nobed, a.nmpasien, b.nmdokter, a.alamat, a.noasuransi, a.nosep, a.norj, a.nmkons
+    //     FROM dafinap a, mtdokter b, mtkamar c
+    //     WHERE b.kddokter=a.kddokter AND c.kdkamar=a.kdkamar
+    //     ORDER BY a.nomrm ASC LIMIT 10");
+    //     $result = $query->result_array();
+    //     return $result;
+    // }
+    
 }

@@ -1,6 +1,6 @@
 <section class="section">
     <div class="section-header">
-        <h5>Asesment Medis</h5>
+        <h5>Asessment Awal</h5>
         <div class="section-header-breadcrumb">
             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
             <div class="breadcrumb-item"><a href="#">Layout</a></div>
@@ -69,21 +69,35 @@
                     <div class="card-body">
                         <ul class="nav nav-pills" id="myTab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" data-tab="mygroup-tab" href="#tab1" role="tab" aria-selected="true">Anamnesis</a>
+                                <a class="nav-link active" data-tab="mygroup-tab" href="#tab1" role="tab" aria-selected="true">Triase</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-tab="mygroup-tab" href="#tab2" role="tab" aria-selected="false">Pemeriksaan Fisik</a>
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab2" role="tab" aria-selected="false">Survei Primer</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-tab="mygroup-tab" href="#tab3" role="tab" aria-selected="false">Pemeriksaan Penunjang</a>
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab3" role="tab" aria-selected="false">Anamnesis</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-tab="mygroup-tab" href="#tab4" role="tab" aria-selected="false">Rencana Asuhan</a>
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab4" role="tab" aria-selected="false">Asesment Nyeri</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-tab="mygroup-tab" href="#tab5" role="tab" aria-selected="false">Intruksi Tindak Lanjut</a>
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab5" role="tab" aria-selected="false">Asesment Resiko Jatuh</a>
                             </li>
-                           
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab6" role="tab" aria-selected="false">Status Fungsional</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab7" role="tab" aria-selected="false">Skrining Risiko Nutrisional</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab8" role="tab" aria-selected="false">Kebutuhan Edukasi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab9" role="tab" aria-selected="false">Diagnosis Keparawatan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-tab=" mygroup-tab" href="#tab10" role="tab" aria-selected="false">Rencana Asuhan</a>
+                            </li>
                         </ul>
 
                         <!-- tab 1 -->
@@ -91,104 +105,110 @@
 
                             <!-- card 1 -->
                             <div class="row">
-                                <div class="card-body col-12">
+                                <div class="col-12 ">
                                     <div class="table-responsive">
-                                        <table class="table table-striped table-md col-12">
+                                        <table class="table col-12">
 
-                                            <!-- 1 -->
+                                            <!-- tanggal -->
                                             <tr>
-                                                <td>Tanggal</td>
                                                 <td>
-                                                    <div class="form-check form-check-inline">
-                                                        <label>
-                                                            <input type="datetime-local" class="form-control datetimepicker">
-                                                        </label>
+                                                    <label class="col-4 d-lg-flex">Tanggal</label>
+                                                    <input type="date" class="form-control">
                                                 </td>
-                                                <td>
-                                                    <label>
-                                                        <center>Jam Datang</center>
-                                                        <input type="datetime-local" class="form-control datetimepicker">
-                                                    </label>
-                                                </td>
-
-                                                <td>
-                                                    <label>
-                                                        <center>Jam Dilayani</center>
-                                                        <input type="datetime-local" class="form-control datetimepicker">
-                                                    </label>
-                                                </td>
-                                                <td></td>
                                             </tr>
 
-
-                                            <!-- 2 -->
                                             <tr>
-                                                <td>TRIASE</td>
                                                 <td>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                        <label class="form-check-label" for="inlineCheckbox2">
-                                                            <center>Merah</center>
-                                                        </label>
-                                                    </div>
+                                                    <label class="col">Jam Masuk</label>
+                                                    <input type="time" class="form-control">
                                                 </td>
-                                                <td>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                        <label class="form-check-label" for="inlineCheckbox2">
-                                                            <center>Kuning</center>
-                                                        </label>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                        <label class="form-check-label" for="inlineCheckbox2">
-                                                            <center>Hijau</center>
-                                                        </label>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                        <label class="form-check-label" for="inlineCheckbox2">
-                                                            <center>Hitam</center>
-                                                        </label>
-                                                    </div>
-                                                </td>
-
-
-
                                             </tr>
 
-                                            <!-- 3 -->
+                                            <tr>
+                                                <td>
+                                                    <div class="form-group">
+                                                        <label class="col">Jam Dilayani</label>
+                                                        <input type="time" class="form-control">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
+                                            
+                                            <div class="form-group" class="col-sm-3">
+                                                <tr>
+                                                    <td>TRIASE</td>
+                                                    <td>
+                                                        <div class="row gutters-xs">
+
+                                                            <div class="col-auto">
+                                                                <label class="colorinput">
+                                                                    <input name="color" type="checkbox" value="danger" class="colorinput-input" />
+                                                                    <span class="colorinput-color bg-danger"></span>
+                                                                </label>
+                                                            </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="col-auto">
+                                                            <label class="colorinput">
+                                                                <input name="color" type="checkbox" value="warning" class="colorinput-input" />
+                                                                <span class="colorinput-color bg-warning"></span>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="col-auto">
+                                                            <label class="colorinput">
+                                                                <input name="color" type="checkbox" value="success" class="colorinput-input" />
+                                                                <span class="colorinput-color bg-success"></span>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+
+                                                    <td>
+                                                        <div class="col-auto">
+                                                            <label class="colorinput">
+                                                                <input name="color" type="checkbox" value="dark" class="colorinput-input" />
+                                                                <span class="colorinput-color bg-dark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                   
                                             <tr>
                                                 <td>Keluhan Utama</td>
                                                 <td>
-                                                    <label class="col-20">
-                                                        <input type="text" class="form-control">
-                                                    </label>
+                                                    <div class="form-group">
+                                                        <textarea name="anamnesis" class="form-control"></textarea>
+                                                    </div>
                                                 </td>
                                                 <td></td>
                                                 <td></td>
                                                 <td></td>
 
                                             </tr>
+                                            </div>
 
-                                            <!-- 4 -->
+
+                                       
+
+                                           
                                             <tr>
                                                 <td>Keadaan Umum</td>
                                                 <td>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                                                         <label class="form-check-label" for="inlineCheckbox2">
-                                                            <center>Gelisah/koma</center>
+                                                            <center>Gelisah / koma</center>
                                                         </label>
+                                                        
                                                     </div>
                                                 </td>
-                                                <td>
+                                            </tr>
+
+
+                                                
+                                                <!-- <td>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                                                         <label class="form-check-label" for="inlineCheckbox2">
@@ -211,10 +231,9 @@
                                                             <center>Meninggal</center>
                                                         </label>
                                                     </div>
-                                                </td>
+                                                </td> -->
                                             </tr>
 
-                                            <!-- 5 -->
                                             <tr>
                                                 <td>Pernafasan</td>
                                                 <td>
@@ -227,7 +246,7 @@
                                                         </label>
                                                     </div>
                                                 </td>
-                                                <td>
+                                                <!-- <td>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                                                         <label class="form-check-label" for="inlineCheckbox2">
@@ -250,12 +269,12 @@
                                                             <center>Kaku Mayat</center>
                                                         </label>
                                                     </div>
-                                                </td>
+                                                </td> -->
 
 
                                             </tr>
 
-                                            <!-- 6 -->
+                                          
                                             <tr>
                                                 <td>Nadi</td>
                                                 <td>
@@ -263,13 +282,13 @@
                                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                                                         <label class="form-check-label" for="inlineCheckbox2">
                                                             <center>
-                                                                <50 /> 150x/m
+                                                                < 50 /> 150x/m
                                                             </center>
                                                         </label>
                                                     </div>
                                                 </td>
 
-                                                <td>
+                                                <!-- <td>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                                                         <label class="form-check-label" for="inlineCheckbox2">
@@ -295,11 +314,11 @@
                                                         </label>
                                                     </div>
                                                 </td>
-
+ 
 
                                             </tr>
-
-                                            <!-- 7 -->
+-->
+                                         
                                             <tr>
                                                 <td>Akral</td>
                                                 <td>
@@ -312,7 +331,7 @@
                                                         </label>
                                                     </div>
                                                 </td>
-                                                <td>
+                                                <!-- <td>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                                                         <label class="form-check-label" for="inlineCheckbox2">
@@ -338,12 +357,12 @@
                                                         </label>
                                                     </div>
                                                 </td>
-
+ -->
 
 
                                             </tr>
 
-                                            <!-- 8 -->
+                                           
                                             <tr>
                                                 <td>CRT</td>
                                                 <td>
@@ -351,12 +370,12 @@
                                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                                                         <label class="form-check-label" for="inlineCheckbox2">
                                                             <center>
-                                                                lebih 2 detik
+                                                                > 2 detik
                                                             </center>
                                                         </label>
                                                     </div>
                                                 </td>
-                                                <td>
+                                                <!-- <td>
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                                                         <label class="form-check-label" for="inlineCheckbox2">
@@ -373,7 +392,7 @@
                                                                 kurang 2 detik</center>
                                                         </label>
                                                     </div>
-                                                </td>
+                                                </td> -->
 
                                             </tr>
 
@@ -382,12 +401,12 @@
                                 </div>
                             </div>
 
-                            <!-- card 2 -->
-                            <div class="row">
+                            <!-- tabel 2 -->
+                            <!-- <div class="row">
                                 <div class="card-body col-12">
                                     <div class="table-responsive">
                                         <table class="table table-striped table-md col-12">
-                                            <!-- 9 -->
+                                           
                                             <tr>
                                                 <td><b>Date Pre Hospital</b></td>
                                                 <td></td>
@@ -395,7 +414,7 @@
                                                 <td></td>
                                             </tr>
 
-                                            <!-- 10 -->
+                                           
                                             <tr>
                                                 <td>Cara Tiba Ke RS</td>
                                                 <td>
@@ -428,7 +447,7 @@
                                                 <td></td>
                                             </tr>
 
-                                            <!-- 11 -->
+                                           
                                             <tr>
                                                 <td>Rujukan</td>
                                                 <td>
@@ -456,7 +475,7 @@
                                                 <td></td>
                                             </tr>
 
-                                            <!-- 12 -->
+                                            
                                             <tr>
                                                 <td>Tanda Tanda Vital</td>
                                                 <td>
@@ -501,7 +520,7 @@
 
                                             </tr>
 
-                                            <!-- 13 -->
+                                          
                                             <tr>
                                                 <td>Tindakan&Pengobatan yang telah dilakukan</td>
                                                 <td>
@@ -558,7 +577,7 @@
                                         </table>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                         </div>
 
@@ -1650,7 +1669,540 @@
                         </div>
                     </div>
 
-                  
+                    <!-- tab 6 -->
+                    <div id="tab6" class="col-12" data-tab-group="mygroup-tab">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>VI. ASESMEN NYERI</h4>
+                            </div>
+                            <div class="row">
+                                <div class="card-body col-12">
+                                    <div class="form">
+                                        <label>Nyeri ?</label>
+                                        <div class="row">
+                                            <div class="card-body">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio1">Ya</label>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio2">Tidak</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="row gutters-sm">
+                                            <div class="col-6 col-sm-4">
+                                                <label class="imagecheck mb-4">
+                                                    <input name="imagecheck" type="checkbox" value="1" class="imagecheck-input" />
+                                                    <figure class="imagecheck-figure">
+                                                        <img src="<?= base_url() ?>/template/assets/img/assesment-nyeri/tidak-nyeri.png" alt="}" class="imagecheck-image">
+                                                    </figure>
+                                                    <p style="text-align: center;">Tidak Nyeri</p>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 col-sm-4">
+                                                <label class="imagecheck mb-4">
+                                                    <input name="imagecheck" type="checkbox" value="2" class="imagecheck-input" checked />
+                                                    <figure class="imagecheck-figure">
+                                                        <img src="<?= base_url() ?>/template/assets/img/assesment-nyeri/nyeri-ringan.png" alt="}" class="imagecheck-image">
+                                                    </figure>
+                                                    <p style="text-align: center;">Nyeri Ringan</p>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 col-sm-4">
+                                                <label class="imagecheck mb-4">
+                                                    <input name="imagecheck" type="checkbox" value="3" class="imagecheck-input" />
+                                                    <figure class="imagecheck-figure">
+                                                        <img src="<?= base_url() ?>/template/assets/img/assesment-nyeri/nyeri-mengganggu.png" alt="}" class="imagecheck-image">
+                                                    </figure>
+                                                    <p style="text-align: center;">Nyeri yang Mengganggu</p>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 col-sm-4">
+                                                <label class="imagecheck mb-4">
+                                                    <input name="imagecheck" type="checkbox" value="4" class="imagecheck-input" checked />
+                                                    <figure class="imagecheck-figure">
+                                                        <img src="<?= base_url() ?>/template/assets/img/assesment-nyeri/nyeri-menyusahkan.png" alt="}" class="imagecheck-image">
+                                                    </figure>
+                                                    <p style="text-align: center;">Nyeri yang Menyusahkan</p>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 col-sm-4">
+                                                <label class="imagecheck mb-4">
+                                                    <input name="imagecheck" type="checkbox" value="5" class="imagecheck-input" />
+                                                    <figure class="imagecheck-figure">
+                                                        <img src="<?= base_url() ?>/template/assets/img/assesment-nyeri/nyeri-hebat.png" alt="}" class="imagecheck-image">
+                                                    </figure>
+                                                    <p style="text-align: center;">Nyeri Hebat</p>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 col-sm-4">
+                                                <label class="imagecheck mb-4">
+                                                    <input name="imagecheck" type="checkbox" value="6" class="imagecheck-input" />
+                                                    <figure class="imagecheck-figure">
+                                                        <img src="<?= base_url() ?>/template/assets/img/assesment-nyeri/nyeri-sangat-hebat.png" alt="}" class="imagecheck-image">
+                                                    </figure>
+                                                    <p style="text-align: center;">Nyeri Sangat Hebat</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form">
+                                        <label>Nyeri ?</label>
+                                        <div class="row">
+                                            <div class="card-body">
+                                                <img src="<?= base_url() ?>/template/assets/img/assesment-nyeri/range-nyeri.png" alt="}" class="imagecheck-image">
+                                                <input type="range" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form">
+                                        <label>Skala</label>
+                                        <div class="row">
+                                            <div class="card-body">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio1">Akut</label>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio2">Kronis</label>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-md"></div>
+                                                    <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab6 ">Kembali <i class="fas fa-arrow-left"></i></a> </button>
+                                                    <!-- <div class="col-lg-4 col-md-5 text-right"> -->
+                                                    <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab7">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tab 7 -->
+                    <div id="tab7" class="col-12" data-tab-group="mygroup-tab">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>VII. Status Fungsional</h4>
+                            </div>
+                            <div class="card-body">
+
+                                <table class="table table-bordered table-md">
+                                    <!-- 1 -->
+                                    <tr>
+                                        <th>Mengendalikan rangsang defaksi</th>
+                                        <td>Tak terkendali / tak teratur(perlu pencahar)</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Kadang-kadang tak terkendali</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Terkendali teratur</td>
+                                        <td>2</td>
+                                    </tr>
+
+                                    <!-- 2 -->
+                                    <tr>
+                                        <th>Mengendalikan rangsang berkemih</th>
+                                        <td>Tak terkendali pakai kateter</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Kadang Kadang tak terkendali (1x24 jam)</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Mandiri</td>
+                                        <td>2</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Membersihkan diri(cuci muka, sisir rambut, sikat gigi)</th>
+                                        <td>Butuh pertolongan orang lain</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Mandiri</td>
+                                        <td>1</td>
+                                    </tr>
+
+
+                                    <!-- 3 -->
+                                    <tr>
+                                        <th>Penggunaan jamban masuk dan keluar (melepaskan, memakai, celanan, membersihkan, menyiram)</th>
+                                        <td>Tergantung pertolongan orang lain</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Perlu pertolongan pada beberapa kegiatan tetapi dapat mengerjakan sendiri kegiatan lain</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Mandiri</td>
+                                        <td>2</td>
+                                    </tr>
+
+                                    <!-- 4 -->
+                                    <tr>
+                                        <th>Makan</th>
+                                        <td>Tidak mampu</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Perlu pertolongan memotong makan</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Mandiri</td>
+                                        <td>2</td>
+                                    </tr>
+
+                                    <!-- 5 -->
+                                    <tr>
+                                        <th>Berubah sikap dan berbaring duduk</th>
+                                        <td>Tidak mampu</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Perlu banyak bantuan untuk bisa duduk(2 orang)</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Mandiri</td>
+                                        <td>2</td>
+                                    </tr>
+
+                                    <!-- 6 -->
+                                    <tr>
+                                        <th>Berpindah / berjalan</th>
+                                        <td>Tidak mampu</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Bisa (pindah) dengan bantuan 1 orang</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Mandiri</td>
+                                        <td>2</td>
+                                    </tr>
+
+                                    <!-- 7 -->
+                                    <tr>
+                                        <th>Memakai baju</th>
+                                        <td>Tergantung orang lain</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Sebagian dibantu (misalnya mengancing baju)</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Mandiri</td>
+                                        <td>2</td>
+                                    </tr>
+
+                                    <!-- 8 -->
+                                    <tr>
+                                        <th>Mandi</th>
+                                        <td>Tergantung orang lain</td>
+                                        <td>0</td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td>Mandiri</td>
+                                        <td>1</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>Total Skor : </th>
+                                        <td></td>
+                                        <td><input type="text" class="form-control"></td>
+                                    </tr>
+
+                                </table>
+                                <div class="form">
+                                    <label>Kesimpulan :</label>
+                                    <div class="form">
+                                        <div class="form-group">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                <label class="form-check-label" for="inlineCheckbox1">Mandiri (20)</label>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Ketergantungan Ringan(12-19)</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                        <label class="form-check-label" for="inlineCheckbox2">Ketergantungan Sedang (9-11)</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                        <label class="form-check-label" for="inlineCheckbox2">Ketergantungan Berat (5-10)</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                        <label class="form-check-label" for="inlineCheckbox2">Ketergantungan Total (5)</label>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <div class="col-md"></div>
+                                                        <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab7 ">Kembali <i class="fas fa-arrow-left"></i></a> </button>
+                                                        <!-- <div class="col-lg-4 col-md-5 text-right"> -->
+                                                        <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab8">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tab 8 -->
+                    <div id="tab8" class="col-12" data-tab-group="mygroup-tab">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>VIII. Kebutuhan Edukasi</h4>
+                            </div>
+                            <div class="row">
+                                <div class="card-body col-sm-4 col-md-6">
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-3">Bicara </label>
+                                        <div class="col-lg-9 col-md-9">
+                                            <input type="text" class="form-control" name="nama">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-3">Gangguan bicara </label>
+                                        <div class="col-lg-9 col-md-9">
+                                            <input type="text" class="form-control" name="nama">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4">Perlu Penerjemah:</label>
+                                        <div class="form">
+                                            <div class="row">
+                                                <div class="card-body">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio1">Tidak</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio2">Ya, bahasa</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="form">
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4">Hambatan Belajar:</label>
+                                        <div class="form">
+                                            <div class="row">
+                                                <div class="card-body">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio1">Tidak</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio2">Ya</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">Pendengaran</label>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">Agama</label>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">Penglihatan</label>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">Emosi</label>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">Kognotif</label>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">Bahasa</label>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">Fisik</label>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">Lainnya</label>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">Budaya</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row align-items-center">
+                                        <label class="col-md-4">Kebutuhan Pembelajaran :</label>
+                                        <div class="form">
+                                            <div class="row">
+                                                <div class="card-body">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio1">Proses Penyakit</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                        <label class="custom-control-label" for="customRadio2">Manajemen nyeri</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">Terapi/obat</label>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">Diet/nutrisi</label>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadio3">Rehabiliasi lainnya</label>
+                                            </div>
+                                            <div class="form-group row">
+                                                <div class="col-md"></div>
+                                                <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab8 ">Kembali <i class="fas fa-arrow-left"></i></a> </button>
+                                                <!-- <div class="col-lg-4 col-md-5 text-right"> -->
+                                                <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab9">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tab 9 -->
+                    <div id="tab9" class="col-12" data-tab-group="mygroup-tab">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>IX. Diagnosa Keperawatan</h4>
+                            </div>
+                            <div class="row">
+                                <div class="card-body col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md"></div>
+                                        <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab9 ">Kembali <i class="fas fa-arrow-left"></i></a> </button>
+                                        <!-- <div class="col-lg-4 col-md-5 text-right"> -->
+                                        <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab10">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tab 10 -->
+                    <div id="tab10" class="col-12" data-tab-group="mygroup-tab">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>X. Rencana Asuhan Keperawatan</h4>
+                            </div>
+                            <div class="row">
+                                <div class="card-body col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md"></div>
+                                        <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab10 ">Kembali <i class="fas fa-arrow-left"></i></a> </button>
+                                        <!-- <div class="col-lg-4 col-md-5 text-right"> -->
+                                        <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab1">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
