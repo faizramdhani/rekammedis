@@ -59,7 +59,8 @@ function ekspresipxCheck() {
         document.getElementById('ekspresipasienyes').style.visibility = 'hidden';
     }
     else document.getElementById('ekspresipasienyes').style.visibility = 'hidden';
-    
+}
+
 function bicaranormalCheck() {
     if (document.getElementById('bicaranormal').checked) {
         document.getElementById('bicaranormal').style.visibility = 'visible';
