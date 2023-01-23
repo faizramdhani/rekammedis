@@ -21,12 +21,12 @@ class Massessmentawalperawat extends CI_Model
     public $rr;
     public $gda;
     public $spo2;
-    // public $persepsi_penyakit_pasien;
-    // public $ekspresi_penyakit_pasien;
-    // public $gangguan_konsepdini;
-    // public $reaksi_anak_interaksi;
-    // public $pendidikan;
-    // public $pekerjaan;
+    public $persepsi_penyakit_pasien;
+    public $ekspresi_penyakit_pasien;
+    public $gangguan_konsepdini;
+    public $reaksi_anak_interaksi;
+    public $pendidikan;
+    public $pekerjaan;
     // public $parameter_gizi1;
     // public $parameter_gizi2;
     // public $parameter_gizi3;
@@ -51,8 +51,8 @@ class Massessmentawalperawat extends CI_Model
     // public $perlu_penerjemah;
     // public $hambatan_belajar;
     // public $kebutuhan_belajar;
-    // public $diagnosa_keperawatan;
-    // public $rencana_keperawatan;
+    public $diagnosa_keperawatan;
+    public $rencana_keperawatan;
 
 
     public function __construct()
@@ -98,11 +98,12 @@ class Massessmentawalperawat extends CI_Model
         $this->rr = $post["rr"];
         $this->gda = $post["gda"];
         $this->spo2 = $post["spo2"];
-        // $this->persepsi_penyakit_pasien = $post["persepsi_penyakit_pasien"];
-        // $this->ekspresi_penyakit_pasien = $post["ekspresi_penyakit_pasien"];
-        // $this->gangguan_konsepdini = $post["gangguan_konsepdini"];
-        // $this->reaksi_anak_interaksi = $post["reaksi_anak_interaksi"];
-        // $this->pendidikan = $post["pendidikan"];
+        $this->persepsi_penyakit_pasien = $post["persepsi_penyakit_pasien"];
+        $this->ekspresi_penyakit_pasien = $post["ekspresi_penyakit_pasien"];
+        $this->gangguan_konsepdini = $post["gangguan_konsepdini"];
+        $this->reaksi_anak_interaksi = $post["reaksi_anak_interaksi"];
+        $this->pendidikan = $post["pendidikan"];
+        $this->pekerjaan = $post["pekerjaan"];
         // $this->parameter_gizi1 = $post["parameter_gizi1"];
         // $this->parameter_gizi2 = $post["parameter_gizi2"];
         // $this->parameter_gizi3 = $post["parameter_gizi3"];
@@ -127,8 +128,8 @@ class Massessmentawalperawat extends CI_Model
         // $this->perlu_penerjemah = $post["perlu_penerjemah"];
         // $this->hambatan_belajar = $post["hambatan_belajar"];
         // $this->kebutuhan_belajar = $post["kebutuhan_belajar"];
-        // $this->diagnosa_keperawatan = $post["diagnosa_keperawatan"];
-        // $this->rencana_keperawatan = $post["rencana_keperawatan"];
+        $this->diagnosa_keperawatan = $post["diagnosa_keperawatan"];
+        $this->rencana_keperawatan = $post["rencana_keperawatan"];
         return $this->db->insert($this->_table, $this);
     }
 
@@ -140,4 +141,15 @@ class Massessmentawalperawat extends CI_Model
         return $result;
     }
 
+    public function getassessmentawaldetail($noIdAssessmentawalperawat)
+    {
+        // $query = $this->db->query("SELECT a.tanggal, a.nomrm, a.nmpasien, b.nmdokter, a.alamat, a.noasuransi, a.nosep, a.norj, a.nmkons, a.nik
+        // FROM paslama a, mtdokter b
+        // WHERE b.kddokter=a.kddokter AND a.nomrm='$noRM'");
+
+        $query = $this->db->query("SELECT * FROM pengkajianawal_perawatrj WHERE id_pengkajianawalperawat='$noIdAssessmentawalperawat'");
+
+        $result = $query->row_array();
+        return $result;
+    }
 }

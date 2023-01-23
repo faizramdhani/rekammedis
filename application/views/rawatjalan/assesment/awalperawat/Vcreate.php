@@ -113,7 +113,7 @@
                                             <div class="row">
                                                 <div class="card-body">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="datangsendiri" onclick="javascript:asalpasienCheck();" name="asalpasien" class="custom-control-input" value="Datang Sendiri">
+                                                        <input type="radio" id="datangsendiri" onclick="javascript:asalpasienCheck();" name="asalpasien" class="custom-control-input" value="Datang Sendiri" <?php if (set_value('asalpasien') == "Datang Sendiri") : echo "checked"; endif; ?>>
                                                         <label class="custom-control-label" for="datangsendiri">Datang Sendiri</label>
                                                     </div>
                                                 </div>
@@ -314,8 +314,7 @@
                                                                 <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab3">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
                                                             </div>
                                                         </div>
-                                                    </div>                                        
-                                                <input class="btn btn-success" type="submit" name="btn" value="Save" />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </table>
@@ -323,7 +322,6 @@
                                 </div>
                             </div>
                         </div>
-                        </form>
                         <!-- tab 3 -->
                         <div id="tab3" class="col-14" data-tab-group="mygroup-tab">
                             <div class="card-header">
@@ -336,25 +334,25 @@
                                         <div class="row">
                                             <div class="card-body">
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadio1">Cobaan Tuhan</label>
+                                                    <input type="radio" id="cobaantuhan" onclick="javascript:persepsipxCheck();" name="persepsi_penyakit_pasien" class="custom-control-input">
+                                                    <label class="custom-control-label" for="cobaantuhan">Cobaan Tuhan</label>
                                                 </div>
                                             </div>
                                             <div class="card-body">
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadio2">Hukuman</label>
+                                                    <input type="radio" id="hukuman" onclick="javascript:persepsipxCheck();" name="persepsi_penyakit_pasien" class="custom-control-input">
+                                                    <label class="custom-control-label" for="hukuman">Hukuman</label>
                                                 </div>
                                             </div>
                                             <div class="card-body">
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadio2">Lainnya</label>
+                                                    <input type="radio" id="persepsilainnya" onclick="javascript:persepsipxCheck();" name="persepsi_penyakit_pasien" class="custom-control-input">
+                                                    <label class="custom-control-label" for="persepsilainnya">Lainnya</label>
                                                 </div>
                                             </div>
                                             <div class="card-body">
-                                                <div class="form">
-                                                    <input type="text" class="form-control">
+                                                <div class="form" id="persepsipasienyes" style="visibility:hidden">
+                                                    <input type="text" name="persepsi_penyakit_pasien" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -364,25 +362,25 @@
                                         <div class="row">
                                             <div class="card-body">
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadio1">Murung/diam</label>
+                                                    <input type="radio" id="murung" onclick="javascript:ekspresipxCheck();" name="ekspresi_penyakit_pasien" class="custom-control-input">
+                                                    <label class="custom-control-label" for="murung">Murung/diam</label>
                                                 </div>
                                             </div>
                                             <div class="card-body">
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadio2">Gelisah</label>
+                                                    <input type="radio" id="gelisah" onclick="javascript:ekspresipxCheck();" name="ekspresi_penyakit_pasien" class="custom-control-input">
+                                                    <label class="custom-control-label" for="gelisah">Gelisah</label>
                                                 </div>
                                             </div>
                                             <div class="card-body">
                                                 <div class="custom-control custom-radio">
-                                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                    <label class="custom-control-label" for="customRadio2">Lainnya</label>
+                                                    <input type="radio" id="ekspresilainnya" onclick="javascript:ekspresipxCheck();" name="ekspresi_penyakit_pasien" class="custom-control-input">
+                                                    <label class="custom-control-label" for="ekspresilainnya">Lainnya</label>
                                                 </div>
                                             </div>
                                             <div class="card-body">
-                                                <div class="form">
-                                                    <input type="text" class="form-control">
+                                                <div class="form" id="ekspresipasienyes" style="visibility:hidden">
+                                                    <input type="text" name="ekspresi_penyakit_pasien" class="form-control">
                                                 </div>
                                             </div>
                                         </div>
@@ -394,12 +392,12 @@
                                             <div class="form">
                                                 <div class="form-group">
                                                     <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                        <label class="form-check-label" for="inlineCheckbox1">Ya</label>
+                                                        <input class="form-check-input" type="radio" id="yagangguan" name="gangguan_konsepdini" value="Ya">
+                                                        <label class="form-check-label" for="yagangguan">Ya</label>
                                                     </div>
                                                     <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                        <label class="form-check-label" for="inlineCheckbox2">Tidak</label>
+                                                        <input class="form-check-input" type="radio" id="tidakgangguan" name="gangguan_konsepdini" value="Tidak">
+                                                        <label class="form-check-label" for="tidakgangguan">Tidak</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -411,16 +409,16 @@
                                             <div class="form">
                                                 <div class="form-group">
                                                     <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                        <label class="form-check-label" for="inlineCheckbox1">Kooperatif</label>
+                                                        <input class="form-check-input" type="radio" id="kooperatif" name="reaksi_anak_interaksi" value="Kooperatif">
+                                                        <label class="form-check-label" for="kooperatif">Kooperatif</label>
                                                     </div>
                                                     <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                        <label class="form-check-label" for="inlineCheckbox2">Tidak Kooperatif</label>
+                                                        <input class="form-check-input" type="radio" id="tidakkooporatif" name="reaksi_anak_interaksi" value="Tidak Kooperatif">
+                                                        <label class="form-check-label" for="tidakkooporatif">Tidak Kooperatif</label>
                                                     </div>
                                                     <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                                                        <label class="form-check-label" for="inlineCheckbox3">Curiga</label>
+                                                        <input class="form-check-input" type="radio" id="curiga" name="reaksi_anak_interaksi" value="Curiga">
+                                                        <label class="form-check-label" for="curiga">Curiga</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -451,10 +449,12 @@
                                             <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab3">Kembali <i class="fas fa-arrow-left"></i></a> </button>
                                             <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab4">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
                                         </div>
-                                    </div>
+                                    </div>                                        
+                                    <input class="btn btn-success" type="submit" name="btn" value="Save" />
                                 </div>
                             </div>
                         </div>
+                        </form>
                         <!-- tab 4 -->
                         <div id="tab4" class="col-14" data-tab-group="mygroup-tab">
                             <div class="row">
@@ -679,7 +679,7 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="row gutters-sm">
-                                            <div class="col-6 col-sm-4">
+                                            <div class="col-3 col-sm-2">
                                                 <label class="imagecheck mb-4">
                                                     <input name="imagecheck" type="checkbox" value="1" class="imagecheck-input" />
                                                     <figure class="imagecheck-figure">
@@ -688,7 +688,7 @@
                                                     <p style="text-align: center;">Tidak Nyeri</p>
                                                 </label>
                                             </div>
-                                            <div class="col-6 col-sm-4">
+                                            <div class="col-3 col-sm-2">
                                                 <label class="imagecheck mb-4">
                                                     <input name="imagecheck" type="checkbox" value="2" class="imagecheck-input" checked />
                                                     <figure class="imagecheck-figure">
@@ -697,7 +697,7 @@
                                                     <p style="text-align: center;">Nyeri Ringan</p>
                                                 </label>
                                             </div>
-                                            <div class="col-6 col-sm-4">
+                                            <div class="col-3 col-sm-2">
                                                 <label class="imagecheck mb-4">
                                                     <input name="imagecheck" type="checkbox" value="3" class="imagecheck-input" />
                                                     <figure class="imagecheck-figure">
@@ -706,7 +706,7 @@
                                                     <p style="text-align: center;">Nyeri yang Mengganggu</p>
                                                 </label>
                                             </div>
-                                            <div class="col-6 col-sm-4">
+                                            <div class="col-3 col-sm-2">
                                                 <label class="imagecheck mb-4">
                                                     <input name="imagecheck" type="checkbox" value="4" class="imagecheck-input" checked />
                                                     <figure class="imagecheck-figure">
@@ -715,7 +715,7 @@
                                                     <p style="text-align: center;">Nyeri yang Menyusahkan</p>
                                                 </label>
                                             </div>
-                                            <div class="col-6 col-sm-4">
+                                            <div class="col-3 col-sm-2">
                                                 <label class="imagecheck mb-4">
                                                     <input name="imagecheck" type="checkbox" value="5" class="imagecheck-input" />
                                                     <figure class="imagecheck-figure">
@@ -724,7 +724,7 @@
                                                     <p style="text-align: center;">Nyeri Hebat</p>
                                                 </label>
                                             </div>
-                                            <div class="col-6 col-sm-4">
+                                            <div class="col-3 col-sm-2">
                                                 <label class="imagecheck mb-4">
                                                     <input name="imagecheck" type="checkbox" value="6" class="imagecheck-input" />
                                                     <figure class="imagecheck-figure">
@@ -1292,7 +1292,7 @@
                                 <div class="row">
                                     <div class="card-body col-12">
                                         <div class="form-group">
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="diagnosa_keperawatan"></textarea>
                                         </div>
                                         <div class="form-group row">
                                             <div class="col-md"></div>
@@ -1313,7 +1313,7 @@
                                 <div class="row">
                                     <div class="card-body col-12">
                                         <div class="form-group">
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="rencana_keperawatan"></textarea>
                                         </div>
                                         <div class="form-group row">
                                             <div class="col-md"></div>

@@ -42,3 +42,21 @@ function riwayatalergiCheck() {
     }
     else document.getElementById('adaalergiyes').style.visibility = 'hidden';
 }
+
+function persepsipxCheck() {
+    if (document.getElementById('persepsilainnya').checked) {
+        document.getElementById('persepsipasienyes').style.visibility = 'visible';
+    }else if(document.getElementById('hukuman').checked){
+        document.getElementById('persepsipasienyes').style.visibility = 'hidden';
+    }
+    else document.getElementById('persepsipasienyes').style.visibility = 'hidden';
+}
+
+function ekspresipxCheck() {
+    if (document.getElementById('ekspresilainnya').checked) {
+        document.getElementById('ekspresipasienyes').style.visibility = 'visible';
+    }else if(document.getElementById('murung').checked){
+        document.getElementById('ekspresipasienyes').style.visibility = 'hidden';
+    }
+    else document.getElementById('ekspresipasienyes').style.visibility = 'hidden';
+}
