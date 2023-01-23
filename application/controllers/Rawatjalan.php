@@ -7,7 +7,6 @@ class Rawatjalan extends CI_Controller
 	{
 		parent::__construct();
 		$this->load->library('session');
-
 		$this->load->model('Pasien_m');
 	}
 
@@ -18,12 +17,7 @@ class Rawatjalan extends CI_Controller
 		$this->template->load('template', 'pasien/paslama', $data);
 	}
 
-	public function pasigd()
-	{
-		$this->template->load('template', 'pasien/pasigd');
-	}
-
-
+	
 	public function rawatjalanDokter()
 	{
 		$noRM = $this->uri->segment(3);

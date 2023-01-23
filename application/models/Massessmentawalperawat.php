@@ -30,12 +30,12 @@ class Massessmentawalperawat extends CI_Model
     // public $parameter_gizi1;
     // public $parameter_gizi2;
     // public $parameter_gizi3;
-    // public $resiko_jatuh1;
-    // public $resiko_jatuh2;
-    // public $resiko_jatuh3;
-    // public $nyeri;
-    // public $nyeri_gmbr;
-    // public $skala;
+    public $resiko_jatuh1;
+    public $resiko_jatuh2;
+    public $resiko_jatuh3;
+    public $nyeri;
+    public $nyeri_gmbr;
+    public $skala;
     // public $rangsang_defaksi;
     // public $rangsa_berkemih;
     // public $membersihkan_diri;
@@ -68,7 +68,7 @@ class Massessmentawalperawat extends CI_Model
                 'label' => 'anamnesis',  // label yang kan ditampilkan pada pesan error
                 'rules' => 'trim|required'
             ]
-            ];
+        ];
     }
 
     public function save1()
@@ -107,12 +107,12 @@ class Massessmentawalperawat extends CI_Model
         // $this->parameter_gizi1 = $post["parameter_gizi1"];
         // $this->parameter_gizi2 = $post["parameter_gizi2"];
         // $this->parameter_gizi3 = $post["parameter_gizi3"];
-        // $this->resiko_jatuh1 = $post["resiko_jatuh1"];
-        // $this->resiko_jatuh2 = $post["resiko_jatuh2"];
-        // $this->resiko_jatuh3 = $post["resiko_jatuh3"];
-        // $this->nyeri = $post["nyeri"];
-        // $this->nyeri_gmbr = $post["nyeri_gmbr"];
-        // $this->skala = $post["skala"];
+        $this->resiko_jatuh1 = $post["resiko_jatuh1"];
+        $this->resiko_jatuh2 = $post["resiko_jatuh2"];
+        $this->resiko_jatuh3 = $post["resiko_jatuh3"];
+        $this->nyeri = $post["nyeri"];
+        $this->nyeri_gmbr = $post["nyeri_gmbr"];
+        $this->skala = $post["skala"];
         // $this->rangsang_defaksi = $post["rangsang_defaksi"];
         // $this->rangsa_berkemih = $post["rangsa_berkemih"];
         // $this->membersihkan_diri = $post["membersihkan_diri"];

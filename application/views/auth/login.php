@@ -14,15 +14,22 @@
     <!-- CSS Libraries -->
 
     <!-- Template CSS -->
-    <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url() ?>/template/assets/css/style.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/components.css">
 
 </head>
 
+
+<!-- <body>
+<img src="<?= base_url() ?>/template/assets/img/unsplash/login-bg.jpg"></img>
+</body> -->
+
 <body>
+<div class="col-lg-20 col-12 order-lg-300 order-1 min-vh-250 " data-background="<?= base_url() ?>/template/assets/img/unsplash/background.jpg">
+
     <div id="app">
         <section class="section">
-            <div class="container mt-0">
+            <div class="container mt-5">
                 <div class="row">
                     <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
                         <div class="login-brand">
@@ -48,21 +55,15 @@
                                         <div class="d-block">
                                             <label for="password" class="control-label">Password</label>
                                         </div>
-                                        <input type="password" class="form-control" name="pswd" tabindex="2" required>
+                                        <input type="password" class="form-control" name="pswd" tabindex="2" required autofocus>
                                         <div class="invalid-feedback">
                                             please fill in your password
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" name="remember" class="custom-control-input" tabindex="3" id="remember-me">
-                                            <label class="custom-control-label" for="remember-me">Remember Me</label>
-                                        </div>
-                                    </div>
 
                                     <div class="form-group">
-                                        <button type="submit" name="login" class="btn btn-primary btn-lg btn-block" tabindex="4">
+                                        <button type="submit" name="login" class="btn btn-primary btn-lg btn-block" tabindex="">
                                             Login
                                         </button>
                                     </div>
