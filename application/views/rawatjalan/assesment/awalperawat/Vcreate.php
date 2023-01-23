@@ -103,131 +103,133 @@
                             </li>
                         </ul>
                         <form action="<?php echo site_url('Cassessmentawalperawat/insert') ?>" method="post" enctype="multipart/form-data" >
-                        <!-- tab 1 -->
-                        <div id="tab1" class="col-14 active" data-tab-group="mygroup-tab">
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="card-body col-12">
-                                        <div class="form">
-                                            <label><b>Asal Pasien</b></label>
-                                            <div class="row">
-                                                <div class="card-body">
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="datangsendiri" onclick="javascript:asalpasienCheck();" name="asalpasien" class="custom-control-input" value="Datang Sendiri" <?php if (set_value('asalpasien') == "Datang Sendiri") : echo "checked"; endif; ?>>
-                                                        <label class="custom-control-label" for="datangsendiri">Datang Sendiri</label>
-                                                    </div>
-                                                </div>
-                                                <!-- <div class="card-body" id="ifYess" style="visibility:hidden">
-                                                    <div class="form">
-                                                        <input type="text" id="return" name="asalpasien" class="form-control" value="Datang Sendiri">
-                                                    </div>
-                                                </div> -->
+                            <!-- tab 1 -->
+                            <div id="tab1" class="col-14 active" data-tab-group="mygroup-tab">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="card-body col-12">
+                                            <div class="form">
+                                                <label><b>Asal Pasien</b></label>
+                                                <div class="row">
                                                     <div class="card-body">
                                                         <div class="custom-control custom-radio">
-                                                            <input type="radio" id="dirujukdari" onclick="javascript:asalpasienCheck();" name="asalpasien" class="custom-control-input">
-                                                            <label class="custom-control-label" for="dirujukdari">Dirujuk Dari</label>
+                                                            <input type="radio" id="datangsendiri" onclick="javascript:asalpasienCheck();" name="asalpasien" class="custom-control-input" value="Datang Sendiri" <?php if (set_value('asalpasien') == "Datang Sendiri") : echo "checked"; endif; ?>>
+                                                            <label class="custom-control-label" for="datangsendiri">Datang Sendiri</label>
                                                         </div>
                                                     </div>
-                                                    <div class="card-body" id="ifYes" style="visibility:hidden">
+                                                    <!-- <div class="card-body" id="ifYess" style="visibility:hidden">
                                                         <div class="form">
-                                                            <input type="text" id="return" name="asalpasien" class="form-control">
+                                                            <input type="text" id="return" name="asalpasien" class="form-control" value="Datang Sendiri">
+                                                        </div>
+                                                    </div> -->
+                                                        <div class="card-body">
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="dirujukdari" onclick="javascript:asalpasienCheck();" name="asalpasien" class="custom-control-input">
+                                                                <label class="custom-control-label" for="dirujukdari">Dirujuk Dari</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-body" id="ifYes" style="visibility:hidden">
+                                                            <div class="form">
+                                                                <input type="text" id="return" name="asalpasien" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <label>Tanggal/Jam</label>
+                                                        <input type="datetime-local" name="tanggal" class="form-control datetimepicker">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="card-header">
+                                            <h4>I. ANAMNESIS</h4>
+                                        </div>
+                                        <div class="card-body col-12">
+                                            <div class="form-group">
+                                                <textarea name="anamnesis" class="form-control"></textarea>
+                                            </div>
+                                            <div class="form">
+                                                <label>1. Riwayat Penyakit Dahulu</label>
+                                                <div class="row">
+                                                    <div class="card-body">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="tidakadapenyakit" onclick="javascript:riwayatpenyakitCheck();" name="riwayat_penyakit" class="custom-control-input">
+                                                            <label class="custom-control-label" for="tidakadapenyakit">Tidak Ada</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="adapenyakit" onclick="javascript:riwayatpenyakitCheck();" name="riwayat_penyakit" class="custom-control-input">
+                                                            <label class="custom-control-label" for="adapenyakit">Ada, sebutkan</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body" id="adapenyakityes" style="visibility:hidden">
+                                                        <div class="form">
+                                                            <input type="text" name="riwayat_penyakit" class="form-control">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="card">
-                                                    <label>Tanggal/Jam</label>
-                                                    <input type="datetime-local" name="tanggal" class="form-control datetimepicker">
-                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="card-header">
-                                        <h4>I. ANAMNESIS</h4>
-                                    </div>
-                                    <div class="card-body col-12">
-                                        <div class="form-group">
-                                            <textarea name="anamnesis" class="form-control"></textarea>
-                                        </div>
-                                        <div class="form">
-                                            <label>1. Riwayat Penyakit Dahulu</label>
-                                            <div class="row">
-                                                <div class="card-body">
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="tidakadapenyakit" onclick="javascript:riwayatpenyakitCheck();" name="riwayat_penyakit" class="custom-control-input">
-                                                        <label class="custom-control-label" for="tidakadapenyakit">Tidak Ada</label>
+                                            <div class="form">
+                                                <label>2. Riwayat Penggunaan Obat</label>
+                                                <div class="row">
+                                                    <div class="card-body">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="tidakadaobat" onclick="javascript:riwayatobatCheck();" name="riwayat_penggunaan_obat" class="custom-control-input">
+                                                            <label class="custom-control-label" for="tidakadaobat">Tidak Ada</label>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="adapenyakit" onclick="javascript:riwayatpenyakitCheck();" name="riwayat_penyakit" class="custom-control-input">
-                                                        <label class="custom-control-label" for="adapenyakit">Ada, sebutkan</label>
+                                                    <div class="card-body">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="adaobat" onclick="javascript:riwayatobatCheck();" name="riwayat_penggunaan_obat" class="custom-control-input">
+                                                            <label class="custom-control-label" for="adaobat">Ada, sebutkan</label>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="card-body" id="adapenyakityes" style="visibility:hidden">
-                                                    <div class="form">
-                                                        <input type="text" name="riwayat_penyakit" class="form-control">
+                                                    <div class="card-body" id="adaobatyes" style="visibility:hidden">
+                                                        <div class="form">
+                                                            <input type="text" name="riwayat_penggunaan_obat" class="form-control">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="form">
-                                            <label>2. Riwayat Penggunaan Obat</label>
-                                            <div class="row">
-                                                <div class="card-body">
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="tidakadaobat" onclick="javascript:riwayatobatCheck();" name="riwayat_penggunaan_obat" class="custom-control-input">
-                                                        <label class="custom-control-label" for="tidakadaobat">Tidak Ada</label>
+                                            <div class="form">
+                                                <label>3. Riwayat Alergi</label>
+                                                <div class="row">
+                                                    <div class="card-body">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="tidakadaalergi" onclick="javascript:riwayatalergiCheck();" name="riwayat_alergi" class="custom-control-input">
+                                                            <label class="custom-control-label" for="tidakadaalergi">Tidak Ada</label>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="adaobat" onclick="javascript:riwayatobatCheck();" name="riwayat_penggunaan_obat" class="custom-control-input">
-                                                        <label class="custom-control-label" for="adaobat">Ada, sebutkan</label>
+                                                    <div class="card-body">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="adaalergi" onclick="javascript:riwayatalergiCheck();" name="riwayat_alergi" class="custom-control-input">
+                                                            <label class="custom-control-label" for="adaalergi">Ada, sebutkan</label>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="card-body" id="adaobatyes" style="visibility:hidden">
-                                                    <div class="form">
-                                                        <input type="text" name="riwayat_penggunaan_obat" class="form-control">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form">
-                                            <label>3. Riwayat Alergi</label>
-                                            <div class="row">
-                                                <div class="card-body">
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="tidakadaalergi" onclick="javascript:riwayatalergiCheck();" name="riwayat_alergi" class="custom-control-input">
-                                                        <label class="custom-control-label" for="tidakadaalergi">Tidak Ada</label>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="custom-control custom-radio">
-                                                        <input type="radio" id="adaalergi" onclick="javascript:riwayatalergiCheck();" name="riwayat_alergi" class="custom-control-input">
-                                                        <label class="custom-control-label" for="adaalergi">Ada, sebutkan</label>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body" id="adaalergiyes" style="visibility:hidden">
-                                                    <div class="form">
-                                                        <input type="text" name="riwayat_alergi" class="form-control">
+                                                    <div class="card-body" id="adaalergiyes" style="visibility:hidden">
+                                                        <div class="form">
+                                                            <input type="text" name="riwayat_alergi" class="form-control">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                        <!-- button  -->
-                                        <div class="form-group row">
-                                            <div class="col-md"></div>
-                                            <div class="col-lg-4 col-md-5 text-right">
-                                                <!-- <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab1">Kembali <i class="fas fa-arrow-left"></i></a> </button> -->
-                                                <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab2">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
+                                            <!-- button  -->
+                                            <div class="form-group row">
+                                                <div class="col-md"></div>
+                                                <div class="col-lg-4 col-md-5 text-right">
+                                                    <!-- <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab1">Kembali <i class="fas fa-arrow-left"></i></a> </button> -->
+                                                    <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab2">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                             <!-- tab 2 -->
                             <div id="tab2" class="col-14" data-tab-group="mygroup-tab">
                                 <div class="card-header">
@@ -313,125 +315,116 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="form-group row">
+                                    <div class="col-md"></div>
+                                    <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab1">Kembali <i class="fas fa-arrow-left"></i></a> </button>
+                                    <div class="col-lg-4 col-md-5 text-right">
+                                        <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab3">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
+                                    </div>
+                                </div>
+                            </div>
 
-
-                                                        <div class="form-group row">
-                                                            <div class="col-md"></div>
-                                                            <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab1">Kembali <i class="fas fa-arrow-left"></i></a> </button>
-                                                            <div class="col-lg-4 col-md-5 text-right">
-                                                                <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab3">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
-                                                            </div>
+                            <!-- tab 3 -->
+                            <div id="tab3" class="col-14" data-tab-group="mygroup-tab">
+                                <div class="card-header">
+                                    <h4>III. PSIKO SOSIAL SPIRITUAL DAN EKONOMI</h4>
+                                </div>
+                                <div class="row">
+                                    <div class="card-body col-12">
+                                        <div class="form">
+                                            <label>1. Persepsi pasien terhadap penyakitnya</label>
+                                            <div class="row">
+                                                <div class="card-body">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="cobaantuhan" onclick="javascript:persepsipxCheck();" name="persepsi_penyakit_pasien" class="custom-control-input">
+                                                        <label class="custom-control-label" for="cobaantuhan">Cobaan Tuhan</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="hukuman" onclick="javascript:persepsipxCheck();" name="persepsi_penyakit_pasien" class="custom-control-input">
+                                                        <label class="custom-control-label" for="hukuman">Hukuman</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="persepsilainnya" onclick="javascript:persepsipxCheck();" name="persepsi_penyakit_pasien" class="custom-control-input">
+                                                        <label class="custom-control-label" for="persepsilainnya">Lainnya</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="form" id="persepsipasienyes" style="visibility:hidden">
+                                                        <input type="text" name="persepsi_penyakit_pasien" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <label>2. Ekspresi pasien terhadap penyakitnya</label>
+                                            <div class="row">
+                                                <div class="card-body">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="murung" onclick="javascript:ekspresipxCheck();" name="ekspresi_penyakit_pasien" class="custom-control-input">
+                                                        <label class="custom-control-label" for="murung">Murung/diam</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="gelisah" onclick="javascript:ekspresipxCheck();" name="ekspresi_penyakit_pasien" class="custom-control-input">
+                                                        <label class="custom-control-label" for="gelisah">Gelisah</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="ekspresilainnya" onclick="javascript:ekspresipxCheck();" name="ekspresi_penyakit_pasien" class="custom-control-input">
+                                                        <label class="custom-control-label" for="ekspresilainnya">Lainnya</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="form" id="ekspresipasienyes" style="visibility:hidden">
+                                                        <input type="text" name="ekspresi_penyakit_pasien" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form">
+                                            <label>3. Gangguan konsep diri</label>
+                                            <div class="card-body col-12">
+                                                <div class="form">
+                                                    <div class="form-group">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" id="yagangguan" name="gangguan_konsepdini" value="Ya">
+                                                            <label class="form-check-label" for="yagangguan">Ya</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" id="tidakgangguan" name="gangguan_konsepdini" value="Tidak">
+                                                            <label class="form-check-label" for="tidakgangguan">Tidak</label>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- tab 3 -->
-                        <div id="tab3" class="col-14" data-tab-group="mygroup-tab">
-                            <div class="card-header">
-                                <h4>III. PSIKO SOSIAL SPIRITUAL DAN EKONOMI</h4>
-                            </div>
-                            <div class="row">
-                                <div class="card-body col-12">
-                                    <div class="form">
-                                        <label>1. Persepsi pasien terhadap penyakitnya</label>
-                                        <div class="row">
-                                            <div class="card-body">
-                                                <div class="custom-control custom-radio">
-                                                    <input type="radio" id="cobaantuhan" onclick="javascript:persepsipxCheck();" name="persepsi_penyakit_pasien" class="custom-control-input">
-                                                    <label class="custom-control-label" for="cobaantuhan">Cobaan Tuhan</label>
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="custom-control custom-radio">
-                                                    <input type="radio" id="hukuman" onclick="javascript:persepsipxCheck();" name="persepsi_penyakit_pasien" class="custom-control-input">
-                                                    <label class="custom-control-label" for="hukuman">Hukuman</label>
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="custom-control custom-radio">
-                                                    <input type="radio" id="persepsilainnya" onclick="javascript:persepsipxCheck();" name="persepsi_penyakit_pasien" class="custom-control-input">
-                                                    <label class="custom-control-label" for="persepsilainnya">Lainnya</label>
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="form" id="persepsipasienyes" style="visibility:hidden">
-                                                    <input type="text" name="persepsi_penyakit_pasien" class="form-control">
-                                                </div>
-                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form">
-                                        <label>2. Ekspresi pasien terhadap penyakitnya</label>
-                                        <div class="row">
-                                            <div class="card-body">
-                                                <div class="custom-control custom-radio">
-                                                    <input type="radio" id="murung" onclick="javascript:ekspresipxCheck();" name="ekspresi_penyakit_pasien" class="custom-control-input">
-                                                    <label class="custom-control-label" for="murung">Murung/diam</label>
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="custom-control custom-radio">
-                                                    <input type="radio" id="gelisah" onclick="javascript:ekspresipxCheck();" name="ekspresi_penyakit_pasien" class="custom-control-input">
-                                                    <label class="custom-control-label" for="gelisah">Gelisah</label>
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="custom-control custom-radio">
-                                                    <input type="radio" id="ekspresilainnya" onclick="javascript:ekspresipxCheck();" name="ekspresi_penyakit_pasien" class="custom-control-input">
-                                                    <label class="custom-control-label" for="ekspresilainnya">Lainnya</label>
-                                                </div>
-                                            </div>
-                                            <div class="card-body">
-                                                <div class="form" id="ekspresipasienyes" style="visibility:hidden">
-                                                    <input type="text" name="ekspresi_penyakit_pasien" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="form">
-                                        <label>3. Gangguan konsep diri</label>
-                                        <div class="card-body col-12">
-                                            <div class="form">
-                                                <div class="form-group">
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" id="yagangguan" name="gangguan_konsepdini" value="Ya">
-                                                        <label class="form-check-label" for="yagangguan">Ya</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" id="tidakgangguan" name="gangguan_konsepdini" value="Tidak">
-                                                        <label class="form-check-label" for="tidakgangguan">Tidak</label>
+                                        <div class="form">
+                                            <label>4. Reaksi anak interaksi (Khusus pasien anak)</label>
+                                            <div class="card-body col-12">
+                                                <div class="form">
+                                                    <div class="form-group">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" id="kooperatif" name="reaksi_anak_interaksi" value="Kooperatif">
+                                                            <label class="form-check-label" for="kooperatif">Kooperatif</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" id="tidakkooporatif" name="reaksi_anak_interaksi" value="Tidak Kooperatif">
+                                                            <label class="form-check-label" for="tidakkooporatif">Tidak Kooperatif</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" id="curiga" name="reaksi_anak_interaksi" value="Curiga">
+                                                            <label class="form-check-label" for="curiga">Curiga</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="form">
-                                        <label>4. Reaksi anak interaksi (Khusus pasien anak)</label>
-                                        <div class="card-body col-12">
-                                            <div class="form">
-                                                <div class="form-group">
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" id="kooperatif" name="reaksi_anak_interaksi" value="Kooperatif">
-                                                        <label class="form-check-label" for="kooperatif">Kooperatif</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" id="tidakkooporatif" name="reaksi_anak_interaksi" value="Tidak Kooperatif">
-                                                        <label class="form-check-label" for="tidakkooporatif">Tidak Kooperatif</label>
-                                                    </div>
-                                                    <div class="form-check form-check-inline">
-                                                        <input class="form-check-input" type="radio" id="curiga" name="reaksi_anak_interaksi" value="Curiga">
-                                                        <label class="form-check-label" for="curiga">Curiga</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
                                         <div class="form">
                                             <label>5. Pendidikan</label>
@@ -451,9 +444,8 @@
                                             </div>
                                         </div>
 
-                                        <!-- button  -->
+                                            <!-- button  -->
                                         <div class="form-group row">
-                                            <div class="col-md"></div>
                                             <div class="col-lg-4 col-md-5 text-right">
                                                 <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab3">Kembali <i class="fas fa-arrow-left"></i></a> </button>
                                                 <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab4">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
@@ -462,6 +454,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- tab 4 -->
                             <div id="tab4" class="col-14" data-tab-group="mygroup-tab">
                                 <div class="row">
@@ -649,8 +642,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-
                                         </div>
                                         <!-- button  -->
                                         <div class="form-group row">
@@ -660,7 +651,6 @@
                                                 <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab6">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -1175,149 +1165,148 @@
 
                             <!-- tab 8 -->
                             <div id="tab8" class="col-14" data-tab-group="mygroup-tab">                             
-                                    <div class="card-header">
-                                        <h4>VIII Kebutuhan Edukasi</h4>
-                                    </div>
+                                <div class="card-header">
+                                    <h4>VIII Kebutuhan Edukasi</h4>
+                                </div>
+                                <div class="form">
+                                    <label class="col-sm-3">Bicara</label>
                                     <div class="form">
-                                        <label class="col-sm-3">Bicara</label>
-                                        <div class="form">
-                                            <div class="card-body">
-                                                <div class="form">
+                                        <div class="card-body">
+                                            <div class="form">
+                                                <div class="form-group">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" id="bicaranormal" onclick="javascript:asalpasienCheck();" name="bicara" type="checkbox" value="Bicara">
+                                                        <label class="form-check-label" for="inlineCheckbox1">Normal</label>
+                                                    </div>
                                                     <div class="form-group">
                                                         <div class="form-check form-check-inline">
-                                                            <input class="form-check-input" id="bicaranormal" onclick="javascript:asalpasienCheck();" name="bicara" type="checkbox" value="Bicara">
-                                                            <label class="form-check-label" for="inlineCheckbox1">Normal</label>
-                                                        </div>
-                                                        <div class="form-group">
-                                                            <div class="form-check form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                                <label class="form-check-label" for="inlineCheckbox2">Gangguan bicara </label>
-                                                                <input type="text" class="form-control col-sm-4">
-                                                            </div>
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Gangguan bicara </label>
+                                                            <input type="text" class="form-control col-sm-4">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div class="form">
-                                            <label class="col-sm-3">Perlu Penerjemah</label>
-                                            <div class="row">
-                                                <div class="card-body">
-                                                    <div class="form">
-                                                        <div class="form-group-rpw">
+                                    <div class="form">
+                                        <label class="col-sm-3">Perlu Penerjemah</label>
+                                        <div class="row">
+                                            <div class="card-body">
+                                                <div class="form">
+                                                    <div class="form-group-rpw">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                            <label class="form-check-label" for="inlineCheckbox1">Tidak</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-row">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Ya </label>
+                                                        </div>
+                                                        <div class="form-group-row">
                                                             <div class="form-check form-check-inline">
                                                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                                <label class="form-check-label" for="inlineCheckbox1">Tidak</label>
+                                                                <label class="form-check-label" for="inlineCheckbox1">Pendengaran</label>
                                                             </div>
-                                                        </div>
-                                                        <div class="form-group-row">
+                                                            <div class="form-check form-check-inline ">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                                <label class="form-check-label" for="inlineCheckbox2">Agama</label>
+                                                            </div>
                                                             <div class="form-check form-check-inline">
                                                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                                <label class="form-check-label" for="inlineCheckbox2">Ya </label>
+                                                                <label class="form-check-label" for="inlineCheckbox2">Penglihatan</label>
                                                             </div>
-                                                            <div class="form-group-row">
-                                                                <div class="form-check form-check-inline">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                                    <label class="form-check-label" for="inlineCheckbox1">Pendengaran</label>
-                                                                </div>
-                                                                <div class="form-check form-check-inline ">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                                    <label class="form-check-label" for="inlineCheckbox2">Agama</label>
-                                                                </div>
-                                                                <div class="form-check form-check-inline">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                                    <label class="form-check-label" for="inlineCheckbox2">Penglihatan</label>
-                                                                </div>
-                                                                <div class="form-check form-check-inline">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                                    <label class="form-check-label" for="inlineCheckbox2">Kognotif</label>
-                                                                </div>
-                                                                <div class="form-check form-check-inline">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                                    <label class="form-check-label" for="inlineCheckbox2">Fisik</label>
-                                                                </div>
-                                                                <div class="form-check form-check-inline">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                                    <label class="form-check-label" for="inlineCheckbox2">Budaya</label>
-                                                                </div>
-                                                                <div class="form-check form-check-inline">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                                    <label class="form-check-label" for="inlineCheckbox1">Agama</label>
-                                                                </div>
-                                                                <div class="form-check form-check-inline">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                                    <label class="form-check-label" for="inlineCheckbox2">Emosi</label>
-                                                                </div>
-                                                                <div class="form-check form-check-inline">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                                    <label class="form-check-label" for="inlineCheckbox2">Bahasa</label>
-                                                                </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                                <label class="form-check-label" for="inlineCheckbox2">Kognotif</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                                <label class="form-check-label" for="inlineCheckbox2">Fisik</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                                <label class="form-check-label" for="inlineCheckbox2">Budaya</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                                <label class="form-check-label" for="inlineCheckbox1">Agama</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                                <label class="form-check-label" for="inlineCheckbox2">Emosi</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                                <label class="form-check-label" for="inlineCheckbox2">Bahasa</label>
                                                             </div>
                                                         </div>
+                                                    </div>
 
+                                                    <div class="form-group-row">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Lainnya</label>
+                                                            <input type="text" class="form-control col-5">
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form">
+                                        <label class="col-sm-3">Kebutuhan Pembelajaran</label>
+                                        <div class="row">
+                                            <div class="card-body">
+                                                <div class="form">
+                                                    <div class="form-group-row">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                            <label class="form-check-label" for="inlineCheckbox1">Proses penyakit</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Manajemen Nyeri</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+                                                            <label class="form-check-label" for="inlineCheckbox3">Terpai/Obat</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox4">Diet/Nurisi</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox5">Rehabiliasi</label>
+                                                        </div>
                                                         <div class="form-group-row">
                                                             <div class="form-check form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                                <label class="form-check-label" for="inlineCheckbox2">Lainnya</label>
+                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option2">
+                                                                <label class="form-check-label" for="inlineCheckbox6">Lainnya</label>
                                                                 <input type="text" class="form-control col-5">
                                                             </div>
                                                         </div>
 
-
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form">
-                                            <label class="col-sm-3">Kebutuhan Pembelajaran</label>
-                                            <div class="row">
-                                                <div class="card-body">
-                                                    <div class="form">
-                                                        <div class="form-group-row">
-                                                            <div class="form-check form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                                                <label class="form-check-label" for="inlineCheckbox1">Proses penyakit</label>
-                                                            </div>
-                                                            <div class="form-check form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                                                <label class="form-check-label" for="inlineCheckbox2">Manajemen Nyeri</label>
-                                                            </div>
-                                                            <div class="form-check form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
-                                                                <label class="form-check-label" for="inlineCheckbox3">Terpai/Obat</label>
-                                                            </div>
-                                                            <div class="form-check form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
-                                                                <label class="form-check-label" for="inlineCheckbox4">Diet/Nurisi</label>
-                                                            </div>
-                                                            <div class="form-check form-check-inline">
-                                                                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
-                                                                <label class="form-check-label" for="inlineCheckbox5">Rehabiliasi</label>
-                                                            </div>
-                                                            <div class="form-group-row">
-                                                                <div class="form-check form-check-inline">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option2">
-                                                                    <label class="form-check-label" for="inlineCheckbox6">Lainnya</label>
-                                                                    <input type="text" class="form-control col-5">
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group row">
-                                                        <div class="col-md"></div>
-                                                        <div class="col-lg-4 col-md-5 text-right">
-                                                            <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab8 ">Kembali <i class="fas fa-arrow-left"></i></a> </button>
-                                                            <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab9">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
-                                                        </div>
+                                                <div class="form-group row">
+                                                    <div class="col-md"></div>
+                                                    <div class="col-lg-4 col-md-5 text-right">
+                                                        <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab8 ">Kembali <i class="fas fa-arrow-left"></i></a> </button>
+                                                        <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab9">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                
+                                </div>
                             </div>
 
                             <!-- tab 9 -->
@@ -1369,7 +1358,6 @@
                                 </div>
                             </div>
                         </form>
-                    </div>
                 </div>
             </div>
         </div>
