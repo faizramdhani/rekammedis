@@ -10,9 +10,9 @@ class Pasien_m extends CI_Model
 
     public function getpaslama()
     {
-        $query = $this->db->query("SELECT a.tanggal, a.nomrm, a.nmpasien, b.nmdokter, a.alamat, a.noasuransi, a.nosep, a.norj, a.nmkons
-        FROM paslama a, mtdokter b
-        WHERE b.kddokter=a.kddokter 
+        $query = $this->db->query("SELECT a.tanggal, a.nomrm, a.nmpasien, b.nmdokter, a.alamat, c.nama, a.nosep, a.norj, a.nmkons
+        FROM paslama a, mtdokter b, tindakan1 c
+        WHERE b.kddokter=a.kddokter AND a.kode1 != '010301' AND c.kode1=a.kode1
         ORDER BY a.nomrm ASC LIMIT 10");
 
         $result = $query->result_array();
@@ -49,9 +49,9 @@ class Pasien_m extends CI_Model
         // FROM paslama a, mtdokter b
         // WHERE b.kddokter=a.kddokter AND a.nomrm='$noRM'");
 
-        $query = $this->db->query("SELECT a.nomrm, a.nmpasien, a.noasuransi, a.norj, b.kelamin, b.identitas, b.umurthn
-        FROM paslama a, pasien b
-        WHERE b.nomrm=a.nomrm AND a.nomrm='$noRM'");
+        $query = $this->db->query("SELECT a.nomrm, a.nmpasien, c.nama, a.norj, b.kelamin, b.identitas, b.umurthn
+        FROM paslama a, pasien b, tindakan1 c
+        WHERE b.nomrm=a.nomrm AND a.nomrm='$noRM'  AND c.kode1=a.kode1");
 
         $result = $query->row_array();
         $this->session->set_userdata($result);

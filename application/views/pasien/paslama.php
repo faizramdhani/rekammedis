@@ -65,7 +65,7 @@
                                  <th>No MRM</th>
 
                                  <th>Alamat</th>
-                                 <th>No Asuransi</th>
+                                 <th>Poliklinik</th>
                                  <th>No SEP</th>
                                  <th>No Rawat Jalan</th>
 
@@ -86,7 +86,7 @@
                                     <td><?= $row['nmpasien'] ?></td>
                                     <td><?= $row['nomrm'] ?></td>
                                     <td><?= $row['alamat'] ?></td>
-                                    <td><?= $row['noasuransi'] ?></td>
+                                    <td><?= $row['nama'] ?></td>
                                     <td><?= $row['nosep'] ?></td>
                                     <td><?= $row['norj'] ?></td>
 

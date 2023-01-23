@@ -47,13 +47,13 @@
                         <tr>
                             <th>NIK</th>
                             <th>Umur</th>
-                            <th>No. Asuransi </th>
+                            <th>Poliklinik</th>
                             <th>Kode Rumah Sakit</th>
                         </tr>
                         <tr>
                             <td><?php echo $this->session->userdata('identitas'); ?></td>
                             <td><?php echo $this->session->userdata('umurthn'); ?></td>
-                            <td><?php echo $this->session->userdata('noasuransi'); ?></td>
+                            <td><?php echo $this->session->userdata('nama'); ?></td>
                             <td></td>
 
                         </tr>
