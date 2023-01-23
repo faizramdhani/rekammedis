@@ -30,10 +30,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 //         $_SERVER['SCRIPT_NAME']
 //     );
 
-$root = (isset($_SERVER['HTTPS']) ? "https://" : "http://") . $_SERVER['HTTP_HOST'];
-$root .= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
-$config['base_url'] = $root;
+// $root = (isset($_SERVER['HTTPS']) ? "https://" : "http://") . $_SERVER['HTTP_HOST'];
+// $root .= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
+// $config['base_url'] = $root;
 
+$config['base_url'] = 'http://localhost/e-rekammedis/';
 /*
 |--------------------------------------------------------------------------
 | Index File
