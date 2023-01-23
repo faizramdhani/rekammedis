@@ -131,7 +131,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label>Tanggal/Jam</label>
-                                                <input type="datetime-local" class="form-control datetimepicker">
+                                                <input type="datetime-local" class="form-control datetimepicker" value="<?= $assessmentdetail['tanggal']?>" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -143,7 +143,7 @@
                                 </div>
                                 <div class="card-body col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control"></textarea>
+                                        <textarea class="form-control" readonly><?= $assessmentdetail['anamnesis']?></textarea>
                                     </div>
                                     <div class="form">
                                         <label>1. Riwayat Penyakit Dahulu</label>
@@ -241,24 +241,18 @@
                                                         <div class="form">
                                                             <label>TB</label>
                                                         </div>
-                                                        <input type="text" class="form-control col-6">
+                                                        <input type="text" class="form-control col-6" value="<?= $assessmentdetail['tb']?>" readonly>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>BB</label>
-                                                            <input type="text" class="form-control col-5">
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div class="form">
-                                                            <label>BB</label>
-                                                            <input type="text" class="form-control col-6">
+                                                            <input type="text" class="form-control col-5" value="<?= $assessmentdetail['bb']?>" readonly>
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>GCS</label>
-                                                            <input type="text" class="form-control col-6">
+                                                            <input type="text" class="form-control col-6" value="<?= $assessmentdetail['gcs']?>" readonly>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -269,42 +263,42 @@
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>TD</label>
-                                                            <input type="text" class="form-control col-5">
+                                                            <input type="text" class="form-control col-5" value="<?= $assessmentdetail['td']?>" readonly>
                                                             <p>mmhg</p>
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>Suhu</label>
-                                                            <input type="text" class="form-control col-5">
+                                                            <input type="text" class="form-control col-5" value="<?= $assessmentdetail['suhu']?>" readonly>
                                                             <p>oC</p>
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>Nadi</label>
-                                                            <input type="text" class="form-control col-5">
+                                                            <input type="text" class="form-control col-5" value="<?= $assessmentdetail['nadi']?>" readonly>
                                                             <p>x/mnt</p>
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>RR</label>
-                                                            <input type="text" class="form-control col-5">
+                                                            <input type="text" class="form-control col-5" value="<?= $assessmentdetail['rr']?>" readonly>
                                                             <p>x/mnt</p>
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>GDA</label>
-                                                            <input type="text" class="form-control col-3">
+                                                            <input type="text" class="form-control col-3" value="<?= $assessmentdetail['gda']?>" readonly>
                                                             <p>mg/dl</p>
                                                         </div>
                                                     </div>
                                                     <div class="card-body">
                                                         <div class="form">
                                                             <label>SpO2</label>
-                                                            <input type="text" class="form-control col-3">
+                                                            <input type="text" class="form-control col-3" value="<?= $assessmentdetail['spo2']?>" readonly>
                                                             <p>%</p>
                                                         </div>
 
@@ -433,7 +427,7 @@
                                         <label>5. Pendidikan</label>
                                         <div class="card-body col-12">
                                             <div class="form">
-                                                <input type="text" class="form-control col-5">
+                                                <input type="text" class="form-control col-5" value="<?= $assessmentdetail['pendidikan']?>" readonly>
                                             </div>
                                         </div>
                                     </div>
@@ -442,7 +436,7 @@
                                         <label>6. Pekerjaan</label>
                                         <div class="card-body col-12">
                                             <div class="form">
-                                                <input type="text" class="form-control col-5">
+                                                <input type="text" class="form-control col-5" value="<?= $assessmentdetail['pekerjaan']?>" readonly>
                                             </div>
                                         </div>
                                     </div>

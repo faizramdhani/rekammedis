@@ -38,13 +38,16 @@ class Cassessmentawalperawat extends CI_Controller
         //kondisi jika semua kolom telah divalidasi, maka akan menjalankan method save pada mahasiswa_model
         if ($validation->run()) {
             $AssessmentAwal->save1();
-            $this->session->set_flashdata('message', '<div class="alert alert-success alert-dismissible fade show" role="alert">
-            Data Mahasiswa berhasil disimpan. 
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button></div>');
         }
-		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/awalperawat/Vindex');
+		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/pasien/paslama');
     }
+
+	public function show()
+	{
+		$noIdAssessmentawalperawat = $this->uri->segment(3);
+		$data['assessmentdetail'] = $this->Massessmentawalperawat->getassessmentawaldetail($noIdAssessmentawalperawat);
+		// dd($data);
+		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/awalperawat/Vread', $data);
+	}
 
 }

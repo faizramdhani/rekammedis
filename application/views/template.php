@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Layout &rsaquo; Default &mdash; Stisla</title>
+    <title>E - Rekam Medis</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -215,6 +215,7 @@
         <script src="<?= base_url() ?>/template/node_modules/datatables/media/js/jquery.datatables.min.js"></script>
         <script src="<?= base_url() ?>/template/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
         <script src="<?= base_url() ?>/template/assets/js/stisla.js"></script>
+        <script src="<?php echo base_url('assets/js/mainchart.js');?>"></script>
 
         <!-- Sweet Alert -->
         <script src="<?= base_url() ?> /template/node_modules/sweetalert/sweetalert.min.js"></script>
