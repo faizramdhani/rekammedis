@@ -96,7 +96,7 @@
                                     <td>
                                        <div class="row">
                                           <div class="buttons">
-                                             <a href="<?= site_url('rawatjalan/rawatjalanDokter/' . $row['nomrm']) ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
+                                             <a href="<?= site_url('Cprofilringkas/index/' . $row['nomrm']) ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
 
                                           </div>
                                        </div>
