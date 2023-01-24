@@ -14,12 +14,12 @@ class Cassessmentawalperawat extends CI_Controller
 	public function index()
 	{
 		$data['assessmentawalperawat'] = $this->Massessmentawalperawat->getassessmentawalperawat();
-		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/awalperawat/Vindex', $data);
+		$this->template->load('rawatjalan/template', 'rawatjalan/assesment/awalperawat/Vindex', $data);
 	}
 
 	public function create()
 	{
-		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/awalperawat/Vcreate');
+		$this->template->load('rawatjalan/template', 'rawatjalan/assesment/awalperawat/Vcreate');
 	}
 
 	public function insert()
@@ -27,7 +27,7 @@ class Cassessmentawalperawat extends CI_Controller
         $product = $this->Massessmentawalperawat;
 		$product->save();
 		$this->session->set_flashdata('success', 'Berhasil disimpan');
-        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/awalperawat/Vindex');
+        $this->template->load('rawatjalan/template', 'rawatjalan/assesment/awalperawat/Vindex');
     }
 
 	public function add()
@@ -39,7 +39,7 @@ class Cassessmentawalperawat extends CI_Controller
         if ($validation->run()) {
             $AssessmentAwal->save1();
         }
-		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/pasien/paslama');
+		$this->template->load('rawatjalan/template', 'rawatjalan/pasien/paslama');
     }
 
 	public function show()
@@ -47,7 +47,7 @@ class Cassessmentawalperawat extends CI_Controller
 		$noIdAssessmentawalperawat = $this->uri->segment(3);
 		$data['assessmentdetail'] = $this->Massessmentawalperawat->getassessmentawaldetail($noIdAssessmentawalperawat);
 		// dd($data);
-		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/awalperawat/Vread', $data);
+		$this->template->load('rawatjalan/template', 'rawatjalan/assesment/awalperawat/Vread', $data);
 	}
 
 }
