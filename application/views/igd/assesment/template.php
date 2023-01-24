@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
-    
+
     <!-- CSS Libraries -->
     <!-- <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/bootstrap-daterangepicker/daterangepicker.css"> -->
-    
+
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/style.css">
@@ -43,7 +43,7 @@
                             <a href="features-profile.html" class="dropdown-item has-icon">
                                 <i class="far fa-user"></i> <?= ucfirst($this->fungsi->user_login()->nmpeg)   ?>
                             </a>
-                           
+
                             <div class="dropdown-divider"></div>
                             <a href="<?= site_url('auth/logout') ?>" class="dropdown-item has-icon text-danger" id="logout" data-confirm="Logout|Yakin akan Logout?" data-confirm-yes="returnLogout()">
                                 <i class="fas fa-sign-out-alt"></i> Logout
@@ -67,10 +67,10 @@
                     <?php if ($this->session->userdata('level_erm') == 3) { ?>
                         <ul class="sidebar-menu">
                             <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
-                             <li><a class="nav-link" href="<?= site_url('igd/igdDokter') ?>"><i class="fas fa-fire"></i> <span>Profil Ringkas</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('igd/igdDokter') ?>"><i class="fas fa-fire"></i> <span>Profil Ringkas</span></a></li>
 
                             <li class="menu-header">KEPERAWATAN</li>
-                           
+
                             <li><a class="nav-link" href="<?= site_url('igd/triase') ?>"><i class="far fa-square"></i> <span>Asesment Awal</span></a></li>
 
 

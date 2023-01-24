@@ -17,7 +17,7 @@ class Rawatjalan extends CI_Controller
 		$this->template->load('template', 'pasien/paslama', $data);
 	}
 
-	
+
 	public function rawatjalanDokter()
 	{
 		$noRM = $this->uri->segment(3);

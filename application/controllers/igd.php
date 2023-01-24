@@ -4,12 +4,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Igd extends CI_Controller
 {
     public function __construct()
-	{
-		parent::__construct();
-		$this->load->library('session');
-		$this->load->model('Pasien_m');
-	}
-    
+    {
+        parent::__construct();
+        $this->load->library('session');
+        $this->load->model('Pasien_m');
+    }
+
     public function pasigd()
     {
         $data['paslama'] = $this->Pasien_m->getpaslama();
@@ -34,7 +34,7 @@ class Igd extends CI_Controller
     }
 
     public function igdCPPT()
-	{
-		$this->template->load('igd/assesment/template', 'igd/assesment/cppt');
-	}
+    {
+        $this->template->load('igd/assesment/template', 'igd/assesment/cppt');
+    }
 }
