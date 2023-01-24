@@ -46,13 +46,13 @@
                <tr>
                   <th>NIK</th>
                   <th>Umur</th>
-                  <th>No. Asuransi </th>
+                  <th>Poliklinik</th>
                   <th>Kode Rumah Sakit</th>
                </tr>
                <tr>
                   <td><?php echo $this->session->userdata('identitas'); ?></td>
                   <td><?php echo $this->session->userdata('umurthn'); ?></td>
-                  <td><?php echo $this->session->userdata('noasuransi'); ?></td>
+                  <td><?php echo $this->session->userdata('nama'); ?></td>
                   <td>
                      <!-- kode rumah sakit tidak ditemukan -->
                   </td>
@@ -89,7 +89,7 @@
                         <div class="card-body">
                            <!-- tabel 1 -->
                            <div class="table-responsive">
-                              <table class="table table-bordered table-md">
+                              <table class="table table-striped table-md">
                                  <tr>
                                     <th>
                                        <center>NO</center>
@@ -138,7 +138,7 @@
 
                            <!-- tabel 2 -->
                            <div class="table-responsive">
-                              <table class="table table-bordered table-md">
+                              <table class="table table-striped table-md">
                                  <tr>
                                     <th>
                                        <center>NO</center>
@@ -191,7 +191,7 @@
                      <div class="col-12 col-md-6 col-lg-6">
                         <div class="card-body">
                            <div class="table-responsive">
-                              <table class="table table-bordered table-md">
+                              <table class="table table-striped table-md">
                                  <tr>
                                     <th>
                                        <center><u>UNTUK ANAK ANAK</u></center>
@@ -209,7 +209,7 @@
                            </div>
 
                            <div class="table-responsive">
-                              <table class="table table-bordered table-md">
+                              <table class="table table-striped table-md">
                                  <tr>
                                     <th>
                                     </th>
@@ -290,7 +290,7 @@
                      <div class="col-12">
                         <div class="card-body">
                            <div class="table-responsive">
-                              <table class="table table-bordered table-md">
+                              <table class="table table-striped table-md">
                                  <tr>
                                     <th>Tanggal</th>
                                     <th>Poliklinik</th>
@@ -396,19 +396,21 @@
                               <!-- button  -->
                               <div class="form-group row">
                                  <div class="col-md"></div>
-                                 <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab1">Kembali <i class="fas fa-arrow-left"></i></a> </button>
-                                 <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab2">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
+                                 <div class="col-lg-4 col-md-5 text-right">
+                                    <a button class="btn btn-outline-warning" data-tab="mygroup-tab" role="tablist" href="#tab1">Kembali <i class="fas fa-arrow-left"></i></a> </button>
+                                    <a button class="btn btn-outline-primary" data-tab="mygroup-tab" role="tablist" href="#tab2">Selanjutnya <i class="fas fa-arrow-right"></i></a> </button>
+                                 </div>
                               </div>
+                              
                            </div>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
 
+            </div>
          </div>
       </div>
-   </div>
    </div>
 
 </section>
