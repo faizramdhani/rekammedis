@@ -10,7 +10,7 @@ class Mprofilringkas extends CI_Model
 
     public function getprofilringkas($noRM)
     {
-        $query = $this->db->query("SELECT a.nomrm, a.nmpasien, c.nama, a.norj, b.kelamin, b.identitas, b.umurthn
+        $query = $this->db->query("SELECT a.nomrm, a.nmpasien, c.nama, a.norj, b.kelamin, b.identitas, b.umurthn, a.kode1
         FROM paslama a, pasien b, tindakan1 c
         WHERE b.nomrm=a.nomrm AND a.nomrm='$noRM'  AND c.kode1=a.kode1");
 

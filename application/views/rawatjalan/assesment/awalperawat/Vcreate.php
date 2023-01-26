@@ -148,9 +148,9 @@
                                 </div>
                                 <div class="card-body col-12">
                                     <div class="form">
-                                        <label for="content">Anamnesis</label>
-                                        <input type="hidden" name="content" value="<?= set_value('content') ?>">
-                                        <div id="editor" style="min-height: 160px;"><?= set_value('content') ?></div>
+                                        <label for="anamnesis">Anamnesis</label>
+                                        <input type="hidden" name="anamnesis" value="<?= set_value('anamnesis') ?>">
+                                        <div id="editor" style="min-height: 160px;"><?= set_value('anamnesis') ?></div>
                                     </div>
                                     <div class="form">
                                         <label>1. Riwayat Penyakit Dahulu</label>

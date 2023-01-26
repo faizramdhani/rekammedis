@@ -15,6 +15,8 @@
     <!-- Data Tables -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
 
+    <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/select2/dist/css/select2.min.css">
+
     <!-- Template CSS -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/style.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/components.css">
@@ -66,26 +68,16 @@
                     <!-- Level 3 perawat -->
                     <?php if ($this->session->userdata('level_erm') == 3) { ?>
                         <ul class="sidebar-menu">
-                            <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('pasien/paslama') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
 
                             <li><a class="nav-link" href="<?= site_url('Cprofilringkas/index/') ?>"><i class="fas fa-user-injured"></i> <span>Profil Ringkas</span></a></li>
+                            
                             <li class="menu-header">KEPERAWATAN</li>
-                            <!-- <li class="nav-item dropdown">
-                                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="far fa-address-book"></i> <span>Assesment</span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="nav-link" href="">Penyakit Dalam</a></li>
-                                    <li><a class="nav-link" href="">Mata</a></li>
-                                    <li><a class="nav-link" href="">Gigi</a></li>
-                                    <li><a class="nav-link" href="">Jantung</a></li>
-                                </ul>
-                            </li> -->
                             <li><a class="nav-link" href="<?= site_url('Cassessmentawalperawat/index') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('Ccppt/index') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
 
 
                             <li class="menu-header">PENGKAJIAN AWAL MEDIS</li>
-                            <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>Pengkajian Awal</span></a></li>
-                            <li><a class="nav-link" href=""><i class="fas fa-user-injured"></i> <span>Asesment Penyakit Dalam</span></a></li>
 
 
                         </ul>
@@ -94,13 +86,14 @@
                     <!-- Level dokter 2 -->
                     <?php if ($this->session->userdata('level_erm') == 2) { ?>
                         <ul class="sidebar-menu">
-                            <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
-                            <!-- <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanDokter') ?>"><i class="far fa-square"></i> <span>Profil Ringkas</span></a></li> -->
+                            <li><a class="nav-link" href="<?= site_url('pasien/paslama') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
+
+                            <li><a class="nav-link" href="<?= site_url('Cprofilringkas/index/') ?>"><i class="fas fa-user-injured"></i> <span>Profil Ringkas</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('Ccppt/index') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
 
                             <li class="menu-header">PENGKAJIAN AWAL KEPERAWATAN</li>
 
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/perawatrawatjalan') ?>"><i class="fas fa-user-injured"></i> <span>Pengkajian Awal</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('Cassessmentawalperawat/index') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
 
 
                             <li class="menu-header">ASSESMENT AWAL MEDIS</li>
@@ -119,7 +112,7 @@
                             <li class="dropdown">
                                 <a class="nav-link has-dropdown"><i class="far fa-address-book"></i> <span>Poli Spesialis</span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/penyakitdalam') ?>"><i class="fas fa-user-injured"></i> <span>Penyakit Dalam</span></a></li>
+                                    <li><a class="nav-link" href="<?= site_url('Cpenyakitdalam/index') ?>"><i class="fas fa-user-injured"></i> <span>Penyakit Dalam</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/anak') ?>"><i class="fas fa-user-injured"></i> <span>Anak</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/bedah') ?>"><i class="fas fa-user-injured"></i> <span>Bedah</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/obstetriginekologi') ?>"><i class="fas fa-user-injured"></i> <span>Obstetri&Ginekologi</span></a></li>
@@ -164,6 +157,7 @@
     <script src="<?= base_url() ?>/template/node_modules/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
     <script src="<?= base_url() ?>/template/node_modules/datatables/media/js/jquery.datatables.min.js"></script>
     <script src="<?= base_url() ?>/template/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="<?= base_url() ?>/template/node_modules/select2/dist/js/select2.full.min.js"></script>
     <script src="<?= base_url() ?>/template/assets/js/stisla.js"></script>
     <script src="<?= base_url() ?>/template/assets/js/mainchart.js"></script>
 
@@ -173,14 +167,50 @@
 
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
-        <script>
-        var quill = new Quill('#editor', {
-            theme: 'snow'
-        });
-        quill.on('text-change', function(delta, oldDelta, source) {
-            document.querySelector("input[name='content']").value = quill.root.innerHTML;
-        });
-        </script>
+    <script>
+    var quill = new Quill('#editor', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='content']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#anamnesis', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='anamnesis']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayat_penyakit', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayat_penyakit']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayat_alergi', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayat_alergi']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#obat_dikonsumsi', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='obat_dikonsumsi']").value = quill.root.innerHTML;
+    });
+    </script>
 
 </body>
 

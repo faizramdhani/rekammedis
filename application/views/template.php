@@ -15,6 +15,8 @@
     <!-- Data Tables -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
 
+    <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/select2/dist/css/select2.min.css">
+
     <!-- Template CSS -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/style.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/components.css">
@@ -216,6 +218,7 @@
         <script src="<?= base_url() ?>/template/node_modules/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
         <script src="<?= base_url() ?>/template/node_modules/datatables/media/js/jquery.datatables.min.js"></script>
         <script src="<?= base_url() ?>/template/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <script src="<?= base_url() ?>/template/node_modules/select2/dist/js/select2.full.min.js"></script>
         <script src="<?= base_url() ?>/template/assets/js/stisla.js"></script>
         <script src="<?php echo base_url('assets/js/mainchart.js');?>"></script>
 
