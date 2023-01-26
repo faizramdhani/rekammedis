@@ -156,13 +156,13 @@
                                             <div class="row">
                                                 <div class="card-body col-1">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="cukup" name="customRadio" class="custom-control-input" value="option1">
+                                                        <input type="radio" id="cukup" name="kondisi_umum" class="custom-control-input" value="Cukup">
                                                         <label class="custom-control-label" for="cukup">Cukup</label>
                                                     </div>
                                                 </div>
                                                 <div class="card-body col-1">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="lemah" name="customRadio" class="custom-control-input" value="option2">
+                                                        <input type="radio" id="lemah" name="kondisi_umum" class="custom-control-input" value="Lemah">
                                                         <label class="custom-control-label" for="lemah">Lemah</label>
                                                     </div>
                                                 </div>
@@ -174,13 +174,13 @@
                                                 <div class="card-body col-3">
                                                     <label>TD</label>
                                                     <div class="input-group">
-                                                        <input type="text" name="bb" class="form-control phone-number">
+                                                        <input type="text" name="tds" class="form-control phone-number">
                                                         <div class="input-group-prepend">
                                                         <div class="input-group-text">
                                                             /
                                                         </div>
                                                         </div>
-                                                        <input type="text" name="bb" class="form-control phone-number">
+                                                        <input type="text" name="tdd" class="form-control phone-number">
                                                         <div class="input-group-prepend">
                                                         <div class="input-group-text">
                                                             mmHG
@@ -191,7 +191,7 @@
                                                 <div class="card-body col-2">
                                                     <label>Suhu</label>
                                                     <div class="input-group">
-                                                        <input type="text" name="tb" class="form-control phone-number">
+                                                        <input type="text" name="suhu" class="form-control phone-number">
                                                         <div class="input-group-prepend">
                                                         <div class="input-group-text">
                                                             °C
@@ -202,7 +202,7 @@
                                                 <div class="card-body col-2">
                                                     <label>Nadi</label>
                                                     <div class="input-group">
-                                                        <input type="text" name="tb" class="form-control phone-number">
+                                                        <input type="text" name="nadi" class="form-control phone-number">
                                                         <div class="input-group-prepend">
                                                         <div class="input-group-text">
                                                             x/mnt
@@ -213,7 +213,7 @@
                                                 <div class="card-body col-2">
                                                     <label>RR</label>
                                                     <div class="input-group">
-                                                        <input type="text" name="tb" class="form-control phone-number">
+                                                        <input type="text" name="rr" class="form-control phone-number">
                                                         <div class="input-group-prepend">
                                                         <div class="input-group-text">
                                                             x/mnt
@@ -224,7 +224,7 @@
                                                 <div class="card-body col-2">
                                                     <label>GDA</label>
                                                     <div class="input-group">
-                                                        <input type="text" name="tb" class="form-control phone-number">
+                                                        <input type="text" name="gda" class="form-control phone-number">
                                                         <div class="input-group-prepend">
                                                         <div class="input-group-text">
                                                             mg
@@ -235,7 +235,7 @@
                                                 <div class="card-body col-2">
                                                     <label>Sp02</label>
                                                     <div class="input-group">
-                                                        <input type="text" name="tb" class="form-control phone-number">
+                                                        <input type="text" name="spo2" class="form-control phone-number">
                                                         <div class="input-group-prepend">
                                                         <div class="input-group-text">
                                                             %
@@ -250,49 +250,49 @@
                                             <div class="row">
                                                 <div class="card-body col-1">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio1">Normal</label>
+                                                        <input type="radio" id="normal" onclick="javascript:kepalaleherCheck();" name="kepala_leher" class="custom-control-input">
+                                                        <label class="custom-control-label" for="normal">Normal</label>
                                                     </div>
                                                 </div>
                                                 <div class="card-body col-1">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio1">Anemis</label>
+                                                        <input type="radio" id="anemis" onclick="javascript:kepalaleherCheck();" name="kepala_leher" class="custom-control-input">
+                                                        <label class="custom-control-label" for="anemis">Anemis</label>
                                                     </div>
                                                 </div>
                                                 <div class="card-body col-1">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio2">Icterus</label>
+                                                        <input type="radio" id="icterus" onclick="javascript:kepalaleherCheck();" name="kepala_leher" class="custom-control-input">
+                                                        <label class="custom-control-label" for="icterus">Icterus</label>
                                                     </div>
                                                 </div>
                                                 <div class="card-body col-1">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio3">Cyanosis</label>
+                                                        <input type="radio" id="cyanosis" onclick="javascript:kepalaleherCheck();" name="kepala_leher" class="custom-control-input">
+                                                        <label class="custom-control-label" for="cyanosis">Cyanosis</label>
                                                     </div>
                                                 </div>
                                                 <div class="card-body col-1">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio4">Dypsnea</label>
+                                                        <input type="radio" id="dypsnea" onclick="javascript:kepalaleherCheck();" name="kepala_leher" class="custom-control-input">
+                                                        <label class="custom-control-label" for="dypsnea">Dypsnea</label>
                                                     </div>
                                                 </div>
                                                 <div class="card-body col-2">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio5">Pembesaran Kelenjar Getah Bening</label>
+                                                        <input type="radio" id="kelenjargetah" onclick="javascript:kepalaleherCheck();" name="kepala_leher" class="custom-control-input">
+                                                        <label class="custom-control-label" for="kelenjargetah">Pembesaran Kelenjar Getah Bening</label>
                                                     </div>
                                                 </div>
-                                                <div class="card-body">
-                                                <div class="row">
-                                                        <div class="custom-control custom-radio">
-                                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                            <label class="custom-control-label" for="customRadio2">Lainnya</label>
-                                                        </div>
-                                                        <div class="form" style="margin-left: 10px;">
-                                                            <input type="text" class="form-control">
-                                                        </div>
+                                                <div class="card-body col-2">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="kepalalainnya" onclick="javascript:kepalaleherCheck();" name="kepala_leher" class="custom-control-input">
+                                                        <label class="custom-control-label" for="kepalalainnya">Lainnya</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body" id="kepala_leherlainnya" style="visibility:hidden">
+                                                    <div class="form">
+                                                        <input type="text" name="kepala_leher" class="form-control">
                                                     </div>
                                                 </div>
                                             </div>
@@ -305,31 +305,31 @@
                                                 </div>
                                                 <div class="card-body col-2">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio2">S1-S2 tunggal</label>
+                                                        <input type="radio" id="tunggal" onclick="javascript:corCheck();" name="cor" class="custom-control-input">
+                                                        <label class="custom-control-label" for="tunggal">S1-S2 tunggal</label>
                                                     </div>
                                                 </div>
                                                 <div class="card-body col-2">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio2">Murmur</label>
+                                                        <input type="radio" id="murmur" onclick="javascript:corCheck();" name="cor" class="custom-control-input">
+                                                        <label class="custom-control-label" for="murmur">Murmur</label>
                                                     </div>
                                                 </div>
                                                 <div class="card-body col-2">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio2">Gallop</label>
+                                                        <input type="radio" id="gallop" onclick="javascript:corCheck();" name="cor" class="custom-control-input">
+                                                        <label class="custom-control-label" for="gallop">Gallop</label>
                                                     </div>
                                                 </div>
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="custom-control custom-radio">
-                                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                            <label class="custom-control-label" for="customRadio2">Lainnya</label>
-                                                        </div>
-                                                        <div class="form" style="margin-left: 10px;">
-                                                            <input type="text" class="form-control">
-                                                        </div>
+                                                <div class="card-body col-2">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="corlainnya" onclick="javascript:corCheck();" name="cor" class="custom-control-input">
+                                                        <label class="custom-control-label" for="corlainnya">Lainnya</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body" id="cor2lainnya" style="visibility:hidden">
+                                                    <div class="form">
+                                                        <input type="text" name="cor" class="form-control">
                                                     </div>
                                                 </div>
                                             </div>
@@ -339,31 +339,31 @@
                                                 </div>
                                                 <div class="card-body col-2">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio2">Ves/ves</label>
+                                                        <input type="radio" id="ves" name="pulmo" class="custom-control-input">
+                                                        <label class="custom-control-label" for="ves">Ves/ves</label>
                                                     </div>
                                                 </div>
                                                 <div class="card-body col-2">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio2">Ronchi</label>
+                                                        <input type="radio" id="ronchi" name="pulmo" class="custom-control-input">
+                                                        <label class="custom-control-label" for="ronchi">Ronchi</label>
                                                     </div>
                                                 </div>
                                                 <div class="card-body col-2">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio2">Wheezing</label>
+                                                        <input type="radio" id="wheezing" name="pulmo" class="custom-control-input">
+                                                        <label class="custom-control-label" for="wheezing">Wheezing</label>
                                                     </div>
                                                 </div>
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="custom-control custom-radio">
-                                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                            <label class="custom-control-label" for="customRadio2">Lainnya</label>
-                                                        </div>
-                                                        <div class="form" style="margin-left: 10px;">
-                                                            <input type="text" class="form-control">
-                                                        </div>
+                                                <div class="card-body col-2">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="pulmolainnya" onclick="javascript:pulmoCheck();" name="pulmo" class="custom-control-input">
+                                                        <label class="custom-control-label" for="pulmolainnya">Lainnya</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body" id="pulmo2lainnya" style="visibility:hidden">
+                                                    <div class="form">
+                                                        <input type="text" name="cor" class="form-control">
                                                     </div>
                                                 </div>
                                             </div>
@@ -373,46 +373,46 @@
                                             <div class="row">
                                                 <div class="card-body col-1">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio2">Supel</label>
+                                                        <input type="radio" id="supel" name="abdomen" class="custom-control-input">
+                                                        <label class="custom-control-label" for="supel">Supel</label>
                                                     </div>
                                                 </div>
                                                 <div class="card-body col-2">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio2">Meteorismus</label>
+                                                        <input type="radio" id="meteorismus" name="abdomen" class="custom-control-input">
+                                                        <label class="custom-control-label" for="meteorismus">Meteorismus</label>
                                                     </div>
                                                 </div>
                                                 <div class="card-body col-3">
                                                     <div class="row">
                                                         <div class="custom-control custom-radio">
-                                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                            <label class="custom-control-label" for="customRadio2">Hepar/Lien</label>
+                                                            <input type="radio" id="hepar" name="abdomen" class="custom-control-input">
+                                                            <label class="custom-control-label" for="hepar">Hepar/Lien</label>
                                                         </div>
-                                                        <div class="form" style="margin-left: 10px;">
-                                                            <input type="text" class="form-control">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="card-body col-3">
-                                                    <div class="row">
-                                                        <div class="custom-control custom-radio">
-                                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                            <label class="custom-control-label" for="customRadio2">Bising usus</label>
-                                                        </div>
-                                                        <div class="form" style="margin-left: 10px;">
-                                                            <input type="text" class="form-control">
+                                                        <div class="form" id="hepartext" style="margin-left: 10px; visibility:hidden">
+                                                            <input type="text" name="abdomen" class="form-control">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="card-body col-3">
                                                     <div class="row">
                                                         <div class="custom-control custom-radio">
-                                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                            <label class="custom-control-label" for="customRadio2">Lainnya</label>
+                                                            <input type="radio" id="bisingusus" name="abdomen" class="custom-control-input">
+                                                            <label class="custom-control-label" for="bisingusus">Bising usus</label>
                                                         </div>
-                                                        <div class="form" style="margin-left: 10px;">
-                                                            <input type="text" class="form-control">
+                                                        <div class="form" id="bisingusustext" style="margin-left: 10px; visibility:hidden">
+                                                            <input type="text" name="abdomen" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body col-3">
+                                                    <div class="row">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="abdomenlain" name="abdomen" class="custom-control-input">
+                                                            <label class="custom-control-label" for="abdomenlain">Lainnya</label>
+                                                        </div>
+                                                        <div class="form" id="abdomenlainnya" style="margin-left: 10px; visibility:hidden">
+                                                            <input type="text" name="abdomen" class="form-control">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -423,19 +423,19 @@
                                             <div class="row">
                                                 <div class="card-body col-2">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio2">Oedem</label>
+                                                        <input type="radio" id="oedem" onclick="javascript:ekstremitasCheck();" name="ekstremitas" class="custom-control-input">
+                                                        <label class="custom-control-label" for="oedem">Oedem</label>
                                                     </div>
                                                 </div>
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="custom-control custom-radio">
-                                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                            <label class="custom-control-label" for="customRadio2">Akral</label>
-                                                        </div>
-                                                        <div class="form" style="margin-left: 10px;">
-                                                            <input type="text" class="form-control">
-                                                        </div>
+                                                <div class="card-body col-2">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="akral" onclick="javascript:ekstremitasCheck();" name="ekstremitas" class="custom-control-input">
+                                                        <label class="custom-control-label" for="akral">Akral</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body" id="ekstremitaslainnya" style="visibility:hidden">
+                                                    <div class="form">
+                                                        <input type="text" name="ekstremitas" class="form-control">
                                                     </div>
                                                 </div>
                                             </div>
@@ -445,19 +445,19 @@
                                             <div class="row">
                                                 <div class="card-body col-2">
                                                     <div class="custom-control custom-radio">
-                                                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                        <label class="custom-control-label" for="customRadio2">Normal</label>
+                                                        <input type="radio" id="normalkelamin" name="alat_kelamin" class="custom-control-input">
+                                                        <label class="custom-control-label" for="normalkelamin">Normal</label>
                                                     </div>
                                                 </div>
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                        <div class="custom-control custom-radio">
-                                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                                                            <label class="custom-control-label" for="customRadio2">Abnormal</label>
-                                                        </div>
-                                                        <div class="form" style="margin-left: 10px;">
-                                                            <input type="text" class="form-control">
-                                                        </div>
+                                                <div class="card-body col-2">
+                                                    <div class="custom-control custom-radio">
+                                                        <input type="radio" id="abnormalkelamin" onclick="javascript:alatkelaminCheck();" name="alat_kelamin" class="custom-control-input">
+                                                        <label class="custom-control-label" for="abnormalkelamin">Abnormal</label>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body" id="alatkelaminlainnya" style="visibility:hidden">
+                                                    <div class="form">
+                                                        <input type="text" name="alat_kelamin" class="form-control">
                                                     </div>
                                                 </div>
                                             </div>
@@ -510,11 +510,11 @@
                                         </div>
                                         <div class="form-group">
                                             <label>Diagnosa Kerja</label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="diagnosa_kerja"></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label>Diagnosa Banding</label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="diagnosa_banding"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -529,13 +529,13 @@
                                     <div class="card-body col-sm-3 col-md-6">
                                         <div class="form">
                                             <label>Terapi</label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="terapi"></textarea>
                                         </div>
                                     </div>
                                     <div class="card-body col-sm-3 col-md-6">
                                         <div class="form">
                                             <label>Tindakan/rencana tindakan</label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="tindakan"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -557,13 +557,13 @@
                                         <h7>Rawat Inap</h7>
                                         <div class="form">
                                             <label>Indikasi:</label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="rawatinap_indikasi"></textarea>
                                         </div>
                                         <br>
                                         <h7>Rujuk Ke</h7>
                                         <div class="form">
                                             <label>Indikasi:</label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="rujukke_indikasi"></textarea>
                                         </div>
                                     </div>
                                 </div>

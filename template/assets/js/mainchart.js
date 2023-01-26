@@ -67,3 +67,47 @@ function bicaranormalCheck() {
     }
     else document.getElementById('bicaranormalyes').style.visibility = 'hidden';
 }
+
+function kepalaleherCheck() {
+    if (document.getElementById('kepalalainnya').checked) {
+        document.getElementById('kepala_leherlainnya').style.visibility = 'visible';
+    }
+    else document.getElementById('kepala_leherlainnya').style.visibility = 'hidden';
+}
+
+function corCheck() {
+    if (document.getElementById('corlainnya').checked) {
+        document.getElementById('cor2lainnya').style.visibility = 'visible';
+    }
+    else document.getElementById('cor2lainnya').style.visibility = 'hidden';
+}
+
+function pulmoCheck() {
+    if (document.getElementById('pulmolainnya').checked) {
+        document.getElementById('pulmo2lainnya').style.visibility = 'visible';
+    }
+    else document.getElementById('pulmo2lainnya').style.visibility = 'hidden';
+}
+
+function abdomenCheck() {
+    if (document.getElementById('hepar').checked) {
+        document.getElementById('hepartext').style.visibility = 'visible';
+    }else if(document.getElementById('bisingusus').checked){
+        document.getElementById('bisingusus').style.visibility = 'hidden';
+    }
+    else document.getElementById('ekspresipasienyes').style.visibility = 'hidden';
+}
+
+function ekstremitasCheck() {
+    if (document.getElementById('akral').checked) {
+        document.getElementById('ekstremitaslainnya').style.visibility = 'visible';
+    }
+    else document.getElementById('ekstremitaslainnya').style.visibility = 'hidden';
+}
+
+function alatkelaminCheck() {
+    if (document.getElementById('abnormalkelamin').checked) {
+        document.getElementById('alatkelaminlainnya').style.visibility = 'visible';
+    }
+    else document.getElementById('alatkelaminlainnya').style.visibility = 'hidden';
+}
