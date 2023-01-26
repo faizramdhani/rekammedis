@@ -19,7 +19,7 @@ class Pasien extends CI_Controller
     function searchdokter()
 	{				
 	    $postData = $this->input->post();
-	    print_r($postData);
+	    // print_r($postData);
         $data = $this->Pasien_m->dokterbyahli($postData['kode1']); 
 		echo json_encode($data); 
 	}

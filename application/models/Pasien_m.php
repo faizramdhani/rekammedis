@@ -38,7 +38,7 @@ class Pasien_m extends CI_Model
     }
 
     function dokterbyahli($kode1){    	
-        $qry = $this->db->query("SELECT a.kddokter, b.nmdokter FROM paslama a, mtdokter b WHERE b.kddokter=a.kddokter AND a.kode1='".$kode1."';");
+        $qry = $this->db->query("SELECT a.kddokter, b.nmdokter FROM paslama a, mtdokter b WHERE b.kddokter=a.kddokter AND kode1='".$kode1."';");
         $rest = $qry->result_array();
 		return $rest;
     }

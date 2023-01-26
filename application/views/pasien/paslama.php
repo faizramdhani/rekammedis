@@ -27,18 +27,20 @@
                                  <form class="form-horizontal style-form" id="pencarianantrian" method="post">
                                     <div class="table-responsive">
                                        <p>Poliklinik:</p>
-                                       <select name="poli" id="poli" class="form-control" required onchange="inputpoli()">
+                                       <select name="poli" id="poli" class="form-control select2" required onchange="inputpoli()">
                                           <option value="">---Pilih---</option>
                                        <?php foreach ($poli as $key => $value) { ?>
                                        <option value="<?php echo $value['kode1']; ?>" class="option"><?php echo $value['nama']; ?></option>
                                        <?php } ?> 
                                        </select>
                                     </div>
+                                    <br>
                                     <div class="table-responsive" id='divkodepoli'>
                                        <p>Dokter :</p>
-                                       <select name="dokterpoli" id="dokterpoli" class="form-control" required>
+                                       <select name="dokterpoli" id="dokterpoli" class="form-control select2" required>
                                        </select>
                                     </div>
+                                    <br>
                                     <div class="table-responsive">
                                        <p>Tanggal Perawatan :</p>
                                        <input type="date" id="tanggal" name="tanggal" class="form-control" value="">
