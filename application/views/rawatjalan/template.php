@@ -113,7 +113,7 @@
                                 <a class="nav-link has-dropdown"><i class="far fa-address-book"></i> <span>Poli Spesialis</span></a>
                                 <ul class="dropdown-menu">
                                     <li><a class="nav-link" href="<?= site_url('Cpenyakitdalam/index') ?>"><i class="fas fa-user-injured"></i> <span>Penyakit Dalam</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/anak') ?>"><i class="fas fa-user-injured"></i> <span>Anak</span></a></li>
+                                    <li><a class="nav-link" href="<?= site_url('Canak/index') ?>"><i class="fas fa-user-injured"></i> <span>Anak</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/bedah') ?>"><i class="fas fa-user-injured"></i> <span>Bedah</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/obstetriginekologi') ?>"><i class="fas fa-user-injured"></i> <span>Obstetri&Ginekologi</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/nefrologi') ?>"><i class="fas fa-user-injured"></i> <span>Nefrologi</span></a></li>
@@ -200,6 +200,42 @@
     });
     quill.on('text-change', function(delta, oldDelta, source) {
         document.querySelector("input[name='riwayat_alergi']").value = quill.root.innerHTML;
+    });
+    </script>
+    
+    <script>
+    var quill = new Quill('#riwayat_kandungan', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayat_kandungan']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayat_kelahiran', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayat_kelahiran']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayat_tumbuh', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayat_tumbuh']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayat_imunisasi', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayat_imunisasi']").value = quill.root.innerHTML;
     });
     </script>
 
