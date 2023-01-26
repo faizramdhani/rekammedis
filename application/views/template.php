@@ -229,6 +229,7 @@
         <!-- Template JS File -->
         <script src="<?= base_url() ?>/template/assets/js/scripts.js"></script>
         <script src="<?= base_url() ?>/template/assets/js/custom.js"></script>
+        <script src="<?= base_url() ?>/template/assets/js/mainchart.js"></script>
 
         <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 

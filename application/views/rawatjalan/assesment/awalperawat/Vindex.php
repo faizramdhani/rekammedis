@@ -7,7 +7,7 @@
             <div class="breadcrumb-item">Default Layout</div>
         </div>
     </div> -->
-    <div class="section-header" style="position:fixed;">
+<div class="section-header">
     <div class="row">
         <div class="col-12 col-md-6 col-lg-5">
             <div class="card card-primary">
@@ -26,9 +26,7 @@
                         <td><?php echo $this->session->userdata('nomrm'); ?></td>
                         <td><?php echo $this->session->userdata('norj'); ?></td>
                         <td><?php echo $this->session->userdata('kelamin'); ?></td>
-
                     </tr>
-                    <tr>
                 </table>
             </div>
         </div>
@@ -50,11 +48,8 @@
                         <td><?php echo $this->session->userdata('umurthn'); ?></td>
                         <td><?php echo $this->session->userdata('nama'); ?></td>
                         <td></td>
-
                     </tr>
-                    <tr>
                 </table>
-
             </div>
         </div>
     </div>

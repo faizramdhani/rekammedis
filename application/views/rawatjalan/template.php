@@ -80,7 +80,7 @@
                                 </ul>
                             </li> -->
                             <li><a class="nav-link" href="<?= site_url('Cassessmentawalperawat/index') ?>"><i class="fas fa-user-injured"></i> <span>Assesment Awal</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/rawatjalanCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('Ccppt/index') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
 
 
                             <li class="menu-header">PENGKAJIAN AWAL MEDIS</li>
