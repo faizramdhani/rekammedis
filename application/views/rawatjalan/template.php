@@ -114,7 +114,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="nav-link" href="<?= site_url('Cpenyakitdalam/index') ?>"><i class="fas fa-user-injured"></i> <span>Penyakit Dalam</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('Canak/index') ?>"><i class="fas fa-user-injured"></i> <span>Anak</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/bedah') ?>"><i class="fas fa-user-injured"></i> <span>Bedah</span></a></li>
+                                    <li><a class="nav-link" href="<?= site_url('Cbedahumum/index') ?>"><i class="fas fa-user-injured"></i> <span>Bedah Umum</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/obstetriginekologi') ?>"><i class="fas fa-user-injured"></i> <span>Obstetri&Ginekologi</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/nefrologi') ?>"><i class="fas fa-user-injured"></i> <span>Nefrologi</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/jantung') ?>"><i class="fas fa-user-injured"></i> <span>Jantung & Pembuluh Darah</span></a></li>
