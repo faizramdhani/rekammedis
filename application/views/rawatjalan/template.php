@@ -118,7 +118,7 @@
                                     <li><a class="nav-link" href="<?= site_url('Cobstetriginekologi/index') ?>"><i class="fas fa-user-injured"></i> <span>Obstetri&Ginekologi</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('Cnefrologi/index') ?>"><i class="fas fa-user-injured"></i> <span>Nefrologi</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('Cjantung/index') ?>"><i class="fas fa-user-injured"></i> <span>Jantung & Pembuluh Darah</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/kulitkelamin') ?>"><i class="fas fa-user-injured"></i> <span>Kulit & Kelamin</span></a></li>
+                                    <li><a class="nav-link" href="<?= site_url('Ckulitkelamin/index') ?>"><i class="fas fa-user-injured"></i> <span>Kulit & Kelamin</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/mata') ?>"><i class="fas fa-user-injured"></i> <span>Mata</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/neurologi') ?>"><i class="fas fa-user-injured"></i> <span>Neurologi</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/onkologi') ?>"><i class="fas fa-user-injured"></i> <span>Onkologi</span></a></li>
