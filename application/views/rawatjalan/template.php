@@ -125,7 +125,7 @@
                                     <li><a class="nav-link" href="<?= site_url('Cparu/index') ?>"><i class="fas fa-user-injured"></i> <span>Paru</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/rehabmedik') ?>"><i class="fas fa-user-injured"></i> <span>Rehab Medik</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/tht') ?>"><i class="fas fa-user-injured"></i> <span>THT</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/urologi') ?>"><i class="fas fa-user-injured"></i> <span>Urologi</span></a></li>
+                                    <li><a class="nav-link" href="<?= site_url('Curologi/index') ?>"><i class="fas fa-user-injured"></i> <span>Urologi</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/gigi') ?>"><i class="fas fa-user-injured"></i> <span>Gigi</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/hd') ?>"><i class="fas fa-user-injured"></i> <span>HD</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/hdulang') ?>"><i class="fas fa-user-injured"></i> <span>Ulang HD</span></a></li>
