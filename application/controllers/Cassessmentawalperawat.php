@@ -19,7 +19,8 @@ class Cassessmentawalperawat extends CI_Controller
 
 	public function create()
 	{
-		$this->template->load('rawatjalan/template', 'rawatjalan/assesment/awalperawat/Vcreate');
+		$data['icd'] = $this->Massessmentawalperawat->geticd();
+		$this->template->load('rawatjalan/template', 'rawatjalan/assesment/awalperawat/Vcreate', $data);
 	}
 
 	public function insert()

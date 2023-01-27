@@ -152,4 +152,13 @@ class Massessmentawalperawat extends CI_Model
         $result = $query->row_array();
         return $result;
     }
+
+    public function geticd(){
+
+        $query = $this->db->query("SELECT * FROM icds ORDER BY code ASC LIMIT 100");
+
+        $result = $query->result_array();
+        return $result;
+        // return $query->result();
+    }
 }
