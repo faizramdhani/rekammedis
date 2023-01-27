@@ -121,7 +121,7 @@
                                     <li><a class="nav-link" href="<?= site_url('Ckulitkelamin/index') ?>"><i class="fas fa-user-injured"></i> <span>Kulit & Kelamin</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('Cmata/index') ?>"><i class="fas fa-user-injured"></i> <span>Mata</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('Cneurologi/index') ?>"><i class="fas fa-user-injured"></i> <span>Neurologi</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/onkologi') ?>"><i class="fas fa-user-injured"></i> <span>Onkologi</span></a></li>
+                                    <li><a class="nav-link" href="<?= site_url('Conkologi/index') ?>"><i class="fas fa-user-injured"></i> <span>Onkologi</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/paru') ?>"><i class="fas fa-user-injured"></i> <span>Paru</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/rehabmedik') ?>"><i class="fas fa-user-injured"></i> <span>Rehab Medik</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/tht') ?>"><i class="fas fa-user-injured"></i> <span>THT</span></a></li>
