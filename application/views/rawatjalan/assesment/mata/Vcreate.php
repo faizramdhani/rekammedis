@@ -54,7 +54,7 @@
                                 <a class="nav-link" data-tab="mygroup-tab" href="#tab2">Pemeriksaan Fisik</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-tab="mygroup-tab" href="#tab3">Pemeriksaan Penunjang</a>
+                                <a class="nav-link" data-tab="mygroup-tab" href="#tab3">Pemeriksaan Spesialistik</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-tab="mygroup-tab" href="#tab4">Diagnosa</a>
@@ -552,20 +552,46 @@
                 </div>
             </div>
         </div>
-        <div id="tab3" class="col-14" data-tab-group="mygroup-tab">
-            <div class="card">
-                <div class="card-header">
-                    <h4>PEMERIKSAAN PENUNJANG</h4>
-                </div>
-                <div class="row">
-                    <div class="card-body col-12">
-                        <div class="form-group">
-                            <textarea class="form-control"></textarea>
+                        <div id="tab3" class="col-14" data-tab-group="mygroup-tab">
+                            <div class="card-body">
+                                <div class="card-header">
+                                    <h4>PEMERIKSAAN SPESIALISTIK</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="section-title mt-0">Riwayat Penggunaan Obat</div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <label>Nama Obat</label>
+                                            <div class="input-group">
+                                                <input type="text" name="namaobat" class="form-control phone-number">
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <label>Dosis</label>
+                                            <div class="input-group">
+                                                <input type="text" name="dosis" class="form-control phone-number">
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <label>Waktu Penggunaan</label>
+                                            <div class="input-group">
+                                                <input type="text" name="waktupenggunaan" class="form-control phone-number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="section-title mt-0">Pilih Pemeriksaan Penunjang</div>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>Laboratorium</option>
+                                            <option>Radiologi</option>
+                                            <option>Obat</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div id="tab4" class="col-14" data-tab-group="mygroup-tab">
             <div class="card">
                 <div class="card-header">
