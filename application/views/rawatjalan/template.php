@@ -115,7 +115,7 @@
                                     <li><a class="nav-link" href="<?= site_url('Cpenyakitdalam/index') ?>"><i class="fas fa-user-injured"></i> <span>Penyakit Dalam</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('Canak/index') ?>"><i class="fas fa-user-injured"></i> <span>Anak</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('Cbedahumum/index') ?>"><i class="fas fa-user-injured"></i> <span>Bedah Umum</span></a></li>
-                                    <li><a class="nav-link" href="<?= site_url('rawatjalan/obstetriginekologi') ?>"><i class="fas fa-user-injured"></i> <span>Obstetri&Ginekologi</span></a></li>
+                                    <li><a class="nav-link" href="<?= site_url('Cobstetriginekologi/index') ?>"><i class="fas fa-user-injured"></i> <span>Obstetri&Ginekologi</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/nefrologi') ?>"><i class="fas fa-user-injured"></i> <span>Nefrologi</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/jantung') ?>"><i class="fas fa-user-injured"></i> <span>Jantung & Pembuluh Darah</span></a></li>
                                     <li><a class="nav-link" href="<?= site_url('rawatjalan/kulitkelamin') ?>"><i class="fas fa-user-injured"></i> <span>Kulit & Kelamin</span></a></li>
@@ -248,6 +248,68 @@
     });
     </script>
 
+    <script>
+    var quill = new Quill('#keluhanutama', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='keluhanutama']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayatkehamilan', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayatkehamilan']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayatpersalinan', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayatpersalinan']").value = quill.root.innerHTML;
+    });
+    </script>
+    
+    <script>
+    var quill = new Quill('#riwayatanc', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayatanc']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayatpenyakitlain', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayatpenyakitlain']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayatpenyakitkeluarga', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayatpenyakitkeluarga']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayatkb', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayatkb']").value = quill.root.innerHTML;
+    });
+    </script>
 </body>
 
 </html>
