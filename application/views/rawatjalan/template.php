@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Layout &rsaquo; Default &mdash; Stisla</title>
+    <title>E - Rekam Medis</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -102,16 +102,16 @@
 
 
                             <li class="menu-header">ASSESMENT AWAL MEDIS</li>
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/awal') ?>"><i class="fas fa-user-injured"></i> <span>Pengkajian Awal</span></a></li>
+                            <!-- <li><a class="nav-link" href="<?= site_url('rawatjalan/awal') ?>"><i class="fas fa-user-injured"></i> <span>Pengkajian Awal</span></a></li> -->
 
 
                             <!-- poli umumm -->
-                            <li class="dropdown">
+                            <!-- <li class="dropdown">
                                 <a class="nav-link has-dropdown"><i class="far fa-address-book"></i> <span>Poli Umum</span></a>
                                 <ul class="dropdown-menu">
 
                                 </ul>
-                            </li>
+                            </li> -->
 
                             <!-- poli spesialis -->
                             <li class="dropdown">
@@ -169,4 +169,176 @@
     <script src="<?= base_url() ?>/template/assets/js/scripts.js"></script>
     <script src="<?= base_url() ?>/template/assets/js/custom.js"></script>
 
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+    <script>
+    var quill = new Quill('#editor', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='content']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#anamnesis', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='anamnesis']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayat_penyakit', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayat_penyakit']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayat_alergi', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayat_alergi']").value = quill.root.innerHTML;
+    });
+    </script>
+    
+    <script>
+    var quill = new Quill('#riwayat_kandungan', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayat_kandungan']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayat_kelahiran', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayat_kelahiran']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayat_tumbuh', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayat_tumbuh']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayat_imunisasi', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayat_imunisasi']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#obat_dikonsumsi', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='obat_dikonsumsi']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#keluhanutama', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='keluhanutama']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayatkehamilan', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayatkehamilan']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayatpersalinan', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayatpersalinan']").value = quill.root.innerHTML;
+    });
+    </script>
+    
+    <script>
+    var quill = new Quill('#riwayatanc', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayatanc']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayatpenyakitlain', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayatpenyakitlain']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayatpenyakitkeluarga', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayatpenyakitkeluarga']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#riwayatkb', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='riwayatkb']").value = quill.root.innerHTML;
+    });
+    </script>
+    
+    <script>
+    var quill = new Quill('#subyektif', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='subyektif']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#penilaian', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='penilaian']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#perencanaan', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='perencanaan']").value = quill.root.innerHTML;
+    });
+    </script>
 </body>
