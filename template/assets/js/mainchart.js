@@ -3,7 +3,7 @@ function inputpoli(){
   var varpoli = $('#poli').val();
   // alert(poli);
   $.ajax({
-      url:'Pasien/searchdokter',
+      url:'./searchdokter',
       method: 'post',
       data: {kode1: varpoli},
       dataType: 'json',
@@ -67,4 +67,3 @@ function bicaranormalCheck() {
     }
     else document.getElementById('bicaranormalyes').style.visibility = 'hidden';
 }
-

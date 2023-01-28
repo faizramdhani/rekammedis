@@ -16,9 +16,13 @@
     <!-- Data Tables -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
 
+    <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/select2/dist/css/select2.min.css">
+
     <!-- Template CSS -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/style.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/components.css">
+
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 
 </head>
 
@@ -215,6 +219,7 @@
         <script src="<?= base_url() ?>/template/node_modules/jquery.nicescroll/dist/jquery.nicescroll.min.js"></script>
         <script src="<?= base_url() ?>/template/node_modules/datatables/media/js/jquery.datatables.min.js"></script>
         <script src="<?= base_url() ?>/template/node_modules/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+        <script src="<?= base_url() ?>/template/node_modules/select2/dist/js/select2.full.min.js"></script>
         <script src="<?= base_url() ?>/template/assets/js/stisla.js"></script>
         <script src="<?php echo base_url('assets/js/mainchart.js');?>"></script>
 
@@ -228,7 +233,18 @@
         <!-- Template JS File -->
         <script src="<?= base_url() ?>/template/assets/js/scripts.js"></script>
         <script src="<?= base_url() ?>/template/assets/js/custom.js"></script>
+        <script src="<?= base_url() ?>/template/assets/js/mainchart.js"></script>
 
+        <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+        <script>
+        var quill = new Quill('#editor', {
+            theme: 'snow'
+        });
+        quill.on('text-change', function(delta, oldDelta, source) {
+            document.querySelector("input[name='content']").value = quill.root.innerHTML;
+        });
+        </script>
 
 </body>
 

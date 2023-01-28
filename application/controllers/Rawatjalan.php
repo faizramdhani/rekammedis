@@ -17,25 +17,14 @@ class Rawatjalan extends CI_Controller
 		$this->template->load('template', 'pasien/paslama', $data);
 	}
 
-
-	public function rawatjalanDokter()
-	{
-		$noRM = $this->uri->segment(3);
-		$data['pasrj'] = $this->Pasien_m->getpaslamadetail($noRM);
-		// dd($data);
-		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/detail', $data);
-	}
-
 	public function perawatrawatjalan()
 	{
-
-		// $this->session->set_userdata('$noRM', 'noRM');
 		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/perawatrawatjalan');
 	}
 
 	public function rawatjalanCPPT()
 	{
-		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/cppt');
+		$this->template->load('rawatjalan/template', 'rawatjalan/assesment/cppt');
 	}
 
 	public function awal()
