@@ -68,37 +68,50 @@
                     <?php if ($this->session->userdata('level_erm') == 3) { ?>
                         <ul class="sidebar-menu">
                             <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('Cprofilringkasigd/index/') ?>"><i class="far fa-user"></i> <span>Profil Ringkas</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('Cprofilringkasigd/index') ?>"><i class="far fa-user"></i> <span>Profil Ringkas</span></a></li>
 
                             <li class="menu-header">KEPERAWATAN</li>
 
                             <li><a class="nav-link" href="<?= site_url('Cassessmentawalperawatigd/index') ?>"><i class="far fa-file-alt"></i> <span>Asesment Awal</span></a></li>
 
-
                             <li class="menu-header">PENGKAJIAN MEDIS</li>
                             <li><a class="nav-link" href="<?= site_url('Cassessmentawalmedisigd/index') ?>"><i class="far fa-file-alt"></i> <span>Pengkajian Awal</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('Ccpptigd/index/') ?>"><i class="far fa-user"></i> <span>CPPT</span></a></li>
-
-                        </ul>
-                    <?php } ?>
-
-                    <!-- Level dokter 2 -->
-                    <?php if ($this->session->userdata('level_erm') == 2) { ?>
-                        <ul class="sidebar-menu">
-                            <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('Cprofilringkasigd/index/') ?>"><i class="fas fa-fire"></i> <span>Profil Ringkas</span></a></li>
-
-                            <li class="menu-header">KEPERAWATAN</li>
-
-                            <li><a class="nav-link" href="<?= site_url('Cassessmentawalperawatigd/index') ?>"><i class="far fa-file-alt"></i> <span>Asesment Awal</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('Ccpptigd/index') ?>"><i class="far fa-file-alt"></i> <span>CPPT</span></a></li>
 
 
-                            <li class="menu-header">PENGKAJIAN MEDIS</li>
-                            <li><a class="nav-link" href="<?= site_url('Cassessmentawalmedisigd/index') ?>"><i class="far fa-file-alt"></i> <span>Pengkajian Awal</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('Ccpptigd/index/') ?>"><i class="far fa-user"></i> <span>CPPT</span></a></li>
+                            <li class="menu-header">EWS</li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i> <span>Observasi</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="<?= site_url('Cobservasiigd/indexanak') ?>">Anak</a></li>
+                                    <li><a class="nav-link" href="<?= site_url('Cobservasiigd/indexdewasa') ?>">Dewasa</a></li>
+                                </ul>
+                            </li>
+                        <?php } ?>
 
-                        </ul>
-                    <?php } ?>
+                        <!-- Level dokter 2 -->
+                        <?php if ($this->session->userdata('level_erm') == 2) { ?>
+                            <ul class="sidebar-menu">
+                                <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
+                                <li><a class="nav-link" href="<?= site_url('Cprofilringkasigd/index') ?>"><i class="fas fa-fire"></i> <span>Profil Ringkas</span></a></li>
+
+                                <li class="menu-header">KEPERAWATAN</li>
+                                <li><a class="nav-link" href="<?= site_url('Cassessmentawalperawatigd/index') ?>"><i class="far fa-file-alt"></i> <span>Asesment Awal</span></a></li>
+
+                                <li class="menu-header">PENGKAJIAN MEDIS</li>
+                                <li><a class="nav-link" href="<?= site_url('Cassessmentawalmedisigd/index') ?>"><i class="far fa-file-alt"></i> <span>Pengkajian Awal</span></a></li>
+                                <li><a class="nav-link" href="<?= site_url('Ccpptigd/index/') ?>"><i class="far fa-user"></i> <span>CPPT</span></a></li>
+
+                                <li class="menu-header">EWS</li>
+                                <li class="dropdown">
+                                    <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i> <span>Observasi</span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="<?= site_url('Cobservasiigd/indexanak') ?>">Anak</a></li>
+                                        <li><a class="nav-link" href="<?= site_url('Cobservasiigd/indexdewasa') ?>">Dewasa</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        <?php } ?>
 
 
                 </aside>

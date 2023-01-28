@@ -13,33 +13,32 @@
 <section class="content">
     <div class="section-body">
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-6 col-lg-5">
                 <div class="card card-primary">
                     <div class="card-header">
                         <h4>Identitas Pasien</h4>
                     </div>
-                    <table class="table striped">
+                    <table class="table table-md">
                         <tr>
-                            <th>Nama Lengkap </th>
+                            <th>Nama </th>
+
                             <th>No. RM</th>
                             <th>No. RJ</th>
                             <th>Jenis Kelamin</th>
                         </tr>
-
-                        <tr>
                         <tr>
                             <td><?php echo $this->session->userdata('nmpasien'); ?></td>
                             <td><?php echo $this->session->userdata('nomrm'); ?></td>
                             <td><?php echo $this->session->userdata('norj'); ?></td>
                             <td><?php echo $this->session->userdata('kelamin'); ?></td>
-                        </tr>
-                        </tr>
-                    </table>
 
+                        </tr>
+                        <tr>
+                    </table>
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-6 col-lg-7">
                 <div class="card card-primary">
                     <div class="card-header">
                         <h4>Pasien</h4>
@@ -48,16 +47,14 @@
                         <tr>
                             <th>NIK</th>
                             <th>Umur</th>
-                            <th>No. Asuransi </th>
+                            <th>Poliklinik</th>
                             <th>Kode Rumah Sakit</th>
                         </tr>
                         <tr>
                             <td><?php echo $this->session->userdata('identitas'); ?></td>
                             <td><?php echo $this->session->userdata('umurthn'); ?></td>
-                            <td><?php echo $this->session->userdata('noasuransi'); ?></td>
-                            <td>
-                                <!-- kode rumah sakit tidak ditemukan -->
-                            </td>
+                            <td><?php echo $this->session->userdata('nama'); ?></td>
+                            <td></td>
 
                         </tr>
                         <tr>
@@ -68,11 +65,9 @@
         </div>
 
 
-
         <div class="row">
             <div class="col-12 ">
                 <div class="card">
-
                     <div class="card-body">
                         <ul class="nav nav-pills" id="myTab10" role="tablist">
                             <li class="nav-item">
@@ -113,7 +108,7 @@
                                 <div class="form-group-row">
                                     <div class="col-12">
                                         <div class="card-body">
-                                          
+
                                             <form>
                                                 <div class="form-group row">
                                                     <div for="tanggal" class="col-sm-2 col-form-label">Tanggal</div>
@@ -2975,8 +2970,6 @@
 
         </div>
     </div>
-
-
 
 
 </section>

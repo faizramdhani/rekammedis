@@ -20,7 +20,10 @@ class Cprofilringkasigd extends CI_Controller
 
 	public function create()
 	{
-		// $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/awalperawat/Vcreate');
+		$noRM = $this->uri->segment(3);
+		$data['profilringkas'] = $this->Mprofilringkasigd->getprofilringkasigd($noRM);
+
+		$this->template->load('igd/template', 'igd/profilringkas/Vcreate', $data);
 	}
 
 	public function insert()

@@ -50,7 +50,7 @@
  					</div>
  					<div class="card-wrap">
  						<div class="card-header">
- 							<h4>IGD</h4>
+ 							<h4>UGD</h4>
  						</div>
  						<div class="card-body">
 

@@ -64,7 +64,7 @@
                                             <th>No SEP</th>
                                             <th>No Rawat Jalan</th>
                                             <th>Konsumen</th>
-                                            <th>Asal</th>
+                                            <th>Poliklinik</th>
                                             <th>Action</th>
 
                                         </tr>
