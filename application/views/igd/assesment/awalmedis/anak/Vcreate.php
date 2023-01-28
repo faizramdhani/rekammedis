@@ -91,13 +91,13 @@
                             </li>
                         </ul>
 
-                        <form action="<?php echo site_url('Cassessmentawalperawat/insert') ?>" method="post" enctype="multipart/form-data">
+                        <form action="<?php echo site_url('Cassessmentawalmedisigd/insert') ?>" method="post" enctype="multipart/form-data">
                             <!-- tab 1 -->
                             <div id="tab1" class="col-12 active" data-tab-group="mygroup-tab">
                                 <div class="form-group-row">
                                     <div class="col-12">
                                         <div class="card-body col-12">
-
+                                            
                                             <div class="form-group">
                                                 <label for="keluhan">Keluhan Utama</label>
                                                 <textarea class="form-control" id="keluhan" rows="1"></textarea>

@@ -67,3 +67,4 @@ function bicaranormalCheck() {
     }
     else document.getElementById('bicaranormalyes').style.visibility = 'hidden';
 }
+

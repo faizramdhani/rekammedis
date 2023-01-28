@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
     <title>E - Rekam Medis</title>
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url() ?>/template/assets/img/icon-nmu.png" />
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="<?= base_url() ?>/template/node_modules/bootstrap/dist/css/bootstrap.min.css">

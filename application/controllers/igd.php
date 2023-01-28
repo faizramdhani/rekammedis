@@ -10,27 +10,28 @@ class Igd extends CI_Controller
         $this->load->model('Pasien_m');
     }
 
-    public function pasigd()
-    {
-        $data['paslama'] = $this->Pasien_m->getpaslama();
-        $data['dokter'] = $this->Pasien_m->getdokter();
-
-        $this->template->load('template', 'pasien/pasigd', $data);
-    }
-
     public function igdDokter()
     {
-        $this->template->load('igd/assesment/template', 'igd/assesment/detail');
-    }
-
-    public function triase()
-    {
-        $this->template->load('igd/assesment/template', 'igd/assesment/triase');
+        $noRM = $this->uri->segment(3);
+		$data['pasigd'] = $this->Pasien_m->getpasigddetail($noRM);
+		// dd($data);
+	
+        $this->template->load('igd/assesment/template', 'igd/assesment/detail', $data );
     }
 
     public function awal()
     {
         $this->template->load('igd/assesment/template', 'igd/assesment/awal');
+    }
+
+    // public function triase()
+    // {
+    //     $this->template->load('igd/assesment/template', 'igd/assesment/triase');
+    // }
+
+    public function perawatigd()
+    {
+        $this->template->load('igd/assesment/template', 'igd/assesment/perawatigd');
     }
 
     public function igdCPPT()

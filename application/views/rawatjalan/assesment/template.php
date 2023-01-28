@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/style.css">
     <link rel="stylesheet" href="<?= base_url() ?>/template/assets/css/components.css">
 
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -168,6 +170,17 @@
     <!-- Template JS File -->
     <script src="<?= base_url() ?>/template/assets/js/scripts.js"></script>
     <script src="<?= base_url() ?>/template/assets/js/custom.js"></script>
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+        <script>
+        var quill = new Quill('#editor', {
+            theme: 'snow'
+        });
+        quill.on('text-change', function(delta, oldDelta, source) {
+            document.querySelector("input[name='content']").value = quill.root.innerHTML;
+        });
+        </script>
 
 </body>
 

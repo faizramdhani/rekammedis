@@ -780,7 +780,6 @@
                                         <h4>VII. Status Fungsional</h4>
                                     </div>
                                     <div class="card-body">
-
                                         <table class="table table-striped table-md">
                                             <!-- 1 -->
                                             <tr>

@@ -4,7 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Massessmentawalperawat extends CI_Model
 // asesmentawal perawat rawat jalan
 {
-    private $_table = "pengkajianawal_perawatrj";
+    private $_table = "pengkajianawal_perawatigd";
 
     public $id_pengkajianawalperawat;
     public $asal_pasien;
@@ -136,7 +136,7 @@ class Massessmentawalperawat extends CI_Model
 
     public function getassessmentawalperawat()
     {
-        $query = $this->db->query("SELECT * FROM pengkajianawal_perawatrj");
+        $query = $this->db->query("SELECT * FROM pengkajianawal_perawatigd");
 
         $result = $query->result_array();
         return $result;
@@ -144,7 +144,7 @@ class Massessmentawalperawat extends CI_Model
 
     public function getassessmentawaldetail($noIdAssessmentawalperawat)
     {
-        $query = $this->db->query("SELECT * FROM pengkajianawal_perawatrj WHERE id_pengkajianawalperawat='$noIdAssessmentawalperawat'");
+        $query = $this->db->query("SELECT * FROM pengkajianawal_perawatigd WHERE id_pengkajianawalperawat='$noIdAssessmentawalperawat'");
 
         $result = $query->row_array();
         return $result;
