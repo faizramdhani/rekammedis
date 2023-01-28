@@ -49,9 +49,24 @@ class Pasien_m extends CI_Model
         // FROM paslama a, mtdokter b
         // WHERE b.kddokter=a.kddokter AND a.nomrm='$noRM'");
 
-        $query = $this->db->query("SELECT a.nomrm, a.nmpasien, c.nama, a.norj, b.kelamin, b.identitas, b.umurthn
-        FROM paslama a, pasien b, tindakan1 c
-        WHERE b.nomrm=a.nomrm AND a.nomrm='$noRM'  AND c.kode1=a.kode1");
+        $query = $this->db->query("SELECT a.nomrm, a.nmpasien, a.noasuransi, a.norj, b.kelamin, b.identitas, b.umurthn
+        FROM paslama a, pasien b
+        WHERE b.nomrm=a.nomrm AND a.nomrm='$noRM'");
+
+        $result = $query->row_array();
+        $this->session->set_userdata($result);
+        return $result;
+    }
+
+    public function getpasigddetail($noRM)
+    {
+        // $query = $this->db->query("SELECT a.tanggal, a.nomrm, a.nmpasien, b.nmdokter, a.alamat, a.noasuransi, a.nosep, a.norj, a.nmkons, a.nik
+        // FROM paslama a, mtdokter b
+        // WHERE b.kddokter=a.kddokter AND a.nomrm='$noRM'");
+
+        $query = $this->db->query("SELECT a.nomrm, a.nmpasien, a.noasuransi, a.norj, b.kelamin, b.identitas, b.umurthn
+        FROM paslama a, pasien b
+        WHERE b.nomrm=a.nomrm AND a.nomrm='$noRM'");
 
         $result = $query->row_array();
         $this->session->set_userdata($result);
@@ -69,16 +84,16 @@ class Pasien_m extends CI_Model
         return $result;
     }
 
-    
-    // public function getpasigd()
-    // {
+    public function getpasigd()
+    {
+        $query = $this->db->query("SELECT a.tanggal, a.nomrm, a.nmpasien, b.nmdokter, a.alamat, a.noasuransi, a.nosep, a.norj, a.nmkons, c.nama
+        FROM paslama a, mtdokter b, tindakan1 c
+        WHERE b.kddokter=a.kddokter AND a.kode1 = '010301' AND c.kode1=a.kode1
+        ORDER BY a.nomrm ASC LIMIT 10");
 
-    //     $query = $this->db->query("SELECT a.tglmasuk, a.jam, a.nomrm, a.nori, a.asal, a.kdkelas, c.nmkamar, a.nobed, a.nmpasien, b.nmdokter, a.alamat, a.noasuransi, a.nosep, a.norj, a.nmkons
-    //     FROM dafinap a, mtdokter b, mtkamar c
-    //     WHERE b.kddokter=a.kddokter AND c.kdkamar=a.kdkamar
-    //     ORDER BY a.nomrm ASC LIMIT 10");
-    //     $result = $query->result_array();
-    //     return $result;
-    // }
+        $result = $query->result_array();
+        return $result;
+    }
+
     
 }

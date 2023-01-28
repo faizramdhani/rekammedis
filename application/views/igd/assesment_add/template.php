@@ -72,11 +72,11 @@
 
                             <li class="menu-header">KEPERAWATAN</li>
 
-                            <li><a class="nav-link" href="<?= site_url('Cassessmentawalperawatigd/index') ?>"><i class="far fa-file-alt"></i> <span>Asesment Awal</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('igd/perawatigd') ?>"><i class="far fa-file-alt"></i> <span>Asesment Awal</span></a></li>
 
 
                             <li class="menu-header">PENGKAJIAN MEDIS</li>
-                            <li><a class="nav-link" href="<?= site_url('Cassessmentawalmedisigd/index') ?>"><i class="far fa-file-alt"></i> <span>Pengkajian Awal</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('igd/awal') ?>"><i class="far fa-file-alt"></i> <span>Pengkajian Awal</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('igd/igdCPPT') ?>"><i class="far fa-file-alt"></i> <span>CPPT</span></a></li>
 
                         </ul>
@@ -85,16 +85,16 @@
                     <!-- Level dokter 2 -->
                     <?php if ($this->session->userdata('level_erm') == 2) { ?>
                         <ul class="sidebar-menu">
-                            <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
+                        <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('igd/igdDokter') ?>"><i class="fas fa-fire"></i> <span>Profil Ringkas</span></a></li>
 
                             <li class="menu-header">KEPERAWATAN</li>
 
-                            <li><a class="nav-link" href="<?= site_url('Cassessmentawalperawatigd/index') ?>"><i class="far fa-file-alt"></i> <span>Asesment Awal</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('igd/perawatigd') ?>"><i class="far fa-square"></i> <span>Asesment Awal</span></a></li>
 
 
                             <li class="menu-header">PENGKAJIAN MEDIS</li>
-                            <li><a class="nav-link" href="<?= site_url('Cassessmentawalmedisigd/index') ?>"><i class="far fa-file-alt"></i> <span>Pengkajian Awal</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('igd/awal') ?>"><i class="far fa-square"></i> <span>Pengkajian Awal</span></a></li>
                             <li><a class="nav-link" href="<?= site_url('igd/igdCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
 
                         </ul>

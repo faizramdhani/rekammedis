@@ -1,34 +1,43 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Cassessmentawalperawat extends CI_Controller
+class Cassessmentawalmedisigd extends CI_Controller
 {
 	public function __construct()
 	{
 		parent::__construct();
 		$this->load->library('session');
+		
 		$this->load->model('Massessmentawalperawat');
 	}
 
 	public function index()
 	{
 		$data['assessmentawalperawat'] = $this->Massessmentawalperawat->getassessmentawalperawat();
-		$this->template->load('rawatjalan/template', 'rawatjalan/assesment/awalperawat/Vindex', $data);
-	}
+		
+		// igd
+		$this->template->load('igd/assesment/template', 'igd/assesment/awalmedis/anak/Vindex', $data);
 
+	}
+	
 
 	public function create()
 	{
-		$data['icd'] = $this->Massessmentawalperawat->geticd();
-		$this->template->load('rawatjalan/template', 'rawatjalan/assesment/awalperawat/Vcreate', $data);
+		// $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/awalperawat/Vcreate');
+
+		// igd
+		$this->template->load('igd/assesment/template', 'igd/assesment/awalmedis/anak/Vcreate');
 	}
 
 	public function insert()
 	{
-		$product = $this->Massessmentawalperawat;
+        $product = $this->Massessmentawalperawat;
 		$product->save();
 		$this->session->set_flashdata('success', 'Berhasil disimpan');
-        $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/awalperawat/Vindex');
+      
+
+		// igd
+		$this->template->load('igd/assesment/template', 'igd/assesment/awalmedis/anak/Vindex');
     }
 
 	public function add()
@@ -40,7 +49,9 @@ class Cassessmentawalperawat extends CI_Controller
         if ($validation->run()) {
             $AssessmentAwal->save1();
         }
-		$this->template->load('rawatjalan/assesment/template', 'rawatjalan/pasien/paslama');
+	
+
+		$this->template->load('igd/assesment/template', 'igd/pasien/pasigd');
     }
 
 	public function show()
@@ -48,6 +59,10 @@ class Cassessmentawalperawat extends CI_Controller
 		$noIdAssessmentawalperawat = $this->uri->segment(3);
 		$data['assessmentdetail'] = $this->Massessmentawalperawat->getassessmentawaldetail($noIdAssessmentawalperawat);
 		// dd($data);
-		$this->template->load('rawatjalan/template', 'rawatjalan/assesment/awalperawat/Vread', $data);
+	
+
+		// igd
+		$this->template->load('igd/assesment/template', 'igd/assesment/awalmedis/anak/Vread', $data);
 	}
+
 }
