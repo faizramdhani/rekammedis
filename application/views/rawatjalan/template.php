@@ -97,16 +97,16 @@
 
 
                             <li class="menu-header">ASSESMENT AWAL MEDIS</li>
-                            <li><a class="nav-link" href="<?= site_url('rawatjalan/awal') ?>"><i class="fas fa-user-injured"></i> <span>Pengkajian Awal</span></a></li>
+                            <!-- <li><a class="nav-link" href="<?= site_url('rawatjalan/awal') ?>"><i class="fas fa-user-injured"></i> <span>Pengkajian Awal</span></a></li> -->
 
 
                             <!-- poli umumm -->
-                            <li class="dropdown">
+                            <!-- <li class="dropdown">
                                 <a class="nav-link has-dropdown"><i class="far fa-address-book"></i> <span>Poli Umum</span></a>
                                 <ul class="dropdown-menu">
 
                                 </ul>
-                            </li>
+                            </li> -->
 
                             <!-- poli spesialis -->
                             <li class="dropdown">
@@ -308,6 +308,33 @@
     });
     quill.on('text-change', function(delta, oldDelta, source) {
         document.querySelector("input[name='riwayatkb']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#subyektif', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='subyektif']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#penilaian', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='penilaian']").value = quill.root.innerHTML;
+    });
+    </script>
+
+    <script>
+    var quill = new Quill('#perencanaan', {
+        theme: 'snow'
+    });
+    quill.on('text-change', function(delta, oldDelta, source) {
+        document.querySelector("input[name='perencanaan']").value = quill.root.innerHTML;
     });
     </script>
 </body>

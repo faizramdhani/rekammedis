@@ -7,4 +7,13 @@ class Mcppt extends CI_Model
     {
         $this->load->database();
     }
+
+    public function geticd(){
+
+        $query = $this->db->query("SELECT * FROM icds ORDER BY code ASC LIMIT 100");
+
+        $result = $query->result_array();
+        return $result;
+        // return $query->result();
+    }
 }

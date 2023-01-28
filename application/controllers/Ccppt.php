@@ -18,7 +18,8 @@ class Ccppt extends CI_Controller
 
 	public function create()
 	{
-		// $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/awalperawat/Vcreate');
+		$data['icd'] = $this->Mcppt->geticd();
+		$this->template->load('rawatjalan/template', 'rawatjalan/cppt/Vcreate', $data);
 	}
 
 	public function insert()
