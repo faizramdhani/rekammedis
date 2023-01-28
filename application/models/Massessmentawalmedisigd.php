@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Massessmentawalperawatigd extends CI_Model
+class Massessmentawalmedisigd extends CI_Model
 
 {
     private $_table = "pengkajianawal_perawatigd";

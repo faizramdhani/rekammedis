@@ -16,7 +16,7 @@ class Cassessmentawalmedisigd extends CI_Controller
 		$data['assessmentawalperawat'] = $this->Massessmentawalperawat->getassessmentawalperawat();
 		
 		// igd
-		$this->template->load('igd/assesment/template', 'igd/assesment/awalmedis/anak/Vindex', $data);
+		$this->template->load('igd/template', 'igd/assesment/awalmedis/anak/Vindex', $data);
 
 	}
 	
@@ -26,7 +26,7 @@ class Cassessmentawalmedisigd extends CI_Controller
 		// $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/awalperawat/Vcreate');
 
 		// igd
-		$this->template->load('igd/assesment/template', 'igd/assesment/awalmedis/anak/Vcreate');
+		$this->template->load('igd/template', 'igd/assesment/awalmedis/anak/Vcreate');
 	}
 
 	public function insert()
@@ -37,7 +37,7 @@ class Cassessmentawalmedisigd extends CI_Controller
       
 
 		// igd
-		$this->template->load('igd/assesment/template', 'igd/assesment/awalmedis/anak/Vindex');
+		$this->template->load('igd/template', 'igd/assesment/awalmedis/anak/Vindex');
     }
 
 	public function add()
@@ -51,7 +51,7 @@ class Cassessmentawalmedisigd extends CI_Controller
         }
 	
 
-		$this->template->load('igd/assesment/template', 'igd/pasien/pasigd');
+		$this->template->load('igd/template', 'igd/pasien/pasigd');
     }
 
 	public function show()
@@ -62,7 +62,7 @@ class Cassessmentawalmedisigd extends CI_Controller
 	
 
 		// igd
-		$this->template->load('igd/assesment/template', 'igd/assesment/awalmedis/anak/Vread', $data);
+		$this->template->load('igd/template', 'igd/assesment/awalmedis/anak/Vread', $data);
 	}
 
 }

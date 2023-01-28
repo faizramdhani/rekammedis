@@ -1,23 +1,22 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Ccppt extends CI_Controller
+class Cprofilringkasigd extends CI_Controller
 {
 	public function __construct()
 	{
 		parent::__construct();
 		$this->load->library('session');
-
-		$this->load->model('Mcppt');
+		$this->load->model('Mprofilringkasigd');
 	}
 
 	public function index()
 	{
-		$this->template->load('rawatjalan/template', 'rawatjalan/cppt/Vindex');
+		$noRM = $this->uri->segment(3);
+		$data['profilringkas'] = $this->Mprofilringkasigd->getprofilringkasigd($noRM);
+		// dd($data);
+		$this->template->load('igd/template', 'igd/profilringkas/Vindex', $data);
 	}
-
-
-	
 
 	public function create()
 	{

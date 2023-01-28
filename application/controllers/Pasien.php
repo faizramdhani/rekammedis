@@ -27,7 +27,7 @@ class Pasien extends CI_Controller
     public function pasigd()
     {
         $data['pasigd'] = $this->Pasien_m->getpasigd();
-        // $data['poli'] = $this->Pasien_m->getpoli();
+        $data['poli'] = $this->Pasien_m->getpoli();
         
         $this->template->load('template', 'pasien/pasigd', $data);
     }

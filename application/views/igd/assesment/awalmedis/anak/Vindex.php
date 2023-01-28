@@ -20,7 +20,6 @@
                 <table class="table table-md">
                     <tr>
                         <th>Nama </th>
-                        <th>NIK</th>
                         <th>No. RM</th>
                         <th>No. RJ</th>
                         <th>Jenis Kelamin</th>
@@ -44,7 +43,7 @@
                 </div>
                 <table class="table table-md">
                     <tr>
-
+                        <th>NIK</th>
                         <th>Umur</th>
                         <th>Poliklinik</th>
                         <th>Kode Rumah Sakit</th>
@@ -72,40 +71,38 @@
             <div class="card">
                 <div class="card-body">
                     <div class="card-footer text-right">
-                        <a class="btn btn-primary" href="<?= site_url('Cassessmentawalmedisigd/create') ?>"><i class="fas fa-plus"></i> Tambah Assessment Awal</a>
+                        <a class="btn btn-primary" href="<?= site_url('Cassessmentawalmedisigd/create') ?>"><i class="fas fa-plus"></i> Tambah Assessment Awal Medis</a>
                     </div>
                     <div class="table-responsive">
                         <table class="table table-striped" id="table1">
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Kode Assessment Awal Perawat</th>
-                                    <th>Anamnesis</th>
+                                    <th>Kode Assessment Awal Medis</th>
+                                    <th>Triase</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
 
 
-                            <tbody>
+                            <!-- <tbody>
                                 <?php $no = 1;
                                 foreach ($assessmentawalperawat as $row) : ?>
                                     <tr>
                                         <td><?= $no++ ?></td>
                                         <td><?= $row['id_pengkajianawalperawat'] ?></td>
                                         <td><?= $row['anamnesis'] ?></td>
-                                        <!-- <td>
+                                        <td>
                                             <div class="row">
                                                 <div class="buttons">
                                                     <a href="<?= site_url('') ?>" class="btn btn-icon btn-primary" title="Edit"><i class="far fa-edit"></i></a>
                                                     <a href="<?= site_url('Cassessmentawalperawat/show/' . $row['id_pengkajianawalperawat']) ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
                                                 </div>
                                             </div>
-                                        </td> -->
-
-                                    <?php endforeach ?>
-
-
-                            </tbody>
+                                        </td>
+                                    </tr>
+                                <?php endforeach ?>
+                            </tbody> -->
                         </table>
                     </div>
                 </div>

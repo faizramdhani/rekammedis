@@ -1,13 +1,14 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Mcppt extends CI_Model
+class Mprofilringkasigd extends CI_Model
 {
     public function __construct()
     {
         $this->load->database();
     }
-    public function getcppt($noRM)
+
+    public function getprofilringkasigd($noRM)
     {
         $query = $this->db->query("SELECT a.nomrm, a.nmpasien, c.nama, a.norj, b.kelamin, b.identitas, b.umurthn, a.kode1
         FROM paslama a, pasien b, tindakan1 c
@@ -16,5 +17,5 @@ class Mcppt extends CI_Model
         $result = $query->row_array();
         $this->session->set_userdata($result);
         return $result;
-    }
+    }   
 }

@@ -18,6 +18,9 @@ class Cprofilringkas extends CI_Controller
 		// dd($data);
 		$this->template->load('rawatjalan/template', 'rawatjalan/profilringkas/Vindex', $data);
 	}
+	
+
+	
 
 	public function create()
 	{

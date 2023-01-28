@@ -68,7 +68,7 @@
                     <?php if ($this->session->userdata('level_erm') == 3) { ?>
                         <ul class="sidebar-menu">
                             <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('igd/igdDokter') ?>"><i class="far fa-user"></i> <span>Profil Ringkas</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('Cprofilringkasigd/index/') ?>"><i class="far fa-user"></i> <span>Profil Ringkas</span></a></li>
 
                             <li class="menu-header">KEPERAWATAN</li>
 
@@ -77,7 +77,7 @@
 
                             <li class="menu-header">PENGKAJIAN MEDIS</li>
                             <li><a class="nav-link" href="<?= site_url('Cassessmentawalmedisigd/index') ?>"><i class="far fa-file-alt"></i> <span>Pengkajian Awal</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('igd/igdCPPT') ?>"><i class="far fa-file-alt"></i> <span>CPPT</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('Ccpptigd/index/') ?>"><i class="far fa-user"></i> <span>CPPT</span></a></li>
 
                         </ul>
                     <?php } ?>
@@ -86,7 +86,7 @@
                     <?php if ($this->session->userdata('level_erm') == 2) { ?>
                         <ul class="sidebar-menu">
                             <li><a class="nav-link" href="<?= site_url('dashboard') ?>"><i class="fas fa-arrow-left"></i> <span>Kembali</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('igd/igdDokter') ?>"><i class="fas fa-fire"></i> <span>Profil Ringkas</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('Cprofilringkasigd/index/') ?>"><i class="fas fa-fire"></i> <span>Profil Ringkas</span></a></li>
 
                             <li class="menu-header">KEPERAWATAN</li>
 
@@ -95,7 +95,7 @@
 
                             <li class="menu-header">PENGKAJIAN MEDIS</li>
                             <li><a class="nav-link" href="<?= site_url('Cassessmentawalmedisigd/index') ?>"><i class="far fa-file-alt"></i> <span>Pengkajian Awal</span></a></li>
-                            <li><a class="nav-link" href="<?= site_url('igd/igdCPPT') ?>"><i class="fas fa-user-injured"></i> <span>CPPT</span></a></li>
+                            <li><a class="nav-link" href="<?= site_url('Ccpptigd/index/') ?>"><i class="far fa-user"></i> <span>CPPT</span></a></li>
 
                         </ul>
                     <?php } ?>

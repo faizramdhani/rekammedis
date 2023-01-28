@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Ccppt extends CI_Controller
+class Ccpptigd extends CI_Controller
 {
 	public function __construct()
 	{
@@ -13,11 +13,11 @@ class Ccppt extends CI_Controller
 
 	public function index()
 	{
-		$this->template->load('rawatjalan/template', 'rawatjalan/cppt/Vindex');
+		$noRM = $this->uri->segment(3);
+		$data['cppt'] = $this->Mcppt->getcppt($noRM);
+
+		$this->template->load('igd/template', 'igd/cppt/Vindex', $data);
 	}
-
-
-	
 
 	public function create()
 	{

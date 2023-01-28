@@ -16,17 +16,16 @@ class Cassessmentawalperawatigd extends CI_Controller
 		$data['assessmentawalperawat'] = $this->Massessmentawalperawat->getassessmentawalperawat();
 		
 		// igd
-		$this->template->load('igd/assesment/template', 'igd/assesment/awalperawat/anak/Vindex', $data);
+		$this->template->load('igd/template', 'igd/assesment/awalperawat/anak/Vindex', $data);
 
 	}
 	
-
 	public function create()
 	{
 		// $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/awalperawat/Vcreate');
 
 		// igd
-		$this->template->load('igd/assesment/template', 'igd/assesment/awalperawat/anak/Vcreate');
+		$this->template->load('igd/template', 'igd/assesment/awalperawat/anak/Vcreate');
 	}
 
 	public function insert()
@@ -37,7 +36,7 @@ class Cassessmentawalperawatigd extends CI_Controller
       
 
 		// igd
-		$this->template->load('igd/assesment/template', 'igd/assesment/awalperawat/anak/Vindex');
+		$this->template->load('igd/template', 'igd/assesment/awalperawat/anak/Vindex');
     }
 
 	public function add()
@@ -49,9 +48,7 @@ class Cassessmentawalperawatigd extends CI_Controller
         if ($validation->run()) {
             $AssessmentAwal->save1();
         }
-	
-
-		$this->template->load('igd/assesment/template', 'igd/pasien/pasigd');
+		$this->template->load('igd/template', 'igd/pasien/pasigd');
     }
 
 	public function show()
@@ -59,10 +56,9 @@ class Cassessmentawalperawatigd extends CI_Controller
 		$noIdAssessmentawalperawat = $this->uri->segment(3);
 		$data['assessmentdetail'] = $this->Massessmentawalperawat->getassessmentawaldetail($noIdAssessmentawalperawat);
 		// dd($data);
-	
 
 		// igd
-		$this->template->load('igd/assesment/template', 'igd/assesment/awalperawat/anak/Vread', $data);
+		$this->template->load('igd/template', 'igd/assesment/awalperawat/Vread', $data);
 	}
 
 }

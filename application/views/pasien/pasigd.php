@@ -1,11 +1,6 @@
 <section class="section">
     <div class="section-header">
         <h5>Instalasi Gawat Darurat</h5>
-        <div class="section-header-breadcrumb">
-            <div class="breadcrumb-item active"><a href="<?= site_url('dashboard') ?>">Dashboard</a></div>
-            <div class="breadcrumb-item"><a href="<?= site_url('rawatjalan/pasigd') ?>">IGD</a></div>
-
-        </div>
     </div>
 </section>
 
@@ -17,6 +12,7 @@
                     <div class="card-header">
                         <h4>Data Pasien IGD</h4>
                     </div>
+
                     <div class="form-group">
                         <div class="row">
                             <div class="col-12">
@@ -26,18 +22,20 @@
                                             <form class="form-horizontal style-form" id="pencarianantrian" method="post">
                                                 <div class="table-responsive">
                                                     <p>Poliklinik:</p>
-                                                    <select name="poli" id="poli" class="form-control" required onchange="inputpoli()">
+                                                    <select name="poli" id="poli" class="form-control select2" required onchange="inputpoli()">
                                                         <option value="">---Pilih---</option>
                                                         <?php foreach ($poli as $key => $value) { ?>
                                                             <option value="<?php echo $value['kode1']; ?>" class="option"><?php echo $value['nama']; ?></option>
                                                         <?php } ?>
                                                     </select>
                                                 </div>
+                                                <br>
                                                 <div class="table-responsive" id='divkodepoli'>
                                                     <p>Dokter :</p>
-                                                    <select name="dokterpoli" id="dokterpoli" class="form-control" required>
+                                                    <select name="dokterpoli" id="dokterpoli" class="form-control select2" required>
                                                     </select>
                                                 </div>
+                                                <br>
                                                 <div class="table-responsive">
                                                     <p>Tanggal Perawatan :</p>
                                                     <input type="date" id="tanggal" name="tanggal" class="form-control" value="">
@@ -68,7 +66,7 @@
                                             <th>Konsumen</th>
                                             <th>Asal</th>
                                             <th>Action</th>
-                                          
+
                                         </tr>
                                     </thead>
 
@@ -91,13 +89,12 @@
                                                 <td>
                                                     <div class="row">
                                                         <div class="buttons">
-                                                        <a href="<?= site_url('igd/igdDokter/' . $row['nomrm']) ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
+                                                            <a href="<?= site_url('Cprofilringkasigd/index/' . $row['nomrm']) ?>" title="Lihat" class="btn btn-icon btn-info "><i class="far fa-eye"></i></a>
+
+                                                        </div>
                                                     </div>
                                                 </td>
-
                                             <?php endforeach ?>
-
-
                                     </tbody>
                                 </table>
                             </div>
@@ -106,4 +103,5 @@
                 </div>
             </div>
         </div>
+    </div>
 </section>

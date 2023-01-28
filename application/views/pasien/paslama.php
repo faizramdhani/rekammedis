@@ -29,9 +29,9 @@
                                        <p>Poliklinik:</p>
                                        <select name="poli" id="poli" class="form-control select2" required onchange="inputpoli()">
                                           <option value="">---Pilih---</option>
-                                       <?php foreach ($poli as $key => $value) { ?>
-                                       <option value="<?php echo $value['kode1']; ?>" class="option"><?php echo $value['nama']; ?></option>
-                                       <?php } ?> 
+                                          <?php foreach ($poli as $key => $value) { ?>
+                                             <option value="<?php echo $value['kode1']; ?>" class="option"><?php echo $value['nama']; ?></option>
+                                          <?php } ?>
                                        </select>
                                     </div>
                                     <br>
@@ -63,18 +63,12 @@
                               <tr>
                                  <th>No</th>
                                  <th>Nama Pasien</th>
-
                                  <th>No MRM</th>
-
                                  <th>Alamat</th>
                                  <th>Poliklinik</th>
                                  <th>No SEP</th>
                                  <th>No Rawat Jalan</th>
-
-
                                  <th>Konsumen</th>
-
-
                                  <th>Action</th>
                               </tr>
                            </thead>
