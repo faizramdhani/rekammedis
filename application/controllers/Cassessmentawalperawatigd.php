@@ -31,12 +31,14 @@ class Cassessmentawalperawatigd extends CI_Controller
 	public function insert()
 	{
         $product = $this->Massessmentawalperawat;
-		$product->save();
-		$this->session->set_flashdata('success', 'Berhasil disimpan');
+		$response = $product->save1();
+		print_r($response);
+		// $this->session->set_flashdata('success', 'Berhasil disimpan');
+		// $this->session->set_flashdata('msg', 'triase ok');
       
 
-		// igd
-		$this->template->load('igd/template', 'igd/assesment/awalperawat/anak/Vindex');
+		// // igd
+		// $this->template->load('igd/template', 'igd/assesment/awalperawat/anak/Vindex');
     }
 
 	public function add()

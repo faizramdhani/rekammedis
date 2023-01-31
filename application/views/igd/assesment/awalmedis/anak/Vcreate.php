@@ -97,22 +97,21 @@
                                 <div class="form-group-row">
                                     <div class="col-12">
                                         <div class="card-body col-12">
-                                            
                                             <div class="form-group">
-                                                <label for="keluhan">Keluhan Utama</label>
-                                                <textarea class="form-control" id="keluhan" rows="1"></textarea>
+                                                <label for="keluhanutama">Keluhan Utama</label>
+                                                <textarea class="form-control" name="keluhanutama" rows="1"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <label for="penyakit">Riwayat Penyakit</label>
-                                                <textarea class="form-control" id="penyakit" rows="1"></textarea>
+                                                <label for="riwayatpenyakit">Riwayat Penyakit</label>
+                                                <textarea class="form-control" name="riwayatpenyakit" rows="1"></textarea>
                                             </div>
                                             <div class="form-group">
-                                                <label for="alergi">Riwayat Alergi</label>
-                                                <textarea class="form-control" id="alergi" rows="1"></textarea>
+                                                <label for="riwayatalergi">Riwayat Alergi</label>
+                                                <textarea class="form-control" name="riwayatalergi" rows="1" placeholder="Obat"></textarea>
                                             </div>
                                             <div class="form-group">
                                                 <label for="pengobatan">Riwayat Pengobatan</label>
-                                                <textarea class="form-control" id="pengobatan" rows="1"></textarea>
+                                                <textarea class="form-control" name="pengobatan" rows="1"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -126,35 +125,35 @@
                                     <div class="card-body col-sm-3 col-md-6">
                                         <div class="form">
                                             <label>Keadaan Umum</label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="keadaanumum"></textarea>
                                         </div>
                                         <div class="form">
                                             <label>GCS</label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="keadaan_gcs"></textarea>
                                         </div>
                                         <div class="form">
                                             <label>Kepala</label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="keadaan_kepala"></textarea>
                                         </div>
                                         <div class="form">
                                             <label>Leher</label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="keadaan_leher"></textarea>
                                         </div>
                                         <div class="form">
                                             <label>Thorax</label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="keadaan_thorax"></textarea>
                                         </div>
                                         <div class="form">
                                             <label>Abdomen & Pelvis</label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="keadaan_abdomen"></textarea>
                                         </div>
                                         <div class="form">
                                             <label>Punggung dan Pinggang</label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="keadaan_punggung"></textarea>
                                         </div>
                                         <div class="form">
                                             <label>Ekstrimitas</label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" name="keadaan_ekstrimitas"></textarea>
                                         </div>
 
                                     </div>
@@ -350,8 +349,12 @@
                                                         <div class="form-check form-check-inline">
                                                             <input class="form-check-input" id="skala" name="skala" type="checkbox" value="Tidak" style="height:20px;width:20px">
                                                             <label class="form-check-label" for="Tidak">Rehabilitatif</label>
+                                                            <div class="card-footer text-center">
+                                                                <a class="btn btn-primary" href="<?= site_url('Cassessmentawalmedisigd/permintaanrawatinap') ?>"><i class="fas fa-plus"></i> Permintaan Rawat Inap</a>
+                                                            </div>
                                                         </div>
                                                     </div>
+
                                                 </div>
 
 
@@ -361,7 +364,7 @@
                                 </div>
 
                                 <div class="form-gorup-row">
-                                    <label class="col-sm-3">2. Pulang atas perstujuan dokter</label>
+                                    <label class="col-sm-3">2. Pulang atas persetujuan dokter</label>
                                     <div class="row">
                                         <div class="card-body col-sm-5">
                                             <div class="form">
@@ -374,10 +377,13 @@
                                                         <div class="form-check form-check-inline">
                                                             <input class="form-check-input" id="skala" name="skala" type="checkbox" value="Tidak" style="height:20px;width:20px">
                                                             <label class="form-check-label" for="Tidak">Tidak</label>
+                                                            <div class="card-footer text-center">
+                                                                <a class="btn btn-primary" href="<?= site_url('Cassessmentawalmedisigd/resumemedis') ?>"><i class="fas fa-plus"></i> Resume Medis</a>
+                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
-
 
                                             </div>
                                         </div>
@@ -398,9 +404,14 @@
                                                         <div class="form-check form-check-inline">
                                                             <input class="form-check-input" id="skala" name="skala" type="checkbox" value="Tidak" style="height:20px;width:20px">
                                                             <label class="form-check-label" for="Tidak">Tidak</label>
+                                                            <div class="card-footer text-center">
+                                                                <a class="btn btn-primary" href="<?= site_url('Cassessmentawalmedisigd/suratkematian') ?>"><i class="fas fa-plus"></i> Surat Kematian</a>
+                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
+
 
 
                                             </div>
@@ -422,10 +433,12 @@
                                                         <div class="form-check form-check-inline">
                                                             <input class="form-check-input" id="skala" name="skala" type="checkbox" value="Tidak" style="height:20px;width:20px">
                                                             <label class="form-check-label" for="Tidak">Tidak</label>
+                                                            <div class="card-footer text-center">
+                                                                <a class="btn btn-primary" href="<?= site_url('Cassessmentawalmedisigd/suratrujukan') ?>"><i class="fas fa-plus"></i> Surat Rujukan</a>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-
 
                                             </div>
                                         </div>
@@ -438,12 +451,21 @@
                                         <div class="card-body col-sm-5">
                                             <div class="form">
                                                 <div class="form-group row">
-                                                    <div for="inputPassword3" class="col-sm-4 col-form-label">Kontrol tanggal</div>
+                                                    <div for="kontroltanggal" class="col-sm-4 col-form-label">Kontrol tanggal</div>
                                                     <div class="col-sm-10">
                                                         <input type="date" class="form-control">
                                                     </div>
 
                                                 </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" id="skala" name="skala" type="checkbox" value="Tidak" style="height:20px;width:20px">
+                                                    <label class="form-check-label" for="Tidak">Ke</label>
+                                                    <div class="card-footer text-center">
+                                                        <a class="btn btn-primary" href="<?= site_url('Cassessmentawalmedisigd/penolakanrawatinap') ?>"><i class="fas fa-plus"></i> Penolakan rawat inap</a>
+                                                    </div>
+                                                </div>
+
+
                                             </div>
                                         </div>
                                     </div>

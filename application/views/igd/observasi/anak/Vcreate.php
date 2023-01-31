@@ -52,7 +52,6 @@
             </div>
         </div>
 
-
         <div class="row">
             <div class="col-12 ">
                 <div class="card">
@@ -76,7 +75,7 @@
                                 <table class="table table-hover table-sm col-12">
                                     <thead>
                                         <tr>
-                                            <th style="border:0">Tanggal MRS</th>
+                                            <th style="border:0">Masuk Rumah Sakit</th>
                                             <th style="border:0">Tanggal / Jam</th>
                                             <th style="border:0">Skor</th>
 
@@ -508,7 +507,7 @@
                                     </tr>
                                     <tbody></tbody>
 
-                                 
+
 
 
                                     </tbody>

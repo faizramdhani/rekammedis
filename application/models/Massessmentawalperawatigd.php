@@ -150,4 +150,3 @@ class Massessmentawalperawatigd extends CI_Model
         return $result;
     }
 }
-

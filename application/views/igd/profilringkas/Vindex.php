@@ -9,85 +9,72 @@
    </div>
 </section>
 
-<section class="content">
-   <div class="row">
-      <div class="col-12 col-md-6 col-lg-5">
-         <div class="card card-primary">
-            <div class="card-header">
-               <h4>Identitas Pasien</h4>
-            </div>
-            <table class="table table-md">
-               <tr>
-                  <th>Nama </th>
-                  <th>No. RM</th>
-                  <th>No. RJ</th>
-                  <th>Jenis Kelamin</th>
-               </tr>
-
-               <tbody>
+<section class="header">
+   <div class="section-body">
+      <div class="row">
+         <div class="col-12 md-6">
+            <div class="card card-primary">
+               <div class="card-header">
+                  <h4>Identitas Pasien</h4>
+               </div>
+               <table class="table table-md">
                   <tr>
-                     <td><?php echo $this->session->userdata('nmpasien'); ?></td>
-                     <td><?php echo $this->session->userdata('nomrm'); ?></td>
-                     <td><?php echo $this->session->userdata('norj'); ?></td>
-                     <td><?php echo $this->session->userdata('kelamin'); ?></td>
+                     <th>Nama </th>
+                     <th>No. RM</th>
+                     <th>No. RJ</th>
+                     <th>Jenis Kelamin</th>
+
+                     <th>NIK</th>
+                     <th>Umur</th>
+                     <th>Poliklinik</th>
+                     <th>Kode Rumah Sakit</th>
                   </tr>
-               </tbody>
-            </table>
 
-         </div>
-      </div>
+                  <tbody>
+                     <tr>
+                        <td><?php echo $this->session->userdata('nmpasien'); ?></td>
+                        <td><?php echo $this->session->userdata('nomrm'); ?></td>
+                        <td><?php echo $this->session->userdata('norj'); ?></td>
+                        <td><?php echo $this->session->userdata('kelamin'); ?></td>
 
-      <div class="col-12 col-md-6 col-lg-7">
-         <div class="card card-primary">
-            <div class="card-header">
-               <h4>Pasien</h4>
+                        <td><?php echo $this->session->userdata('identitas'); ?></td>
+                        <td><?php echo $this->session->userdata('umurthn'); ?></td>
+                        <td><?php echo $this->session->userdata('nama'); ?></td>
+                        <td>
+                     </tr>
+                  </tbody>
+               </table>
             </div>
-            <table class="table table-md">
-               <tr>
-                  <th>NIK</th>
-                  <th>Umur</th>
-                  <th>Poliklinik</th>
-                  <th>Kode Rumah Sakit</th>
-               </tr>
-               <tr>
-                  <td><?php echo $this->session->userdata('identitas'); ?></td>
-                  <td><?php echo $this->session->userdata('umurthn'); ?></td>
-                  <td><?php echo $this->session->userdata('nama'); ?></td>
-                  <td>
-                     <!-- kode rumah sakit tidak ditemukan -->
-                  </td>
-
-               </tr>
-               <tr>
-            </table>
-
          </div>
       </div>
    </div>
-
-   <!-- Main content -->
-   <section class="content">
-      <div class="row">
-         <div class="col-12">
-            <div class="card">
-               <div class="card-body">
-                  <div class="card-footer text-right">
-                     <a class="btn btn-primary" href="<?= site_url('Cprofilringkasigd/create') ?>"><i class="fas fa-plus"></i> Tambah Profil Ringkas</a>
-                  </div>
-                  <div class="table-responsive">
-                     <table class="table table-striped" id="table1">
-                        <thead>
-                           <tr>
-                              <th>No</th>
-                              <th>Kode Assessment Awal Perawat</th>
-                              <th>Identitas</th>
-                              <th>Action</th>
-                           </tr>
-                        </thead>
+</section>
 
 
 
-                        <!-- <tbody>
+<!-- Main content -->
+<section class="content">
+   <div class="row">
+      <div class="col-12">
+         <div class="card">
+            <div class="card-body">
+               <div class="card-footer text-right">
+                  <a class="btn btn-primary" href="<?= site_url('Cprofilringkasigd/create') ?>"><i class="fas fa-plus"></i> Tambah Profil Ringkas</a>
+               </div>
+               <div class="table-responsive">
+                  <table class="table table-striped" id="table1">
+                     <thead>
+                        <tr>
+                           <th>No</th>
+                           <th>Kode Assessment Awal Perawat</th>
+                           <th>Identitas</th>
+                           <th>Action</th>
+                        </tr>
+                     </thead>
+
+
+
+                     <!-- <tbody>
                             <?php $no = 1;
                               foreach ($assessmentawalperawat as $row) : ?>
                                     <tr>
@@ -105,15 +92,10 @@
                                     </tr>
                                 <?php endforeach ?>
                             </tbody> -->
-                     </table>
-                  </div>
+                  </table>
                </div>
             </div>
          </div>
       </div>
-      </div>
-
-
-   </section>
-
+   </div>
 </section>

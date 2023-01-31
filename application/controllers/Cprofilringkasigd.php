@@ -18,6 +18,7 @@ class Cprofilringkasigd extends CI_Controller
 		$this->template->load('igd/template', 'igd/profilringkas/Vindex', $data);
 	}
 
+
 	public function create()
 	{
 		$noRM = $this->uri->segment(3);

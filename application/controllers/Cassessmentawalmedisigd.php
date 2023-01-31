@@ -19,6 +19,55 @@ class Cassessmentawalmedisigd extends CI_Controller
 		$this->template->load('igd/template', 'igd/assesment/awalmedis/anak/Vindex', $data);
 
 	}
+
+	public function permintaanrawatinap()
+	{
+		$data['assessmentawalperawat'] = $this->Massessmentawalperawat->getassessmentawalperawat();
+		
+		// igd
+		$this->template->load('igd/template', 'igd/permintaan_rawatinap/Vindex', $data);
+
+	}
+	
+
+	public function resumemedis()
+	{
+		$data['assessmentawalperawat'] = $this->Massessmentawalperawat->getassessmentawalperawat();
+		
+		// igd
+		$this->template->load('igd/template', 'igd/resume_medis/Vindex', $data);
+
+	}
+
+	
+	public function suratkematian()
+	{
+		$data['assessmentawalperawat'] = $this->Massessmentawalperawat->getassessmentawalperawat();
+		
+		// igd
+		$this->template->load('igd/template', 'igd/surat_kematian/Vindex', $data);
+
+	}
+
+	public function suratrujukan()
+	{
+		$data['assessmentawalperawat'] = $this->Massessmentawalperawat->getassessmentawalperawat();
+		
+		// igd
+		$this->template->load('igd/template', 'igd/surat_rujukan/Vindex', $data);
+
+	}
+
+	public function penolakanrawatinap()
+	{
+		$data['assessmentawalperawat'] = $this->Massessmentawalperawat->getassessmentawalperawat();
+		
+		// igd
+		$this->template->load('igd/template', 'igd/penolakan_rawatinap/Vindex', $data);
+
+	}
+
+	
 	
 
 	public function create()
