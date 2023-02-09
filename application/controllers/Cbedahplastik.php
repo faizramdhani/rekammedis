@@ -1,42 +1,33 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Cprofilringkas extends CI_Controller
+class Cbedahplastik extends CI_Controller
 {
 	public function __construct()
 	{
 		parent::__construct();
 		$this->load->library('session');
 
-		$this->load->model('Mprofilringkas');
+		$this->load->model('Mbedahplastik');
 	}
 
 	public function index()
 	{
-        $noRM = $this->uri->segment(3);
-		$data['profilringkas'] = $this->Mprofilringkas->getprofilringkas($noRM);
-		// dd($data);
-		$this->template->load('rawatjalan/template', 'rawatjalan/profilringkas/Vindex', $data);
+		$this->template->load('rawatjalan/template', 'rawatjalan/assesment/bedahplastik/Vindex');
 	}
-	
-
-	
 
 	public function create()
 	{
-		$noRM = $this->uri->segment(3);
-		$data['profilringkas'] = $this->Mprofilringkas->getprofilringkas($noRM);
-		$this->template->load('rawatjalan/template', 'rawatjalan/profilringkas/Vcreate', $data);
+        $data['icd'] = $this->Mbedahplastik->geticd();
+		$this->template->load('rawatjalan/template', 'rawatjalan/assesment/bedahplastik/Vcreate', $data);
 	}
 
 	public function insert()
 	{
-        $add = $this->Mprofilringkas;
-		$add->save();
-		$this->session->set_flashdata('success', 'Berhasil disimpan');
-		$noRM = $this->uri->segment(3);
-		$data['profilringkas'] = $this->Mprofilringkas->getprofilringkas($noRM);
-        $this->template->load('rawatjalan/template', 'rawatjalan/profilringkas/Vcreate', $data);
+        // $product = $this->Massessmentawalperawat;
+		// $product->save();
+		// $this->session->set_flashdata('success', 'Berhasil disimpan');
+        // $this->template->load('rawatjalan/assesment/template', 'rawatjalan/assesment/awalperawat/Vindex');
     }
 
 	public function add()
